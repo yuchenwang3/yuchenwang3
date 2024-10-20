@@ -1,5 +1,5 @@
 # 👋 Hi, I’m @wangyuchen333
-- 👀 I’m interested in machine learning, computer vision, parallel programming and many other aspects.
-- 🌱 I’m currently learning computer science, artificial intelligence and math.
-- 💞️ I’m looking to collaborate on machine learning theory and algorithms, (TBD)
-- 📫 How to reach me 
+- 👀 I’m interested in interpretate the in-context learning ablity for LLMs and Gaussian Mixture in Diffusion Models.
+- 🌱 I’m currently seeking for RA or Phd position on Artificial Intelligence.
+- 💞️ I’m looking to collaborate on discover why llm is powerful and the mechanmics of transformer behind it, also the throughout process of diffusion and sampling
+- 📫 My personal website is https://wangyuchen333.github.io/
