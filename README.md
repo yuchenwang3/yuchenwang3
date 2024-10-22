@@ -10,6 +10,4 @@
 
 Looking forward to connecting and potentially joining forces in the vibrant domain of AI research and development! 🌟
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wangyuchen333)
-
 ![Metrics](/github-metrics.svg)
