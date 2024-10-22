@@ -1,4 +1,4 @@
-![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Yuchen+Wang;王昱琛)
+![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Yuchen+Wang;03+03+2003)
 
 👋 Hello there! I’m @wangyuchen333.
 
