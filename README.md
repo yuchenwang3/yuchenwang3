@@ -13,9 +13,9 @@
 Looking forward to connecting and potentially joining forces in the vibrant domain of AI research and development! 🌟
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Peter-JXL/wangyuchen333/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Peter-JXL/wangyuchen333/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Peter-JXL/wangyuchen333/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-contribution-grid-snake.svg">
 </picture>
 
 ![Github Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=wangyuchen333)
