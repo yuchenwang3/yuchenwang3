@@ -12,4 +12,4 @@ Looking forward to connecting and potentially joining forces in the vibrant doma
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wangyuchen333)
 
-
+![Metrics](/github-metrics.svg)
