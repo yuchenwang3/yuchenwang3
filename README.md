@@ -9,3 +9,8 @@
 - 📫 For more about my work and interests, visit my personal website at [wangyuchen333](https://wangyuchen333.github.io/).
 
 Looking forward to connecting and potentially joining forces in the vibrant domain of AI research and development! 🌟
+
+![wangyuchen333's GitHub stats](https://github-readme-stats.vercel.app/api?username=wangyuchen333)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=wangyuchen333)
+
