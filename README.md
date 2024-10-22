@@ -20,8 +20,6 @@ Looking forward to connecting and potentially joining forces in the vibrant doma
 
 ![Github Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=wangyuchen333)
 
-![Stats](https://github-immortality.vercel.app/api?username=wangyuchen333)
-
 ![GitHub Streak](https://streak-stats.demolab.com/?user=wangyuchen333)
 
 ![Metrics](/github-metrics.svg)
