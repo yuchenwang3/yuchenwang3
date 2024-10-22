@@ -1,23 +1,77 @@
+# Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: Metrics
 on:
-  schedule: [{cron: "0 */6 * * *"}]  # Run every 6 hours
+  # Schedule updates (each hour)
+  schedule: [{cron: "0 * * * *"}]
+  # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
-  push:
-    branches:
-      - master
-      - main
+  push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    environment: 
-      name: production
     permissions:
       contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          # Your GitHub token
+          # The following scopes are required:
+          #  - public_access (default scope)
+          #  - repo
+          # The following additional scopes may be required:
+          #  - read:org      (for organization related metrics)
+          #  - read:user     (for user related data)
+          #  - read:packages (for some packages related data)
+          #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
-          user: wangyuchen333
+
+          # Options
           template: classic
-          base: header, activity, community, repositories, languages, metadata  # Add or remove as needed
-          config_timezone: Asia/Shanghai  # Change timezone if necessary
+          base: header, activity, community, repositories, metadata
+          base_hireable: yes
+          config_timezone: Asia/Hong_Kong
+          plugin_calendar: yes
+          plugin_calendar_limit: 1
+          plugin_code: yes
+          plugin_code_days: 3
+          plugin_code_lines: 12
+          plugin_code_load: 400
+          plugin_code_visibility: public
+          plugin_discussions: yes
+          plugin_discussions_categories: yes
+          plugin_gists: yes
+          plugin_habits: yes
+          plugin_habits_charts_type: classic
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_from: 200
+          plugin_habits_languages_limit: 8
+          plugin_habits_languages_threshold: 0%
+          plugin_repositories: yes
+          plugin_repositories_order: featured, pinned, starred, random
+          plugin_screenshot: yes
+          plugin_screenshot_background: yes
+          plugin_screenshot_mode: image
+          plugin_screenshot_selector: body
+          plugin_screenshot_title: Screenshot
+          plugin_screenshot_viewport: {
+  "width": 1280,
+  "height": 1280
+}
+
+          plugin_skyline: yes
+          plugin_skyline_frames: 60
+          plugin_skyline_quality: 0.5
+          plugin_skyline_settings: {
+  "url": "https://skyline.github.com/${login}/${year}",
+  "ready": "[...document.querySelectorAll('span')].map(span => span.innerText).includes('Share on Twitter')",
+  "wait": 1,
+  "hide": "button, footer, a"
+}
+
+          plugin_skyline_year: current-year
+          plugin_stargazers: yes
+          plugin_stargazers_charts: yes
+          plugin_stargazers_charts_type: classic
+          plugin_stargazers_days: 14
+          plugin_traffic: yes
