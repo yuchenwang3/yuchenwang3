@@ -28,10 +28,10 @@ jobs:
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: List files
-        run: ls -R  # 列出当前目录中的所有文件
+        run: ls -R
 
       - name: push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v3.2.0  # 更新到最新版本
         with:
           target_branch: output
           build_dir: dist
