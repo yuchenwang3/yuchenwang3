@@ -8,7 +8,7 @@
 
 - 💞️ I'm seeking collaboration opportunities to unravel the mysteries behind the power of LLMs, delve into the mechanics of transformers, and theorize about the nuances of diffusion models.
 
-- 📫 For more about my work and interests, visit my [personal website](https://wangyuchen333.github.io/).
+- 📫 For more about my work and interests, please visit my [personal website](https://wangyuchen333.github.io/).
 
 Looking forward to connecting and potentially joining forces in the vibrant domain of AI research and development! 🌟
 
