@@ -18,6 +18,6 @@ Looking forward to connecting and potentially joining forces in the vibrant doma
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-contribution-grid-snake.svg">
 </picture>
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=wangyuchen333)
+<div align="center"><img src="https://streak-stats.demolab.com/?user=wangyuchen333" alt="GitHub Streak"></div>
 
 ![Metrics](/github-metrics.svg)
