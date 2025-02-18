@@ -2,11 +2,9 @@
 
 👋 Hello there! I’m @wangyuchen333.
 
-- 👀 I'm deeply fascinated by the intricacies of Large Language Models (LLMs), the generative capabilities of Diffusion Models, and the transformative potential of transformer architectures and intelligent agents within the expansive field of AI.
+- 👀 I'm deeply fascinated by the intricacies of Large Language Models (LLMs) and intelligent agents within the expansive field of AI.
 
-- 🌱 I'm currently in the midst of seeking a Research Assistant (RA) or Ph.D. position in Artificial Intelligence. My ambition is to contribute to innovative projects and sharpen my research acumen.
-
-- 💞️ I'm seeking collaboration opportunities to unravel the mysteries behind the power of LLMs, delve into the mechanics of transformers, and theorize about the nuances of diffusion models.
+- 🌱 I'm currently in the midst of seeking a Research Assistant (RA) position in Artificial Intelligence. My ambition is to contribute to innovative projects and sharpen my research acumen.
 
 - 📫 For more about my work and interests, please visit my [personal website](https://wangyuchen333.github.io/).
 
