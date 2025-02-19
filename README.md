@@ -4,7 +4,7 @@
 
 - 👀 I'm deeply fascinated by the intricacies of Large Language Models (LLMs) and intelligent agents within the expansive field of AI.
 
-- 🌱 I'm currently in the midst of seeking a Research Assistant (RA) position in Artificial Intelligence. My ambition is to contribute to innovative projects and sharpen my research acumen.
+- 🌱 I'm currently in the midst of seeking a Research Assistant (RA) position. My ambition is to contribute to innovative projects and sharpen my research acumen.
 
 - 📫 For more about my work and interests, please visit my [personal website](https://wangyuchen333.github.io/).
 
