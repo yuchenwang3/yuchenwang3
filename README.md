@@ -2,7 +2,7 @@
 
 👋 Hello there! I’m @wangyuchen333.
 
-- 👀 I'm deeply fascinated by Large Language Models (LLMs).
+- 👀 I'm deeply fascinated by Large Language Models.
 
 - 🌱 I'm currently in the midst of seeking a Research Assistant (RA) position.
 
