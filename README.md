@@ -1,5 +1,7 @@
 ![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Yuchen+Wang;03+03+2003)
 
+致永无止境的明日。To an Unceasing Future.
+
 👋 Hello there! I’m @wangyuchen333.
 
 - 👀 I'm deeply fascinated by Large Language Models.
