@@ -10,7 +10,7 @@
 
 - 📫 For more about me, please visit my [personal website](https://wangyuchen333.github.io/).
 
-Looking forward to the future! 🌟
+🌟
 
 
 ![Metrics](/github-metrics.svg)
