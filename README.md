@@ -1,8 +1,7 @@
 ![Typing SVG](https://readme-typing-svg.demolab.com/?lines=Yuchen+Wang;03+03+2003)
 
 ![](https://komarev.com/ghpvc/?username=wangyuchen333)
-- <img src="https://media.giphy.com/media/mcsPU3SkKrYDdW3aAU/giphy.gif" width="20"> 
-<!--END_SECTION:waka-->
+
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
