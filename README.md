@@ -26,6 +26,6 @@
     />
   <img 
     alt="github contribution grid snake animation" 
-    src="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-snake.svg"
+    src="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-snake-dark.svg?palette=github-dark.svg"
     />
 </picture>
