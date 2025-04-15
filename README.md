@@ -18,14 +18,14 @@
 <picture>
   <source
     media="(prefers-color-scheme: dark)" 
-    srcset="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-contribution-grid-snake-dark.svg"
+    srcset="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-snake.svg"
     />
   <source 
     media="(prefers-color-scheme: light)" 
-    srcset="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-contribution-grid-snake.svg"
+    srcset="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-snake-dark.svg?palette=github-dark.svg"
     />
   <img 
     alt="github contribution grid snake animation" 
-    src="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-contribution-grid-snake.svg"
+    src="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-snake.svg"
     />
 </picture>
