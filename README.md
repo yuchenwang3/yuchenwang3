@@ -2,21 +2,6 @@
 
 ![](https://komarev.com/ghpvc/?username=wangyuchen333)
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/zwhe99/zwhe99/output/github-contribution-grid-snake-dark.svg"
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/zwhe99/zwhe99/output/github-contribution-grid-snake.svg"
-  />
-  <img
-    alt="github contribution grid snake animation"
-    src="https://raw.githubusercontent.com/zwhe99/zwhe99/output/github-contribution-grid-snake.svg"
-  />
-</picture>
-
 致永无止境的明日。To an Unceasing Future.
 
 👋 Hello there! I’m @wangyuchen333.
