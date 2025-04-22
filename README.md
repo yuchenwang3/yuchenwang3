@@ -4,11 +4,11 @@
 
 🌌 *To an Unceasing Future. 致永无止境的明天*
 
-👾 Hey there, I'm @wangyuchen333, your future digital architect.
+👾 Yo, I'm @wangyuchen333, your digital architect of tomorrow.
 
-- 🚀 **Obsessed with Large Language Models**: They’re the blueprint for the next-gen AI, and I'm all about cracking the code, exploring the math, and pushing the boundaries of what’s possible. 
-- 🔍 Currently diving into **Group Relative Policy Optimization (GRPO)**, **supervised fine-tuning (SFT)**, and tuning AI for complex real-world tasks. Let’s turn theory into tech.
-- 🌐 Check out my [personal website](https://wangyuchen333.github.io/), **X**: [@abse27088252895](https://x.com/abse27088252895), and **Xiaohongshu**: [Link](https://www.xiaohongshu.com/user/profile/62988580000000001902961f) for more insights on my projects and thoughts.
+- 🚀 **LLMs**: The future of AI. I'm deep into the code and algorithms, hacking the math, and breaking limits.
+- 🔍 Exploring **GRPO**, **SFT**, and fine-tuning AI for real-world tasks. Theory → Tech.
+- 🌐 Visit my [website](https://wangyuchen333.github.io/), **X**: [@abse27088252895](https://x.com/abse27088252895), **Xiaohongshu**: [Link](https://www.xiaohongshu.com/user/profile/62988580000000001902961f) for more.
 
 <picture>
   <source 
