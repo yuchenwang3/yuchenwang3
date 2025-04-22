@@ -8,8 +8,6 @@
 
 - 🌟 I'm deeply fascinated by Large Language Models.
 
-- 🌱 I'm currently in the midst of seeking a Research Assistant (RA) position.
-
 - 📫 For more about me, please visit my [personal website](https://wangyuchen333.github.io/).
 
 <picture>
