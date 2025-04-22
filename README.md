@@ -9,10 +9,8 @@
 # Exploring GRPO, SFT, and fine-tuning AI for real-world tasks.
 
 🌐 Visit my [website](https://wangyuchen333.github.io/),
-🌐 Visit my [website](https://wangyuchen333.github.io/),
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/ohmyzsh?label=%40ohmyzsh&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=ohmyzsh)
-[![X (formerly Twitter)](https://img.shields.io/twitter/follow/abse27088252895?label=%40abse27088252895&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=abse27088252895)
-[![X](https://img.shields.io/badge/X-1DA1F2?logo=twitter&logoColor=white)](https://x.com/abse27088252895)
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/YuchenWang7651?label=%YuchenWang7651&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=YuchenWang7651)
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/abse27088252895?label=%40abse27088252895&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=abse27088252895)
 [![Xiaohongshu](https://img.shields.io/badge/Xiaohongshu-FF2442?logo=Xiaohongshu&logoColor=white)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
 for more.
 
