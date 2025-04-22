@@ -4,10 +4,10 @@
 
 🌌 *To an Unceasing Future. 致永无止境的明天*
 
-👾 Yo, I'm @wangyuchen333, your digital architect of tomorrow.
+# @wangyuchen333 | LLM Researcher & Architect
+# Specializing in LLM post-training, building intelligent AI systems.
+# Exploring GRPO, SFT, and fine-tuning AI for real-world tasks.
 
-- 🚀 **LLMs**: The future of AI. I'm deep into the code and algorithms, hacking the math, and breaking limits.
-- 🔍 Exploring **GRPO**, **SFT**, and fine-tuning AI for real-world tasks. Theory → Tech.
 - 🌐 Visit my [website](https://wangyuchen333.github.io/), [![X](https://upload.wikimedia.org/wikipedia/commons/6/60/X_Logo_2023.svg)](https://x.com/abse27088252895) 
 [![Xiaohongshu](https://upload.wikimedia.org/wikipedia/commons/6/60/Xiaohongshu_logo.svg)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
 for more.
