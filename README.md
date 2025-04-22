@@ -8,9 +8,11 @@
 # Specializing in LLM post-training, building intelligent AI systems.
 # Exploring GRPO, SFT, and fine-tuning AI for real-world tasks.
 
-- 🌐 Visit my [website](https://wangyuchen333.github.io/), [![X](https://upload.wikimedia.org/wikipedia/commons/6/60/X_Logo_2023.svg)](https://x.com/abse27088252895) 
-[![Xiaohongshu](https://upload.wikimedia.org/wikipedia/commons/6/60/Xiaohongshu_logo.svg)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
+🌐 Visit my [website](https://wangyuchen333.github.io/),
+[![X](https://img.shields.io/badge/X-1DA1F2?logo=twitter&logoColor=white)](https://x.com/abse27088252895)
+[![Xiaohongshu](https://img.shields.io/badge/Xiaohongshu-FF2442?logo=Xiaohongshu&logoColor=white)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
 for more.
+
 
 <picture>
   <source 
