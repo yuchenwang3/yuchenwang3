@@ -4,34 +4,14 @@
 
 🌌 *To an Unceasing Future. 致永无止境的明天*
 
-# @wangyuchen333 | LLM Researcher & Architect
-# Specializing in LLM post-training, building intelligent AI systems.
-# Exploring GRPO, SFT, and fine-tuning AI for real-world tasks.
-
-🌐 Visit my [website](https://wangyuchen333.github.io/),
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/YuchenWang7651?label=%YuchenWang7651&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=YuchenWang7651)
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/abse27088252895?label=%40abse27088252895&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=abse27088252895)
-[![Xiaohongshu](https://img.shields.io/badge/Xiaohongshu-FF2442?logo=4139562698&logoColor=white)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
-for more.
-
-
 ```plaintext
-# @wangyuchen333 | Interest in LLM
+@wangyuchen333 | Interest in LLM
 ```
-
-🌐 Visit my [website](https://wangyuchen333.github.io/),
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/YuchenWang7651?label=%40YuchenWang7651&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=YuchenWang7651)
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/abse27088252895?label=%40abse27088252895&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=abse27088252895)
-[![Xiaohongshu](https://img.shields.io/badge/xiaohongshu-FF0000?logo=Xiaohongshu&logoColor=white)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
-
-```plaintext
-# @wangyuchen333 | Interest in LLM
-```
-
+🌐 
 [![Website](https://img.shields.io/badge/website-wangyuchen333.github.io-blue)](https://wangyuchen333.github.io/)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/YuchenWang7651?label=%40YuchenWang7651&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=YuchenWang7651)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/abse27088252895?label=%40abse27088252895&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=abse27088252895)
-[![xiaohongshu](https://img.shields.io/badge/xiaohongshu-FF0000?logo=Xiaohongshu&logoColor=white)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
+[![xiaohongshu](https://img.shields.io/badge/xiaohongshu-FF0000?logo=EangCMS&logoColor=white)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
 
 
 <picture>
