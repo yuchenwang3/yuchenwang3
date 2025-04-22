@@ -11,11 +11,18 @@
 🌐 Visit my [website](https://wangyuchen333.github.io/),
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/YuchenWang7651?label=%YuchenWang7651&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=YuchenWang7651)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/abse27088252895?label=%40abse27088252895&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=abse27088252895)
-[![Xiaohongshu](https://img.shields.io/badge/Xiaohongshu-FF2442?logo=Xiaohongshu&logoColor=white)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
+[![Xiaohongshu](https://img.shields.io/badge/Xiaohongshu-FF2442?logo=4139562698&logoColor=white)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
 for more.
 
-[![Xiaohongshu](https://img.shields.io/badge/Xiaohongshu-FF2442?logo=Xiaohongshu&logoColor=white)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
-for more.
+
+```plaintext
+# @wangyuchen333 | Interest in LLM
+```
+
+🌐 Visit my [website](https://wangyuchen333.github.io/),
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/YuchenWang7651?label=%40YuchenWang7651&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=YuchenWang7651)
+[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/abse27088252895?label=%40abse27088252895&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=abse27088252895)
+[![Xiaohongshu](https://img.shields.io/badge/xiaohongshu-FF0000?logo=Xiaohongshu&logoColor=white)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
 
 
 <picture>
