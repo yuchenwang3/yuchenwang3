@@ -12,9 +12,6 @@
 
 - 📫 For more about me, please visit my [personal website](https://wangyuchen333.github.io/).
 
-
-![Metrics](/github-metrics.svg)
-
 <picture>
   <source
     media="(prefers-color-scheme: dark)" 
