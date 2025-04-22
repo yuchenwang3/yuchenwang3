@@ -8,7 +8,9 @@
 
 - 🚀 **LLMs**: The future of AI. I'm deep into the code and algorithms, hacking the math, and breaking limits.
 - 🔍 Exploring **GRPO**, **SFT**, and fine-tuning AI for real-world tasks. Theory → Tech.
-- 🌐 Visit my [website](https://wangyuchen333.github.io/), **X**: [@abse27088252895](https://x.com/abse27088252895), **Xiaohongshu**: [Link](https://www.xiaohongshu.com/user/profile/62988580000000001902961f) for more.
+- 🌐 Visit my [website](https://wangyuchen333.github.io/), [![X](https://upload.wikimedia.org/wikipedia/commons/6/60/X_Logo_2023.svg)](https://x.com/abse27088252895) 
+[![Xiaohongshu](https://upload.wikimedia.org/wikipedia/commons/6/60/Xiaohongshu_logo.svg)](https://www.xiaohongshu.com/user/profile/62988580000000001902961f)
+for more.
 
 <picture>
   <source 
