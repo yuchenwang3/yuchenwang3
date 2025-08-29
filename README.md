@@ -9,7 +9,7 @@
 ```
 
 [![Website](https://img.shields.io/badge/website-wangyuchen333.github.io-blue&style=flat)](https://wangyuchen333.github.io/)
-[![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/YuchenWang7651?label=%40YuchenWang7651&logo=x&style=flat)](https://twitter.com/intent/follow?screen_name=YuchenWang7651)
+
 
 
 <picture>
