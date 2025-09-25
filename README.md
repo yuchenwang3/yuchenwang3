@@ -7,5 +7,3 @@
 ```plaintext
 @wangyuchen333 | Interest in LLM
 ```
-
-[![Website](https://img.shields.io/badge/website-wangyuchen333.github.io-blue&style=flat)](https://wangyuchen333.github.io/)
