@@ -9,20 +9,3 @@
 ```
 
 [![Website](https://img.shields.io/badge/website-wangyuchen333.github.io-blue&style=flat)](https://wangyuchen333.github.io/)
-
-
-
-<picture>
-  <source 
-    media="(prefers-color-scheme: dark)" 
-    srcset="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-snake.svg"
-  />
-  <source 
-    media="(prefers-color-scheme: light)" 
-    srcset="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-snake-dark.svg?palette=github-dark.svg"
-  />
-  <img 
-    alt="github contribution grid snake animation" 
-    src="https://raw.githubusercontent.com/wangyuchen333/wangyuchen333/output/github-snake-dark.svg?palette=github-dark.svg"
-  />
-</picture>
