@@ -5,5 +5,5 @@
 🌌 *To an Unceasing Future. 致永无止境的明天*
 
 ```plaintext
-@wangyuchen333 | Interest in LLM
+@yuchenwang3 | Interest in LLM and Diffusion
 ```
