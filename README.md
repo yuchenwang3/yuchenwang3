@@ -79,8 +79,16 @@ resulting system raised Combined T/C Strict Pass@1/3 from
 </p>
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=yuchenwang3&show_icons=true&hide_border=true&rank_icon=percentile&theme=transparent" alt="Yuchen Wang's GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yuchenwang3&layout=compact&langs_count=8&hide_border=true&theme=transparent" alt="Most-used languages" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuchenwang3&theme=github_dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuchenwang3&theme=github" />
+    <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuchenwang3&theme=github" alt="GitHub stars, commits, pull requests, issues, and contributions" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuchenwang3&theme=github_dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuchenwang3&theme=github" />
+    <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuchenwang3&theme=github" alt="Top GitHub repository languages" />
+  </picture>
 </p>
 
 <picture>
