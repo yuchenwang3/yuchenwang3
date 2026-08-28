@@ -24,7 +24,7 @@
     <td valign="top" width="50%">
       <h3>🔬 Now</h3>
       <p><strong>Research Scientist Intern @ Alibaba</strong><br />Agentic LLM post-training, long-horizon tool use, and evaluation infrastructure.</p>
-      <p><strong>M.S. Computer Science @ UIUC</strong><br />Previously Peking University Zhi Class (Elite Program).</p>
+      <p><strong>M.S. Computer Science @ UIUC</strong><br />B.S. in Intelligent Science and Technology (AI), Peking University Zhi Class.</p>
     </td>
     <td valign="top" width="50%">
       <h3>⚙️ Systems</h3>
@@ -33,6 +33,22 @@
     </td>
   </tr>
 </table>
+
+<details>
+  <summary><strong>🎧 Off the clock</strong></summary>
+  <br />
+  <strong>11,410 tracks logged on NetEase Cloud</strong>
+  · hip-hop & trap, EDM, alt-pop, ambient, and post-rock.
+  <br />
+  <a href="https://steamcommunity.com/id/eang24/"><strong>1,481.5 hours on Steam</strong></a>
+  · competitive FPS, tactical shooters, story-rich RPGs, and co-op games.
+  <br /><br />
+  <a href="https://steamcommunity.com/id/eang24/">
+    <img src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/steam-card.png" alt="Live Steam activity: top games and playtime" width="900" />
+  </a>
+  <br /><br />
+  <em>P.S. Trying to be more engaged with the outdoors.</em>
+</details>
 
 ## 🦦 Occamy-1.0
 

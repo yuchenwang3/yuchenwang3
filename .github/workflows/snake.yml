@@ -17,6 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - name: Checkout profile assets
+        uses: actions/checkout@v4
+
       - name: Generate light and dark contribution animations
         uses: Platane/snk/svg-only@v3
         with:
@@ -24,6 +27,17 @@ jobs:
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Refresh Steam activity card
+        shell: bash
+        run: |
+          set -u
+          steam_card_url='https://steam-widget.com/widget/img?id=eang24&gameList=TOP_GAMES_TOTAL&gameListSize=5&style=MIDNIGHT&playingRightNow=true&purpose=yuchen_profile&width=900'
+          if ! curl --fail --silent --show-error --location --retry 3 --retry-delay 2 \
+            "$steam_card_url" --output dist/steam-card.png; then
+            echo "Steam widget unavailable; publishing the checked-in fallback."
+            cp assets/steam-card-fallback.png dist/steam-card.png
+          fi
 
       - name: Publish animations to the output branch
         uses: crazy-max/ghaction-github-pages@v4.2.0
