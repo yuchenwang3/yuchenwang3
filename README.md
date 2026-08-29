@@ -39,6 +39,8 @@
   <br />
   <strong>11,410 tracks logged on NetEase Cloud</strong>
   · hip-hop & trap, EDM, alt-pop, ambient, and post-rock.
+  <br /><br />
+  <img src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/music-card.svg" alt="All-time NetEase Cloud listening snapshot: 11,410 tracks and most replayed songs" width="900" />
   <br />
   <a href="https://steamcommunity.com/id/eang24/"><strong>1,481.5 hours on Steam</strong></a>
   · competitive FPS, tactical shooters, story-rich RPGs, and co-op games.
