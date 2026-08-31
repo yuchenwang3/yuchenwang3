@@ -5,11 +5,11 @@
 
 <div align="center">
 
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=0A66C2&center=true&vCenter=true&width=860&lines=Yuchen+Wang+%7C+Agentic+LLM+Research;Post-training+%C3%97+Systems+%C3%97+Open+Source" alt="Yuchen Wang — Agentic LLM Research" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=3843D0&center=true&vCenter=true&width=860&lines=Yuchen+Wang+%7C+Agentic+LLM+Research;Post-training+%C3%97+Systems+%C3%97+Open+Source" alt="Yuchen Wang — Agentic LLM Research" />
 
   <p>
     <a href="https://huggingface.co/occamy-ai/occamy-1.0"><img src="https://img.shields.io/badge/Occamy--1.0-35B--A3B-FFD21E?style=for-the-badge&logo=huggingface&logoColor=111111" alt="Occamy-1.0" /></a>
-    <a href="https://yuchenwang3.github.io"><img src="https://img.shields.io/badge/Portfolio-Research%20%26%20Systems-0A66C2?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio" /></a>
+    <a href="https://yuchenwang3.github.io"><img src="https://img.shields.io/badge/Portfolio-Research%20%26%20Systems-3843D0?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio" /></a>
     <a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar" /></a>
   </p>
 
@@ -17,8 +17,8 @@
     <a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-Yuchen%20Wang-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
     <a href="https://yuchenwang3.github.io/CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-B31B1B?style=flat-square&logo=adobeacrobatreader&logoColor=white" alt="CV" /></a>
     <img src="https://img.shields.io/github/followers/yuchenwang3?style=flat-square&logo=github&label=Followers" alt="GitHub followers" />
-    <img src="https://komarev.com/ghpvc/?username=yuchenwang3&base=953&style=flat-square&color=0A66C2" alt="Profile views" />
-    <a href="https://gitviewsmap.onrender.com/yuchenwang3"><img src="https://img.shields.io/badge/Visitor%20Map-approximate%20locations-6C5CE7?style=flat-square&logo=googlemaps&logoColor=white" alt="Approximate visitor map" /></a>
+    <img src="https://komarev.com/ghpvc/?username=yuchenwang3&base=953&style=flat-square&color=3843D0" alt="Profile views" />
+    <a href="https://gitviewsmap.onrender.com/yuchenwang3"><img src="https://img.shields.io/badge/Visitor%20Map-approximate%20locations-4B55D4?style=flat-square&logo=googlemaps&logoColor=white" alt="Approximate visitor map" /></a>
   </p>
 
 </div>
@@ -78,7 +78,7 @@ resulting system raised Combined T/C Strict Pass@1/3 from
   <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=111111" alt="Hugging Face" />
   <img src="https://img.shields.io/badge/vLLM-111111?style=for-the-badge" alt="vLLM" />
   <img src="https://img.shields.io/badge/Megatron--LM-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="Megatron-LM" />
-  <img src="https://img.shields.io/badge/SGLang-6C5CE7?style=for-the-badge" alt="SGLang" />
+  <img src="https://img.shields.io/badge/SGLang-4B55D4?style=for-the-badge" alt="SGLang" />
 </p>
 
 <p align="center">
