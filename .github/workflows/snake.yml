@@ -28,17 +28,6 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
-      - name: Refresh Steam activity card
-        shell: bash
-        run: |
-          set -u
-          steam_card_url='https://steam-widget.com/widget/img?id=eang24&gameList=TOP_GAMES_TOTAL&gameListSize=5&style=MIDNIGHT&playingRightNow=true&purpose=yuchen_profile&width=900'
-          if ! curl --fail --silent --show-error --location --retry 3 --retry-delay 2 \
-            "$steam_card_url" --output dist/steam-card.png; then
-            echo "Steam widget unavailable; publishing the checked-in fallback."
-            cp assets/steam-card-fallback.png dist/steam-card.png
-          fi
-
       - name: Publish verified listening snapshot
         shell: bash
         run: cp assets/music-card.svg dist/music-card.svg

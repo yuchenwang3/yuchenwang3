@@ -41,13 +41,6 @@
   · hip-hop & trap, EDM, alt-pop, ambient, and post-rock.
   <br /><br />
   <img src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/music-card.svg" alt="All-time NetEase Cloud listening snapshot: 11,410 tracks and most replayed songs" width="900" />
-  <br />
-  <a href="https://steamcommunity.com/id/eang24/"><strong>1,481.5 hours on Steam</strong></a>
-  · competitive FPS, tactical shooters, story-rich RPGs, and co-op games.
-  <br /><br />
-  <a href="https://steamcommunity.com/id/eang24/">
-    <img src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/steam-card.png" alt="Live Steam activity: top games and playtime" width="900" />
-  </a>
   <br /><br />
   <em>P.S. Trying to be more engaged with the outdoors.</em>
 </details>
