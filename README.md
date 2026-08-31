@@ -12,21 +12,33 @@
   <a href="mailto:yuchenwang0303@gmail.com">email</a>
 </p>
 
-## 01 / GitHub telemetry
+## 01 / GitHub command center
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-telemetry-dark.svg">
   <img width="100%" src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-telemetry.svg" alt="Live GitHub telemetry: repositories, pull requests, upstream work, followers, and languages">
 </picture>
 
-<details>
-  <summary><strong>Contribution stream</strong> · generated daily from the GitHub contribution graph</summary>
-  <br>
+<a href="https://github.com/pulls?q=is%3Apr+author%3Ayuchenwang3">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake-dark.svg">
-    <img width="100%" src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake.svg" alt="Animated GitHub contribution graph">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-upstream-dark.svg">
+    <img width="100%" src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-upstream.svg" alt="Live network map of upstream repositories receiving my pull requests">
   </picture>
-</details>
+</a>
+
+<a href="https://github.com/pulls?q=is%3Apr+author%3Ayuchenwang3">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-activity-dark.svg">
+    <img width="100%" src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-activity.svg" alt="Live ledger of my most recently updated upstream pull requests">
+  </picture>
+</a>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake-dark.svg">
+  <img width="100%" src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake.svg" alt="Animated GitHub contribution graph">
+</picture>
+
+<sub>All panels are generated daily from the GitHub API and contribution graph; click the upstream panels to open the live PR ledger.</sub>
 
 ## 02 / Current
 
