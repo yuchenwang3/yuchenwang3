@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/editorial-header-dark.svg">
+  <img src="./assets/editorial-header-light.svg" alt="Yuchen Ean Wang — agentic post-training, ML systems, and open-source engineering">
+</picture>
+
 <div align="center">
 
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=0A66C2&center=true&vCenter=true&width=860&lines=Yuchen+Wang+%7C+Agentic+LLM+Research;Post-training+%C3%97+Systems+%C3%97+Open+Source" alt="Yuchen Wang — Agentic LLM Research" />

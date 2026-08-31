@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Yuchen Ean Wang</title>
+  <desc id="desc">Editorial header for research in agentic post-training, machine learning systems, and open source.</desc>
+  <defs>
+    <pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.35" fill="#30343A"/>
+    </pattern>
+    <clipPath id="field">
+      <path d="M812 58H1160V236H1088V276H846V204H812Z"/>
+    </clipPath>
+  </defs>
+  <rect width="1200" height="360" fill="#FAFAF7"/>
+  <path d="M52 42H1148" stroke="#30343A" stroke-width="2"/>
+  <path d="M52 318H1148" stroke="#30343A" stroke-width="1"/>
+  <rect x="784" y="58" width="12" height="218" fill="#C83232"/>
+  <g clip-path="url(#field)" opacity=".34">
+    <rect x="812" y="58" width="348" height="218" fill="url(#dots)"/>
+  </g>
+  <circle cx="1127" cy="42" r="17" fill="none" stroke="#C83232" stroke-width="2"/>
+  <path d="M1110 42H1144M1127 25V59" stroke="#C83232" stroke-width="1"/>
+  <text x="54" y="145" fill="#30343A" font-family="Georgia, 'Times New Roman', serif" font-size="106" font-weight="500" letter-spacing="-6">YUCHEN</text>
+  <text x="54" y="278" fill="#30343A" font-family="Georgia, 'Times New Roman', serif" font-size="148" font-weight="600" letter-spacing="-9">WANG</text>
+  <text x="624" y="108" fill="#C83232" font-family="'Courier New', monospace" font-size="15" font-weight="700" letter-spacing="3">( EAN )</text>
+  <text x="824" y="290" fill="#30343A" font-family="'Courier New', monospace" font-size="13" font-weight="700" letter-spacing="1.8">AGENTIC POST-TRAINING</text>
+  <text x="824" y="309" fill="#30343A" font-family="'Courier New', monospace" font-size="13" font-weight="700" letter-spacing="1.8">ML SYSTEMS / OPEN SOURCE</text>
+  <text x="54" y="341" fill="#6B6F74" font-family="'Courier New', monospace" font-size="11" letter-spacing="1.5">RESEARCH PORTFOLIO · 2026</text>
+  <text x="1148" y="341" fill="#C83232" text-anchor="end" font-family="'Courier New', monospace" font-size="11" font-weight="700" letter-spacing="1.5">YUCHENWANG3</text>
+</svg>
