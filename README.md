@@ -59,11 +59,23 @@ tokens per trajectory**.
 ## 06 / GitHub signal
 
 <p align="center">
-  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuchenwang3&amp;theme=transparent&amp;title_color=2148B8&amp;text_color=30343A&amp;bg_color=FAFAF7&amp;border_color=E9E9E5&amp;icon_color=2148B8&amp;chart_color=2148B8" alt="GitHub stars, commits, pull requests, issues, and contributions" />
-  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuchenwang3&amp;theme=transparent&amp;title_color=2148B8&amp;text_color=30343A&amp;bg_color=FAFAF7&amp;border_color=E9E9E5&amp;icon_color=2148B8&amp;chart_color=2148B8" alt="Top GitHub repository languages" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuchenwang3&theme=github_dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuchenwang3&theme=github" />
+    <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuchenwang3&theme=github" alt="GitHub stars, commits, pull requests, issues, and contributions" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuchenwang3&theme=github_dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuchenwang3&theme=github" />
+    <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuchenwang3&theme=github" alt="Top GitHub repository languages" />
+  </picture>
 </p>
 
-<img alt="GitHub contribution grid animation" src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake.svg" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake.svg" />
+  <img alt="GitHub contribution grid animation" src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake.svg" />
+</picture>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=yuchenwang3&base=953&style=flat-square&color=2148B8" alt="Profile views" />
