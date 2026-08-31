@@ -14,7 +14,8 @@
     <a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-Yuchen%20Wang-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
     <a href="https://yuchenwang3.github.io/CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-B31B1B?style=flat-square&logo=adobeacrobatreader&logoColor=white" alt="CV" /></a>
     <img src="https://img.shields.io/github/followers/yuchenwang3?style=flat-square&logo=github&label=Followers" alt="GitHub followers" />
-    <img src="https://komarev.com/ghpvc/?username=wangyuchen333&style=flat-square&color=0A66C2" alt="Profile views" />
+    <img src="https://komarev.com/ghpvc/?username=yuchenwang3&base=953&style=flat-square&color=0A66C2" alt="Profile views" />
+    <a href="https://gitviewsmap.onrender.com/yuchenwang3"><img src="https://img.shields.io/badge/Visitor%20Map-approximate%20locations-6C5CE7?style=flat-square&logo=googlemaps&logoColor=white" alt="Approximate visitor map" /></a>
   </p>
 
 </div>
@@ -40,7 +41,7 @@
   <strong>11,410 tracks logged on NetEase Cloud</strong>
   · hip-hop & trap, EDM, alt-pop, ambient, and post-rock.
   <br /><br />
-  <img src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/music-card.svg" alt="All-time NetEase Cloud listening snapshot: 11,410 tracks and most replayed songs" width="900" />
+  <img src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/music-card.svg" alt="NetEase Cloud listening snapshot" width="900" />
   <br /><br />
   <em>P.S. Trying to be more engaged with the outdoors.</em>
 </details>
