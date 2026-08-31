@@ -12,7 +12,23 @@
   <a href="mailto:yuchenwang0303@gmail.com">email</a>
 </p>
 
-## 01 / Current
+## 01 / GitHub telemetry
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-telemetry-dark.svg">
+  <img width="100%" src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-telemetry.svg" alt="Live GitHub telemetry: repositories, pull requests, upstream work, followers, and languages">
+</picture>
+
+<details>
+  <summary><strong>Contribution stream</strong> · generated daily from the GitHub contribution graph</summary>
+  <br>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake-dark.svg">
+    <img width="100%" src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake.svg" alt="Animated GitHub contribution graph">
+  </picture>
+</details>
+
+## 02 / Current
 
 **Research Scientist Intern at Alibaba** — agentic LLM post-training, long-horizon
 tool use, evaluation infrastructure, and learning systems.
@@ -20,7 +36,7 @@ tool use, evaluation infrastructure, and learning systems.
 M.S. Computer Science at **UIUC**. B.S. in Intelligent Science and Technology
 (AI) from **Peking University, Zhi Class**.
 
-## 02 / Occamy-1.0
+## 03 / Occamy-1.0
 
 **[Occamy-1.0](https://huggingface.co/occamy-ai/occamy-1.0)** is a 35B-A3B
 co-work model continued from Qwen3.6-35B-A3B through full-parameter SFT,
@@ -33,7 +49,7 @@ On the same frozen ClawEval harness, the resulting system raised Combined T/C
 Strict Pass@1/3 from **65.16/73.87% to 77.39/85.93%** while using **38.6% fewer
 tokens per trajectory**.
 
-## 03 / Selected upstream engineering
+## 04 / Selected upstream engineering
 
 | Focus                        | Upstream work                                                                                                                                                                                                                                                                                                        |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -43,14 +59,14 @@ tokens per trajectory**.
 | Long-context kernels         | Fused GatedDeltaNet Q/K normalization and selective Mamba recompute — [Megatron-LM #5396](https://github.com/NVIDIA/Megatron-LM/pull/5396), [#5463](https://github.com/NVIDIA/Megatron-LM/pull/5463)                                                                                                                 |
 | RL and inference reliability | Safer rollout logprobs and hybrid-model weight reloads — [NeMo RL #2962](https://github.com/NVIDIA-NeMo/RL/pull/2962), [SGLang #31621](https://github.com/sgl-project/sglang/pull/31621)                                                                                                                             |
 
-## 04 / Papers and systems
+## 05 / Papers and systems
 
 - **[CineFlow](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/cineflow-paper.pdf)** — semantic dependency scheduling for parallel video generation; **1.7–5.5× speedup** and up to **17.3% higher VBench overall**.
 - **[Dynamic Prefill Optimization](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/dynamic-prefill-online-packing-report.pdf)** — AIMD control with p95 TTFT feedback and greedy/DP prompt packing; up to **20% lower TTFT** on production-style traces.
 - **[FlashAttention-style CUDA Optimization](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/gpt2-processing-unit-report.pdf)** — tiled online softmax and kernel fusion for GPT-2; roughly **10× lower HBM traffic** and up to **9% end-to-end speedup**.
 - **[RL for Legal Reasoning](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/legal-reasoning-thesis.pdf)** — Zero-RL → distilled-CoT SFT → GRPO, reaching **57.6% accuracy**.
 
-## 05 / Working set
+## 06 / Working set
 
 `Python · C++ · CUDA · PyTorch · Megatron-LM · NeMo · vLLM · SGLang · distributed training · reinforcement learning`
 
