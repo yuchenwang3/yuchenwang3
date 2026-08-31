@@ -33,15 +33,6 @@
   </tr>
 </table>
 
-<details>
-  <summary><strong>🎧 Off the clock</strong></summary>
-  <br />
-  <strong>11,410 tracks logged on NetEase Cloud</strong>
-  · hip-hop & trap, EDM, alt-pop, ambient, and post-rock.
-  <br /><br />
-  <em>P.S. Trying to be more engaged with the outdoors.</em>
-</details>
-
 ## 🦦 Occamy-1.0
 
 **[Occamy-1.0](https://huggingface.co/occamy-ai/occamy-1.0)** is a 35B-A3B
