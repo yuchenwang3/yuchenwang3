@@ -27,7 +27,7 @@
   <tr>
     <td valign="top" width="50%">
       <h3>🔬 Now</h3>
-      <p><strong>Research Scientist Intern @ Alibaba</strong><br />Agentic LLM post-training, long-horizon tool use, and evaluation infrastructure.</p>
+      <p><strong>Research Intern @ Alibaba U.S.</strong><br />Agentic LLM post-training, long-horizon tool use, and evaluation infrastructure.</p>
       <p><strong>M.S. Computer Science @ UIUC</strong><br />B.S. in Intelligent Science and Technology (AI), Peking University Zhi Class.</p>
     </td>
     <td valign="top" width="50%">
@@ -46,10 +46,10 @@ uniform model soup, and GRPO/SAO reinforcement learning.
 
 I built verifier-gated data and training infrastructure for token-exact replay,
 state reconstruction, episode credit across context rewrites, immutable
-provenance, and quarantine gates. On the same frozen ClawEval harness, the
-resulting system raised Combined T/C Strict Pass@1/3 from
-**65.16/73.87% → 77.39/85.93%** while reducing tokens per trajectory by
-**38.6%**.
+provenance, and quarantine gates. The public release reached **84.3 Claw-Eval
+(71.3 Pass³), 59.0 Terminal-Bench 2.1, 50.1 WildClawBench, and 43.5 SWE-bench
+Pro**; AutomationBench reached **27.6% strict / 69.1% partial**. The same stack
+reduced tokens per trajectory by **38.6%** and wall time by **36.1%**.
 
 ## 🧩 Open-source systems engineering
 
@@ -58,15 +58,17 @@ resulting system raised Combined T/C Strict Pass@1/3 from
 | Optimizer stability          | Scale-invariant Newton–Schulz for small-norm Muon inputs in [NVIDIA NeMo Emerging Optimizers #230](https://github.com/NVIDIA-NeMo/Emerging-Optimizers/pull/230)                                                                                                                                                                                |
 | Hybrid-model training        | Recompute propagation and Mamba + attention + MoE runtime fixes in [vLLM/Vime #337](https://github.com/vllm-project/vime/pull/337)                                                                                                                                                                                                             |
 | Training throughput          | Order-preserving sequence packing, NCCL warmup, and Muon correctness across [ModelScope ms-swift #9598](https://github.com/modelscope/ms-swift/pull/9598), [#9602](https://github.com/modelscope/ms-swift/pull/9602), [#9599](https://github.com/modelscope/ms-swift/pull/9599), and [#9591](https://github.com/modelscope/ms-swift/pull/9591) |
+| Large-model serving          | In-place FlashInfer BF16 MoE conversion in [vLLM #54699](https://github.com/vllm-project/vllm/pull/54699), halving TP2 peak allocation from **7.88 to 3.94 GiB** and validating real 120B load, generation, and 3/3 sleep-wake cycles on 8×B200                                                                              |
+| Distributed transfer         | Controlled Ray transfer path in [NeMo RL #3943](https://github.com/NVIDIA-NeMo/RL/pull/3943), delivering **4.44–5.31× speedup** while limiting driver RSS deltas to 0.1–0.3 MB                                                                                                                                                                 |
 | Long-context kernels         | Fused GatedDeltaNet Q/K normalization for 128K SFT in [Megatron-LM #5396](https://github.com/NVIDIA/Megatron-LM/pull/5396) and selective Mamba recompute in [#5463](https://github.com/NVIDIA/Megatron-LM/pull/5463)                                                                                                                           |
-| RL and inference reliability | Non-finite rollout-logprob sanitization in [NeMo RL #2962](https://github.com/NVIDIA-NeMo/RL/pull/2962) and safer hybrid-model weight reloads in [SGLang #31621](https://github.com/sgl-project/sglang/pull/31621)                                                                                                                             |
+| RL and inference reliability | Non-finite rollout-logprob sanitization in [NeMo RL #2962](https://github.com/NVIDIA-NeMo/RL/pull/2962), GDN/Muon clipping and routing in [Megatron-LM #5395](https://github.com/NVIDIA/Megatron-LM/pull/5395), [#5400](https://github.com/NVIDIA/Megatron-LM/pull/5400), and [#5431](https://github.com/NVIDIA/Megatron-LM/pull/5431), skipped-tensor checks in [SGLang #31621](https://github.com/sgl-project/sglang/pull/31621), and authoritative FSDP strategy in [verl #7597](https://github.com/verl-project/verl/pull/7597) |
 
 ## 📚 Papers and projects
 
-- **[CineFlow](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/cineflow-paper.pdf)** — dependency-driven parallel video generation with semantic DAG compilation, trajectory-aware fusion, and critical-path scheduling; **1.7–5.5× speedup** and **17.3% higher visual quality**.
+- **[CineFlow](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/cineflow-paper.pdf)** — the first dependency-driven video-diffusion inference system, evaluated across Wan2.2-5B, CogVideoX-5B, and HunyuanVideo on 8×H100; **1.7–5.5× speedup**, **1.30–2.02× lower P90 latency**, and **5.4–17.3% higher VBench overall**.
 - **[Dynamic Prefill Optimization](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/dynamic-prefill-online-packing-report.pdf)** — AIMD control with p95 TTFT feedback and greedy/DP prompt packing; up to **20% lower TTFT** on production-style traces.
 - **[FlashAttention-style CUDA Optimization](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/gpt2-processing-unit-report.pdf)** — tiled online softmax and kernel fusion for GPT-2; roughly **10× lower HBM traffic** and up to **9% end-to-end speedup**.
-- **[RL for Legal Reasoning](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/legal-reasoning-thesis.pdf)** — Zero-RL → distilled-CoT SFT → GRPO, reaching **57.6% accuracy**.
+- **[RL for Legal Reasoning](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/legal-reasoning-thesis.pdf)** — advised by Prof. Yansong Feng; Zero-RL → distilled-CoT SFT → GRPO, reaching **57.6% accuracy**.
 
 ## 🛠️ Stack
 
