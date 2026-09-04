@@ -8,7 +8,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=3843D0&center=true&vCenter=true&width=860&lines=Yuchen+Wang+%7C+Agentic+LLM+Research;Post-training+%C3%97+Systems+%C3%97+Open+Source" alt="Yuchen Wang — Agentic LLM Research" />
 
   <p>
-    <a href="https://huggingface.co/occamy-ai/occamy-1.0"><img src="https://img.shields.io/badge/Occamy--1.0-35B--A3B-FFD21E?style=for-the-badge&logo=huggingface&logoColor=111111" alt="Occamy-1.0" /></a>
+    <a href="https://huggingface.co/Accio-Lab/Occamy-1.0"><img src="https://img.shields.io/badge/Occamy--1.0-35B--A3B-FFD21E?style=for-the-badge&logo=huggingface&logoColor=111111" alt="Occamy-1.0" /></a>
     <a href="https://yuchenwang3.github.io"><img src="https://img.shields.io/badge/Portfolio-Research%20%26%20Systems-3843D0?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio" /></a>
     <a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar" /></a>
   </p>
@@ -27,7 +27,7 @@
   <tr>
     <td valign="top" width="50%">
       <h3>🔬 Now</h3>
-      <p><strong>Research Intern @ Alibaba U.S.</strong><br />Agentic LLM post-training, long-horizon tool use, and evaluation infrastructure.</p>
+      <p><strong>Research Intern @ Alibaba U.S. · Accio Team</strong><br />Execution-grounded data, agentic post-training, and reliable long-horizon tool use.</p>
       <p><strong>M.S. Computer Science @ UIUC</strong><br />B.S. in Intelligent Science and Technology (AI), Peking University Zhi Class.</p>
     </td>
     <td valign="top" width="50%">
@@ -40,16 +40,26 @@
 
 ## 🦦 Occamy-1.0
 
-**[Occamy-1.0](https://huggingface.co/occamy-ai/occamy-1.0)** is a 35B-A3B
-co-work model continued from Qwen3.6-35B-A3B through full-parameter SFT,
-uniform model soup, and GRPO/SAO reinforcement learning.
+**Occamy-1.0: Open Pareto-frontier 35B Intelligence for Co-work**
 
-I built verifier-gated data and training infrastructure for token-exact replay,
-state reconstruction, episode credit across context rewrites, immutable
-provenance, and quarantine gates. The public release reached **84.3 Claw-Eval
-(71.3 Pass³), 59.0 Terminal-Bench 2.1, 50.1 WildClawBench, and 43.5 SWE-bench
-Pro**; AutomationBench reached **27.6% strict / 69.1% partial**. The same stack
-reduced tokens per trajectory by **38.6%** and wall time by **36.1%**.
+I contribute to **Occamy-1.0 with Alibaba's Accio Team**, working on
+execution-grounded data, multi-harness trajectory collection, and post-training
+infrastructure. Built from Qwen3.6-35B-A3B, the model combines a long-horizon
+Marathon Expert (SFT + HDPO) and a broader Sprint Expert (SFT) through model
+soup, followed by SAO reinforcement learning.
+
+My work includes verifier-gated task admission, token-exact replay, state
+reconstruction, and training traces that preserve task-level outcomes across
+context rewrites. The latest report records **82.2 Claw-Eval average / 71.4
+Pass³**, **49.16 WildClawBench**, and **27.6% AutomationBench strict pass rate**.
+On the combined Claw-Eval T/C evaluation, Occamy uses **19.5% fewer tokens per
+trajectory** and **46.4% less trace wall time** than Qwen3.6-35B-A3B under the
+same protocol. These are team-level model results.
+
+[Project & results](https://yuchenwang3.github.io/projects/occamy-1-0/) ·
+[Research website](https://occamy-research.ianwang030303.chatgpt.site/) ·
+[Model](https://huggingface.co/Accio-Lab/Occamy-1.0) ·
+[Code](https://github.com/Accio-Lab/occamy)
 
 ## 🧩 Open-source systems engineering
 
