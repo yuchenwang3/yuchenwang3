@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250" role="img" aria-label="NVIDIA-NeMo/RL PR 3943">
+<rect x="1" y="1" width="598" height="248" rx="14" fill="#141a27" stroke="#303b52"/>
+<path d="M28 54h12m-6-6v12m12-16v20" stroke="#a5b5ff" stroke-width="2"/>
+<g fill="#edf1ff" font-family="Segoe UI,Arial,sans-serif">
+<text x="62" y="58" fill="#a5b5ff" font-size="20" font-weight="700">NVIDIA-NeMo/RL</text>
+<text x="28" y="104" font-size="20" font-weight="600">perf(distillation): defer teacher top-k Ray</text><text x="28" y="132" font-size="20" font-weight="600">payloads</text>
+<path d="M28 190H572" stroke="#303b52"/>
+<text x="28" y="222" fill="#a6b1cb" font-size="16">PR #3943 · 11 files</text>
+<text x="340" y="222" fill="#a5b5ff" font-size="17" font-weight="600">+539 / −20</text>
+<text x="545" y="58" fill="#a6b1cb" font-size="20">↗</text>
+</g></svg>

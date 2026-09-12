@@ -1,0 +1,101 @@
+{
+  "updated": "2026-09-11",
+  "pull_requests": [
+    {
+      "repo": "flashinfer-ai/flashinfer",
+      "number": 4984,
+      "title": "fix: apply calibration scales to ragged FP8 KV prefill",
+      "url": "https://github.com/flashinfer-ai/flashinfer/pull/4984",
+      "additions": 75,
+      "deletions": 7,
+      "files": 2,
+      "updated": "2026-09-09T16:57:35Z",
+      "head": "2f253e0ba7111caf8d2d8ccf832f76678a2bb51a",
+      "state": "merged"
+    },
+    {
+      "repo": "vllm-project/vllm",
+      "number": 54699,
+      "title": "[Bugfix][MoE] Convert FlashInfer BF16 weights in place",
+      "url": "https://github.com/vllm-project/vllm/pull/54699",
+      "additions": 475,
+      "deletions": 65,
+      "files": 5,
+      "updated": "2026-09-11T21:33:22Z",
+      "head": "50bc409d422dd37a13414a1c8fb3b5598746244b",
+      "state": "open"
+    },
+    {
+      "repo": "NVIDIA-NeMo/RL",
+      "number": 3943,
+      "title": "perf(distillation): defer teacher top-k Ray payloads",
+      "url": "https://github.com/NVIDIA-NeMo/RL/pull/3943",
+      "additions": 539,
+      "deletions": 20,
+      "files": 11,
+      "updated": "2026-09-11T19:26:43Z",
+      "head": "850a8926f02eab1fad123eb7185d66664cee9151",
+      "state": "open"
+    },
+    {
+      "repo": "NousResearch/hermes-agent",
+      "number": 100693,
+      "title": "fix(tools): resolve local schema refs during arg coercion",
+      "url": "https://github.com/NousResearch/hermes-agent/pull/100693",
+      "additions": 153,
+      "deletions": 11,
+      "files": 2,
+      "updated": "2026-09-11T00:34:11Z",
+      "head": "54de5e5f0341cd63a6411baa3ad89006d8bdc0ee",
+      "state": "open"
+    },
+    {
+      "repo": "NVIDIA-NeMo/Emerging-Optimizers",
+      "number": 230,
+      "title": "fix(muon_utils): keep newton_schulz scale-invariant for small-norm inputs (#229)",
+      "url": "https://github.com/NVIDIA-NeMo/Emerging-Optimizers/pull/230",
+      "additions": 27,
+      "deletions": 2,
+      "files": 2,
+      "updated": "2026-06-22T18:37:28Z",
+      "head": "620196ca7f02ea39ec38fd83de1948a917378659",
+      "state": "merged"
+    },
+    {
+      "repo": "NVIDIA/Megatron-LM",
+      "number": 5396,
+      "title": "perf(gated_delta_net): fold q/k L2-norm into the gated_delta_rule kernel",
+      "url": "https://github.com/NVIDIA/Megatron-LM/pull/5396",
+      "additions": 206,
+      "deletions": 11,
+      "files": 6,
+      "updated": "2026-09-07T19:38:03Z",
+      "head": "72e0c40996bd77ee6d1a67236b030634f3d2c4d3",
+      "state": "open"
+    },
+    {
+      "repo": "NVIDIA/Megatron-LM",
+      "number": 5463,
+      "title": "feat(recompute): add mamba to recompute_modules",
+      "url": "https://github.com/NVIDIA/Megatron-LM/pull/5463",
+      "additions": 236,
+      "deletions": 16,
+      "files": 3,
+      "updated": "2026-09-11T05:26:11Z",
+      "head": "d0485317e36f6e5e5e04bc9954fa272ba799618e",
+      "state": "open"
+    },
+    {
+      "repo": "NousResearch/hermes-agent",
+      "number": 102549,
+      "title": "fix(desktop): reap idle SSH bot backends",
+      "url": "https://github.com/NousResearch/hermes-agent/pull/102549",
+      "additions": 69,
+      "deletions": 1,
+      "files": 3,
+      "updated": "2026-09-04T01:01:21Z",
+      "head": "23a2d4adb26d61287059fbe9b29497e97093bb87",
+      "state": "open"
+    }
+  ]
+}

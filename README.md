@@ -41,26 +41,71 @@
 
 **Occamy-1.0: Open Pareto-frontier 35B Intelligence for Co-work**
 
-I contribute to **Occamy-1.0 with Alibaba's Accio Team**, working on
-execution-grounded data, multi-harness trajectory collection, and post-training
-infrastructure. Built from Qwen3.6-35B-A3B, the model combines a long-horizon
-Marathon Expert (SFT + HDPO) and a broader Sprint Expert (SFT) through model
-soup, followed by SAO reinforcement learning.
+Core contributor to **Occamy-1.0**, a **35A3B** co-work model with Alibaba's Accio Team.
+I architected and delivered execution-grounded data and post-training infrastructure
+for long-horizon tool use. The team's recipe combines SFT, HDPO, expert merging,
+and SAO over a **15K-trajectory, 403M-token SFT corpus**.
 
 My work includes verifier-gated task admission, token-exact replay, state
 reconstruction, and training traces that preserve task-level outcomes across
 context rewrites. The latest report records **82.2 Claw-Eval average / 71.4
 Pass³**, **49.16 WildClawBench**, and **27.6% AutomationBench strict pass rate**.
-On the combined Claw-Eval T/C evaluation, Occamy uses **19.5% fewer tokens per
-trajectory** and **46.4% less trace wall time** than Qwen3.6-35B-A3B under the
-same protocol. These are team-level model results.
+The released model reaches the **low-cost knee of the cost–performance Pareto frontier**
+in the report's four-benchmark comparison. These are team-level model results.
 
 [Project & results](https://yuchenwang3.github.io/projects/occamy-1-0/) ·
-[Research website](https://occamy-research.ianwang030303.chatgpt.site/) ·
+[Research website](https://accio-lab.github.io/occamy/) ·
+[Paper PDF](https://accio-lab.github.io/occamy/report/occamy1.0.pdf) ·
 [Model](https://huggingface.co/Accio-Lab/Occamy-1.0) ·
 [Code](https://github.com/Accio-Lab/occamy)
 
 ## 🧩 Open-source systems engineering
+
+<!-- PR-PREVIEWS:START -->
+
+<a href="https://github.com/flashinfer-ai/flashinfer/pull/4984"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/flashinfer-ai-flashinfer-4984-dark.svg">
+  <img width="49%" src="./assets/prs/flashinfer-ai-flashinfer-4984-light.svg" alt="flashinfer-ai/flashinfer #4984: fix: apply calibration scales to ragged FP8 KV prefill">
+</picture></a>
+<a href="https://github.com/vllm-project/vllm/pull/54699"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/vllm-project-vllm-54699-dark.svg">
+  <img width="49%" src="./assets/prs/vllm-project-vllm-54699-light.svg" alt="vllm-project/vllm #54699: [Bugfix][MoE] Convert FlashInfer BF16 weights in place">
+</picture></a>
+<a href="https://github.com/NVIDIA-NeMo/RL/pull/3943"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-RL-3943-dark.svg">
+  <img width="49%" src="./assets/prs/NVIDIA-NeMo-RL-3943-light.svg" alt="NVIDIA-NeMo/RL #3943: perf(distillation): defer teacher top-k Ray payloads">
+</picture></a>
+<a href="https://github.com/NousResearch/hermes-agent/pull/100693"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-100693-dark.svg">
+  <img width="49%" src="./assets/prs/NousResearch-hermes-agent-100693-light.svg" alt="NousResearch/hermes-agent #100693: fix(tools): resolve local schema refs during arg coercion">
+</picture></a>
+<a href="https://github.com/NVIDIA-NeMo/Emerging-Optimizers/pull/230"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-dark.svg">
+  <img width="49%" src="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-light.svg" alt="NVIDIA-NeMo/Emerging-Optimizers #230: fix(muon_utils): keep newton_schulz scale-invariant for small-norm inputs (#229)">
+</picture></a>
+<a href="https://github.com/NVIDIA/Megatron-LM/pull/5396"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5396-dark.svg">
+  <img width="49%" src="./assets/prs/NVIDIA-Megatron-LM-5396-light.svg" alt="NVIDIA/Megatron-LM #5396: perf(gated_delta_net): fold q/k L2-norm into the gated_delta_rule kernel">
+</picture></a>
+<a href="https://github.com/NVIDIA/Megatron-LM/pull/5463"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5463-dark.svg">
+  <img width="49%" src="./assets/prs/NVIDIA-Megatron-LM-5463-light.svg" alt="NVIDIA/Megatron-LM #5463: feat(recompute): add mamba to recompute_modules">
+</picture></a>
+<a href="https://github.com/NousResearch/hermes-agent/pull/102549"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-102549-dark.svg">
+  <img width="49%" src="./assets/prs/NousResearch-hermes-agent-102549-light.svg" alt="NousResearch/hermes-agent #102549: fix(desktop): reap idle SSH bot backends">
+</picture></a>
+
+[All upstream contributions](https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests) · Previews refresh daily.
+
+<!-- PR-PREVIEWS:END -->
+
+### Selected engineering work
+
+- **[FlashInfer #4984](https://github.com/flashinfer-ai/flashinfer/pull/4984)** — corrected K/V calibration for ragged FP8 prefill; now included upstream.
+- **[vLLM #54699](https://github.com/vllm-project/vllm/pull/54699)** — latest follow-up preserves reload padding and reconstructs kernel views from restored tensors, including cross-process IPC coverage; the 120B memory result below comes from the earlier lifecycle validation.
+- **[Hermes #100693](https://github.com/NousResearch/hermes-agent/pull/100693) / [#102549](https://github.com/NousResearch/hermes-agent/pull/102549)** — schema-reference tool argument coercion and ownership-checked cleanup of idle SSH backends.
+- **[NeMo Gym #2726](https://github.com/NVIDIA-NeMo/Gym/pull/2726)** — co-authored pickle-safe propagation of cross-process HTTP failures.
 
 | Area                         | Selected contribution                                                                                                                                                                                                                                                                                                                          |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
