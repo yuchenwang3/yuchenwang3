@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12",
+  "updated": "2026-09-13",
   "pull_requests": [
     {
       "repo": "flashinfer-ai/flashinfer",
@@ -81,7 +81,7 @@
       "additions": 236,
       "deletions": 16,
       "files": 3,
-      "updated": "2026-09-11T05:26:11Z",
+      "updated": "2026-09-13T04:24:18Z",
       "head": "d0485317e36f6e5e5e04bc9954fa272ba799618e",
       "state": "open"
     },
