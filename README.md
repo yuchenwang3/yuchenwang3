@@ -93,7 +93,7 @@ in the report's four-benchmark comparison. These are team-level model results.
 </picture></a>
 <a href="https://github.com/NousResearch/hermes-agent/pull/102549"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-102549-dark.svg">
-  <img width="49%" src="./assets/prs/NousResearch-hermes-agent-102549-light.svg" alt="NousResearch/hermes-agent #102549: fix(desktop): reap idle SSH bot backends">
+  <img width="49%" src="./assets/prs/NousResearch-hermes-agent-102549-light.svg" alt="NousResearch/hermes-agent #102549: fix(desktop): wait for pooled SSH teardown before reconnecting">
 </picture></a>
 
 [All upstream contributions](https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests) · Previews refresh daily.

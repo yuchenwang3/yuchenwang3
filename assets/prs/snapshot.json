@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-15",
   "pull_requests": [
     {
       "repo": "flashinfer-ai/flashinfer",
@@ -18,11 +18,11 @@
       "number": 54699,
       "title": "[Bugfix][MoE] Convert FlashInfer BF16 weights in place",
       "url": "https://github.com/vllm-project/vllm/pull/54699",
-      "additions": 475,
-      "deletions": 65,
-      "files": 5,
-      "updated": "2026-09-12T06:24:58Z",
-      "head": "50bc409d422dd37a13414a1c8fb3b5598746244b",
+      "additions": 598,
+      "deletions": 68,
+      "files": 8,
+      "updated": "2026-09-15T18:10:45Z",
+      "head": "fd35773f44cd6c70461b057f398990d89e4eb41c",
       "state": "open"
     },
     {
@@ -42,11 +42,11 @@
       "number": 100693,
       "title": "fix(tools): resolve local schema refs during arg coercion",
       "url": "https://github.com/NousResearch/hermes-agent/pull/100693",
-      "additions": 153,
+      "additions": 185,
       "deletions": 11,
       "files": 2,
-      "updated": "2026-09-11T00:34:11Z",
-      "head": "54de5e5f0341cd63a6411baa3ad89006d8bdc0ee",
+      "updated": "2026-09-14T23:45:58Z",
+      "head": "e6d68e42cc513cb5f3539e1fc22638296a47777c",
       "state": "open"
     },
     {
@@ -66,11 +66,11 @@
       "number": 5396,
       "title": "perf(gated_delta_net): fold q/k L2-norm into the gated_delta_rule kernel",
       "url": "https://github.com/NVIDIA/Megatron-LM/pull/5396",
-      "additions": 206,
-      "deletions": 11,
-      "files": 6,
-      "updated": "2026-09-07T19:38:03Z",
-      "head": "72e0c40996bd77ee6d1a67236b030634f3d2c4d3",
+      "additions": 215,
+      "deletions": 15,
+      "files": 7,
+      "updated": "2026-09-15T18:10:28Z",
+      "head": "192d5d36464927714223d95d6b603f48d1560a31",
       "state": "open"
     },
     {
@@ -88,13 +88,13 @@
     {
       "repo": "NousResearch/hermes-agent",
       "number": 102549,
-      "title": "fix(desktop): reap idle SSH bot backends",
+      "title": "fix(desktop): wait for pooled SSH teardown before reconnecting",
       "url": "https://github.com/NousResearch/hermes-agent/pull/102549",
-      "additions": 69,
-      "deletions": 1,
-      "files": 3,
-      "updated": "2026-09-04T01:01:21Z",
-      "head": "23a2d4adb26d61287059fbe9b29497e97093bb87",
+      "additions": 53,
+      "deletions": 0,
+      "files": 2,
+      "updated": "2026-09-14T23:38:09Z",
+      "head": "a28b02e2746ebf332b4d15566288153e43afdc16",
       "state": "open"
     }
   ]
