@@ -53,43 +53,40 @@ Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba 
   <a href="https://yuchenwang3.github.io/projects/open-source-systems/"><img src="https://img.shields.io/badge/Engineering_Notes-3843D0?style=for-the-badge" alt="Engineering notes and validation details"></a>
 </p>
 
-<details open>
-<summary>PR previews · updated daily</summary>
-
 <!-- PR-PREVIEWS:START -->
 
 <div>
 <a href="https://github.com/flashinfer-ai/flashinfer/pull/4984"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/flashinfer-ai-flashinfer-4984-dark.svg">
-<img width="410" src="./assets/prs/flashinfer-ai-flashinfer-4984-light.svg" alt="flashinfer-ai/flashinfer #4984: fix: apply calibration scales to ragged FP8 KV prefill">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/flashinfer-ai-flashinfer-4984-dark.svg">
+  <img width="410" src="./assets/prs/flashinfer-ai-flashinfer-4984-light.svg" alt="flashinfer-ai/flashinfer #4984: fix: apply calibration scales to ragged FP8 KV prefill">
 </picture></a>
 <a href="https://github.com/vllm-project/vllm/pull/54699"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/vllm-project-vllm-54699-dark.svg">
-<img width="410" src="./assets/prs/vllm-project-vllm-54699-light.svg" alt="vllm-project/vllm #54699: [Bugfix][MoE] Convert FlashInfer BF16 weights in place">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/vllm-project-vllm-54699-dark.svg">
+  <img width="410" src="./assets/prs/vllm-project-vllm-54699-light.svg" alt="vllm-project/vllm #54699: [Bugfix][MoE] Convert FlashInfer BF16 weights in place">
 </picture></a>
 <a href="https://github.com/NVIDIA-NeMo/RL/pull/3943"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-RL-3943-dark.svg">
-<img width="410" src="./assets/prs/NVIDIA-NeMo-RL-3943-light.svg" alt="NVIDIA-NeMo/RL #3943: perf(distillation): defer teacher top-k Ray payloads">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-RL-3943-dark.svg">
+  <img width="410" src="./assets/prs/NVIDIA-NeMo-RL-3943-light.svg" alt="NVIDIA-NeMo/RL #3943: perf(distillation): defer teacher top-k Ray payloads">
 </picture></a>
 <a href="https://github.com/NousResearch/hermes-agent/pull/100693"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-100693-dark.svg">
-<img width="410" src="./assets/prs/NousResearch-hermes-agent-100693-light.svg" alt="NousResearch/hermes-agent #100693: fix(tools): resolve local schema refs during arg coercion">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-100693-dark.svg">
+  <img width="410" src="./assets/prs/NousResearch-hermes-agent-100693-light.svg" alt="NousResearch/hermes-agent #100693: fix(tools): resolve local schema refs during arg coercion">
 </picture></a>
 <a href="https://github.com/NVIDIA-NeMo/Emerging-Optimizers/pull/230"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-dark.svg">
-<img width="410" src="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-light.svg" alt="NVIDIA-NeMo/Emerging-Optimizers #230: fix(muon_utils): keep newton_schulz scale-invariant for small-norm inputs (#229)">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-dark.svg">
+  <img width="410" src="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-light.svg" alt="NVIDIA-NeMo/Emerging-Optimizers #230: fix(muon_utils): keep newton_schulz scale-invariant for small-norm inputs (#229)">
 </picture></a>
 <a href="https://github.com/NVIDIA/Megatron-LM/pull/5396"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5396-dark.svg">
-<img width="410" src="./assets/prs/NVIDIA-Megatron-LM-5396-light.svg" alt="NVIDIA/Megatron-LM #5396: perf(gated_delta_net): fold q/k L2-norm into the gated_delta_rule kernel">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5396-dark.svg">
+  <img width="410" src="./assets/prs/NVIDIA-Megatron-LM-5396-light.svg" alt="NVIDIA/Megatron-LM #5396: perf(gated_delta_net): fold q/k L2-norm into the gated_delta_rule kernel">
 </picture></a>
 <a href="https://github.com/NVIDIA/Megatron-LM/pull/5463"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5463-dark.svg">
-<img width="410" src="./assets/prs/NVIDIA-Megatron-LM-5463-light.svg" alt="NVIDIA/Megatron-LM #5463: feat(recompute): add mamba to recompute_modules">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5463-dark.svg">
+  <img width="410" src="./assets/prs/NVIDIA-Megatron-LM-5463-light.svg" alt="NVIDIA/Megatron-LM #5463: feat(recompute): add mamba to recompute_modules">
 </picture></a>
 <a href="https://github.com/NousResearch/hermes-agent/pull/102549"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-102549-dark.svg">
-<img width="410" src="./assets/prs/NousResearch-hermes-agent-102549-light.svg" alt="NousResearch/hermes-agent #102549: fix(desktop): wait for pooled SSH teardown before reconnecting">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-102549-dark.svg">
+  <img width="410" src="./assets/prs/NousResearch-hermes-agent-102549-light.svg" alt="NousResearch/hermes-agent #102549: fix(desktop): wait for pooled SSH teardown before reconnecting">
 </picture></a>
 </div>
 
@@ -98,5 +95,3 @@ Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba 
 </p>
 
 <!-- PR-PREVIEWS:END -->
-
-</details>

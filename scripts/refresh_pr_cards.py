@@ -5,7 +5,7 @@ import html
 import json
 import pathlib
 import subprocess
-import textwrap
+from profile_art import render_pr
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SELECTED = [
@@ -34,24 +34,7 @@ def fetch(item):
 
 
 def render(p, dark):
-    bg, ink, muted, line, blue = (
-        ("#141a27", "#edf1ff", "#a6b1cb", "#303b52", "#a5b5ff") if dark else
-        ("#f8faff", "#172442", "#536482", "#d5def0", "#384cc0")
-    )
-    esc = html.escape
-    title = textwrap.wrap(p["title"], width=48)[:3]
-    lines = "".join(f'<text x="28" y="{104+i*28}" font-size="20" font-weight="600">{esc(t)}</text>' for i,t in enumerate(title))
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="600" height="250" viewBox="0 0 600 250" role="img" aria-label="{esc(p['repo'])} PR {p['number']}">
-<rect x="1" y="1" width="598" height="248" rx="14" fill="{bg}" stroke="{line}"/>
-<path d="M28 54h12m-6-6v12m12-16v20" stroke="{blue}" stroke-width="2"/>
-<g fill="{ink}" font-family="Segoe UI,Arial,sans-serif">
-<text x="62" y="58" fill="{blue}" font-size="20" font-weight="700">{esc(p['repo'])}</text>
-{lines}
-<path d="M28 190H572" stroke="{line}"/>
-<text x="28" y="222" fill="{muted}" font-size="16">PR #{p['number']} · {p['files']} files</text>
-<text x="340" y="222" fill="{blue}" font-size="17" font-weight="600">+{p['additions']} / −{p['deletions']}</text>
-<text x="545" y="58" fill="{muted}" font-size="20">↗</text>
-</g></svg>'''
+    return render_pr(p, dark).rstrip("\n")
 
 
 def main():

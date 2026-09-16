@@ -21,7 +21,7 @@
       "additions": 598,
       "deletions": 68,
       "files": 8,
-      "updated": "2026-09-15T18:10:45Z",
+      "updated": "2026-09-15T22:23:43Z",
       "head": "fd35773f44cd6c70461b057f398990d89e4eb41c",
       "state": "open"
     },
@@ -33,8 +33,8 @@
       "additions": 539,
       "deletions": 20,
       "files": 11,
-      "updated": "2026-09-13T20:23:08Z",
-      "head": "850a8926f02eab1fad123eb7185d66664cee9151",
+      "updated": "2026-09-16T06:21:02Z",
+      "head": "eff2617084fc12b1054789e1cabaccf702c75f62",
       "state": "open"
     },
     {
@@ -42,11 +42,11 @@
       "number": 100693,
       "title": "fix(tools): resolve local schema refs during arg coercion",
       "url": "https://github.com/NousResearch/hermes-agent/pull/100693",
-      "additions": 185,
+      "additions": 169,
       "deletions": 11,
       "files": 2,
-      "updated": "2026-09-14T23:45:58Z",
-      "head": "e6d68e42cc513cb5f3539e1fc22638296a47777c",
+      "updated": "2026-09-16T06:21:15Z",
+      "head": "81f1577599dc03888815214183a6fe194e1f004a",
       "state": "open"
     },
     {
@@ -69,7 +69,7 @@
       "additions": 215,
       "deletions": 15,
       "files": 7,
-      "updated": "2026-09-15T18:10:28Z",
+      "updated": "2026-09-16T04:44:11Z",
       "head": "192d5d36464927714223d95d6b603f48d1560a31",
       "state": "open"
     },
@@ -78,11 +78,11 @@
       "number": 5463,
       "title": "feat(recompute): add mamba to recompute_modules",
       "url": "https://github.com/NVIDIA/Megatron-LM/pull/5463",
-      "additions": 236,
-      "deletions": 16,
+      "additions": 235,
+      "deletions": 15,
       "files": 3,
-      "updated": "2026-09-13T04:24:18Z",
-      "head": "d0485317e36f6e5e5e04bc9954fa272ba799618e",
+      "updated": "2026-09-16T06:20:55Z",
+      "head": "ebe20fd8041847ae75dfd45d366c755c935aacc1",
       "state": "open"
     },
     {
@@ -93,8 +93,8 @@
       "additions": 53,
       "deletions": 0,
       "files": 2,
-      "updated": "2026-09-14T23:38:09Z",
-      "head": "a28b02e2746ebf332b4d15566288153e43afdc16",
+      "updated": "2026-09-16T06:21:18Z",
+      "head": "1585ef2543b74a9072c18984a44e8bfe474eb1c8",
       "state": "open"
     }
   ]
