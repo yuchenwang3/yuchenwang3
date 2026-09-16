@@ -32,8 +32,8 @@ class ProfileLayoutTest(unittest.TestCase):
 
     def test_full_upstream_inventory(self):
         from refresh_pr_cards import SELECTED
-        self.assertEqual(len(SELECTED), 24)
-        self.assertEqual(len(PROJECTS), 11)
+        self.assertEqual(len(SELECTED), 26)
+        self.assertEqual(len(PROJECTS), 12)
         self.assertEqual(set(SELECTED), {(p["repo"], p["number"]) for p in self.prs})
         self.assertEqual(len(SELECTED), len(set(SELECTED)))
         block = contribution_section(self.prs)
@@ -54,8 +54,18 @@ class ProfileLayoutTest(unittest.TestCase):
     def test_counts_match_visible_inventory(self):
         block = contribution_section(self.prs)
         for state in ("open", "merged"):
-            count = sum(p["state"] == state for p in self.prs)
+            count = sum(p["state"] == state and (state != "merged" or p.get("role") != "adopted_solution") for p in self.prs)
             self.assertIn(f"<strong>{count} {state}</strong>", block)
+
+    def test_attribution_is_explicit(self):
+        block = contribution_section(self.prs)
+        self.assertIn("<sub>Co-author</sub>", block)
+        self.assertIn("Solution adopted by the PR author", block)
+        self.assertIn("#issuecomment-4921776396", block)
+        self.assertIn("<strong>1 adopted solution</strong>", block)
+        prs = {(p["repo"], p["number"]): p for p in self.prs}
+        self.assertEqual(prs[("NVIDIA-NeMo/Gym", 2726)]["role"], "coauthor")
+        self.assertEqual(prs[("Dao-AILab/flash-attention", 2507)]["role"], "adopted_solution")
 
     def test_local_images_exist(self):
         readme = render_readme(self.prs)

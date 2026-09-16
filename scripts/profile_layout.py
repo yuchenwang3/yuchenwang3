@@ -55,13 +55,14 @@ PROJECTS = [
     ("flashinfer-ai/flashinfer", "FlashInfer", 145061914),
     ("vllm-project/vime", "vime", 136984999),
     ("NVIDIA-NeMo/Emerging-Optimizers", "Emerging Optimizers", 213689629),
+    ("NVIDIA-NeMo/Gym", "NeMo Gym", 213689629),
+    ("Dao-AILab/flash-attention", "FlashAttention", 139507659),
     ("vllm-project/vllm", "vLLM", 136984999),
     ("NVIDIA/Megatron-LM", "Megatron-LM", 1728152),
     ("NVIDIA-NeMo/RL", "NeMo RL", 213689629),
     ("sgl-project/sglang", "SGLang", 147780389),
     ("verl-project/verl", "verl", 212961691),
     ("NousResearch/hermes-agent", "Hermes Agent", 134168893),
-    ("NVIDIA-NeMo/Gym", "NeMo Gym", 213689629),
 ]
 
 PR_LABELS = {
@@ -81,6 +82,8 @@ PR_LABELS = {
     ("sgl-project/sglang", 31621): "Honor weight-check exclusions during reset",
     ("verl-project/verl", 7597): "Validate actor FSDP strategy",
     ("NVIDIA-NeMo/Gym", 1788): "Make rollout failures recoverable",
+    ("NVIDIA-NeMo/Gym", 2726): "Preserve HTTP errors across process boundaries",
+    ("Dao-AILab/flash-attention", 2507): "Stabilize backward JIT keys without CPU–GPU sync",
 }
 
 
@@ -88,10 +91,12 @@ def contribution_section(prs):
     # Retain the full snapshot for history/refresh, but only show active or
     # merged work on the profile. Closed-only projects disappear automatically.
     visible = [p for p in prs if p["state"] in ("merged", "open")]
-    merged_count = sum(p["state"] == "merged" for p in visible)
+    merged_count = sum(p["state"] == "merged" and p.get("role") != "adopted_solution" for p in visible)
+    adopted_count = sum(p["state"] == "merged" and p.get("role") == "adopted_solution" for p in visible)
     open_count = sum(p["state"] == "open" for p in visible)
     project_count = len({p["repo"] for p in visible})
-    summary = (f'<p><strong>{merged_count} merged</strong> · '
+    adopted_summary = f'<strong>{adopted_count} adopted solution{("s" if adopted_count != 1 else "")}</strong> · ' if adopted_count else ""
+    summary = (f'<p><strong>{merged_count} merged</strong> · ' + adopted_summary +
                f'<strong>{open_count} open</strong> · {project_count} projects</p>')
     rows = []
     for repo, name, avatar in PROJECTS:
@@ -106,7 +111,12 @@ def contribution_section(prs):
             # One status per PR: never imply an open proposal has merged.
             color = {"merged": "8250df", "open": "1a7f37"}[p["state"]]
             status = button(f'#{p["number"]} · {p["state"]}', p["url"], color)
-            contributions.append(f'<p>{status} {escape(label)}</p>')
+            credit = ""
+            if p.get("role") == "coauthor":
+                credit = "<br><sub>Co-author</sub>"
+            elif p.get("role") == "adopted_solution":
+                credit = f'<br><sub><a href="{escape(p["credit_url"], quote=True)}">Solution adopted by the PR author</a></sub>'
+            contributions.append(f'<p>{status} {escape(label)}{credit}</p>')
         if not contributions:
             continue
         rows.append(f'''<tr>

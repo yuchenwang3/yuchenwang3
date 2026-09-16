@@ -36,7 +36,7 @@ M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 
 <!-- PR-PREVIEWS:START -->
 
-<p><strong>7 merged</strong> · <strong>13 open</strong> · 10 projects</p>
+<p><strong>8 merged</strong> · <strong>1 adopted solution</strong> · <strong>13 open</strong> · 12 projects</p>
 
 <table>
 <tr>
@@ -54,6 +54,14 @@ M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NVIDIA-NeMo/Emerging-Optimizers"><img src="https://avatars.githubusercontent.com/u/213689629?s=64&amp;v=4" width="30" height="30" alt="NVIDIA-NeMo organization avatar"><br><strong>Emerging Optimizers</strong></a></td>
 <td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/Emerging-Optimizers/pull/230"><img src="https://img.shields.io/badge/%23230%20%C2%B7%20merged-8250df?style=flat-square" alt="#230 · merged"></a> Keep Muon scale-invariant</p></td>
+</tr>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/NVIDIA-NeMo/Gym"><img src="https://avatars.githubusercontent.com/u/213689629?s=64&amp;v=4" width="30" height="30" alt="NVIDIA-NeMo organization avatar"><br><strong>NeMo Gym</strong></a></td>
+<td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/Gym/pull/2726"><img src="https://img.shields.io/badge/%232726%20%C2%B7%20merged-8250df?style=flat-square" alt="#2726 · merged"></a> Preserve HTTP errors across process boundaries<br><sub>Co-author</sub></p></td>
+</tr>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/Dao-AILab/flash-attention"><img src="https://avatars.githubusercontent.com/u/139507659?s=64&amp;v=4" width="30" height="30" alt="Dao-AILab organization avatar"><br><strong>FlashAttention</strong></a></td>
+<td width="72%"><p><a href="https://github.com/Dao-AILab/flash-attention/pull/2507"><img src="https://img.shields.io/badge/%232507%20%C2%B7%20merged-8250df?style=flat-square" alt="#2507 · merged"></a> Stabilize backward JIT keys without CPU–GPU sync<br><sub><a href="https://github.com/Dao-AILab/flash-attention/pull/2507#issuecomment-4921776396">Solution adopted by the PR author</a></sub></p></td>
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/vllm-project/vllm"><img src="https://avatars.githubusercontent.com/u/136984999?s=64&amp;v=4" width="30" height="30" alt="vllm-project organization avatar"><br><strong>vLLM</strong></a></td>

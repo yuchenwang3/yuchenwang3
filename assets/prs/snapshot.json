@@ -11,6 +11,8 @@
       "files": 2,
       "updated": "2026-09-09T16:57:35Z",
       "head": "2f253e0ba7111caf8d2d8ccf832f76678a2bb51a",
+      "role": "author",
+      "credit_url": null,
       "state": "merged"
     },
     {
@@ -21,8 +23,10 @@
       "additions": 598,
       "deletions": 68,
       "files": 8,
-      "updated": "2026-09-15T22:23:43Z",
+      "updated": "2026-09-16T12:15:57Z",
       "head": "fd35773f44cd6c70461b057f398990d89e4eb41c",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -33,8 +37,10 @@
       "additions": 539,
       "deletions": 20,
       "files": 11,
-      "updated": "2026-09-16T07:26:33Z",
+      "updated": "2026-09-16T12:28:31Z",
       "head": "eff2617084fc12b1054789e1cabaccf702c75f62",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -47,6 +53,8 @@
       "files": 2,
       "updated": "2026-09-16T07:23:55Z",
       "head": "81f1577599dc03888815214183a6fe194e1f004a",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -59,6 +67,8 @@
       "files": 2,
       "updated": "2026-06-22T18:37:28Z",
       "head": "620196ca7f02ea39ec38fd83de1948a917378659",
+      "role": "author",
+      "credit_url": null,
       "state": "merged"
     },
     {
@@ -71,6 +81,8 @@
       "files": 7,
       "updated": "2026-09-16T04:44:11Z",
       "head": "192d5d36464927714223d95d6b603f48d1560a31",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -81,8 +93,10 @@
       "additions": 235,
       "deletions": 15,
       "files": 3,
-      "updated": "2026-09-16T07:26:29Z",
+      "updated": "2026-09-16T08:23:35Z",
       "head": "ebe20fd8041847ae75dfd45d366c755c935aacc1",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -95,6 +109,8 @@
       "files": 2,
       "updated": "2026-09-16T07:23:58Z",
       "head": "1585ef2543b74a9072c18984a44e8bfe474eb1c8",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -107,6 +123,8 @@
       "files": 5,
       "updated": "2026-07-06T12:06:01Z",
       "head": "03b920b7cf707bb835b5ec445a53c1d389bc3d39",
+      "role": "author",
+      "credit_url": null,
       "state": "merged"
     },
     {
@@ -119,6 +137,8 @@
       "files": 2,
       "updated": "2026-07-06T11:46:26Z",
       "head": "83197c5b18e0fc4d188b0e411d567cbb9275f263",
+      "role": "author",
+      "credit_url": null,
       "state": "merged"
     },
     {
@@ -131,6 +151,8 @@
       "files": 1,
       "updated": "2026-06-18T09:23:18Z",
       "head": "63ca2d551553dcd5c7a55e874273ccfbd0e63d2b",
+      "role": "author",
+      "credit_url": null,
       "state": "merged"
     },
     {
@@ -143,6 +165,8 @@
       "files": 3,
       "updated": "2026-06-18T05:35:45Z",
       "head": "d9210ba8f7e9d0a8cffeec565eeacfcb4e9e113d",
+      "role": "author",
+      "credit_url": null,
       "state": "merged"
     },
     {
@@ -155,6 +179,8 @@
       "files": 1,
       "updated": "2026-06-22T03:44:04Z",
       "head": "4e367055811c5480e84ab6c7178da9f66782c334",
+      "role": "author",
+      "credit_url": null,
       "state": "closed"
     },
     {
@@ -167,6 +193,8 @@
       "files": 4,
       "updated": "2026-07-14T23:54:54Z",
       "head": "587769f402e61299d908d2aed2fdcb33411ac78b",
+      "role": "author",
+      "credit_url": null,
       "state": "merged"
     },
     {
@@ -179,6 +207,8 @@
       "files": 1,
       "updated": "2026-08-25T07:54:39Z",
       "head": "a4a6708bc823e2db568cf2a6c32f7c307386e7c7",
+      "role": "author",
+      "credit_url": null,
       "state": "closed"
     },
     {
@@ -189,8 +219,10 @@
       "additions": 5,
       "deletions": 0,
       "files": 2,
-      "updated": "2026-09-16T07:26:26Z",
+      "updated": "2026-09-16T08:23:33Z",
       "head": "33f55df716212f07f1e262488cfc320d817efdab",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -201,8 +233,10 @@
       "additions": 90,
       "deletions": 1,
       "files": 5,
-      "updated": "2026-09-16T07:23:53Z",
+      "updated": "2026-09-16T08:23:34Z",
       "head": "ceee3a95741d12873c3540433c18bb9d86715b6a",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -215,6 +249,8 @@
       "files": 5,
       "updated": "2026-09-10T16:22:56Z",
       "head": "1add0b2151507c5603a316b2e84a617e7ca16961",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -225,8 +261,10 @@
       "additions": 56,
       "deletions": 1,
       "files": 2,
-      "updated": "2026-09-16T07:26:39Z",
+      "updated": "2026-09-16T08:23:36Z",
       "head": "3e2115879bd082a6a697787ff3574204dbac7285",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -239,6 +277,8 @@
       "files": 1,
       "updated": "2026-08-08T06:50:33Z",
       "head": "5bbefd93e4112f9076acc317173885872ca762bf",
+      "role": "author",
+      "credit_url": null,
       "state": "closed"
     },
     {
@@ -251,6 +291,8 @@
       "files": 3,
       "updated": "2026-09-16T07:26:32Z",
       "head": "9eed62cf8a1271ae45ef324a2f5e6cf634b03302",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -263,6 +305,8 @@
       "files": 2,
       "updated": "2026-09-16T06:36:18Z",
       "head": "84172fafc16129e3b29448c74272bd97aa99e804",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -275,6 +319,8 @@
       "files": 5,
       "updated": "2026-09-16T07:26:37Z",
       "head": "96ad10eb7d52b3775edf925a4fe057fdfd4259bf",
+      "role": "author",
+      "credit_url": null,
       "state": "open"
     },
     {
@@ -287,7 +333,37 @@
       "files": 2,
       "updated": "2026-08-25T08:30:35Z",
       "head": "22ed1af413ffa2c51c7473b08669788236e98d3b",
+      "role": "author",
+      "credit_url": null,
       "state": "closed"
+    },
+    {
+      "repo": "NVIDIA-NeMo/Gym",
+      "number": 2726,
+      "title": "fix: preserve HTTP errors across process boundaries",
+      "url": "https://github.com/NVIDIA-NeMo/Gym/pull/2726",
+      "additions": 86,
+      "deletions": 2,
+      "files": 2,
+      "updated": "2026-08-26T18:07:35Z",
+      "head": "1e67fc455126881989f05d753a6d78ece09a398d",
+      "role": "coauthor",
+      "credit_url": "https://github.com/NVIDIA-NeMo/Gym/pull/2726",
+      "state": "merged"
+    },
+    {
+      "repo": "Dao-AILab/flash-attention",
+      "number": 2507,
+      "title": "[CuTe, Bwd] Fix backward compile key churn due to pickling, max_seqlen is a tensor",
+      "url": "https://github.com/Dao-AILab/flash-attention/pull/2507",
+      "additions": 14,
+      "deletions": 4,
+      "files": 1,
+      "updated": "2026-07-11T22:48:55Z",
+      "head": "26a8451a3057c3fdb5e3b5ca6630b3ccdba97918",
+      "role": "adopted_solution",
+      "credit_url": "https://github.com/Dao-AILab/flash-attention/pull/2507#issuecomment-4921776396",
+      "state": "merged"
     }
   ]
 }
