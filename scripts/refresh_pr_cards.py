@@ -4,7 +4,7 @@ import datetime
 import json
 import pathlib
 import subprocess
-from profile_art import render_pr
+from profile_art import render_pr, PR_DESIGN
 from profile_layout import contribution_section
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -17,6 +17,22 @@ SELECTED = [
     ("NVIDIA/Megatron-LM", 5396),
     ("NVIDIA/Megatron-LM", 5463),
     ("NousResearch/hermes-agent", 102549),
+    ("modelscope/ms-swift", 9598),
+    ("modelscope/ms-swift", 9602),
+    ("modelscope/ms-swift", 9599),
+    ("modelscope/ms-swift", 9591),
+    ("modelscope/ms-swift", 9600),
+    ("vllm-project/vime", 337),
+    ("vllm-project/vllm", 48284),
+    ("NVIDIA/Megatron-LM", 5400),
+    ("NVIDIA/Megatron-LM", 5431),
+    ("NVIDIA/Megatron-LM", 5395),
+    ("NVIDIA-NeMo/RL", 2962),
+    ("NVIDIA-NeMo/RL", 2907),
+    ("sgl-project/sglang", 38063),
+    ("sgl-project/sglang", 31621),
+    ("verl-project/verl", 7597),
+    ("NVIDIA-NeMo/Gym", 1788),
 ]
 
 
@@ -27,6 +43,8 @@ def fetch(item):
         capture_output=True, text=True, check=True, timeout=45,
     )
     p = json.loads(result.stdout)
+    if p["user"]["login"] != "yuchenwang3" or p["base"]["repo"]["private"]:
+        raise ValueError(f"Not a public contribution by yuchenwang3: {repo}#{number}")
     return dict(repo=repo, number=number, title=p["title"], url=p["html_url"],
                 additions=p["additions"], deletions=p["deletions"], files=p["changed_files"],
                 updated=p["updated_at"], head=p["head"]["sha"],
@@ -46,6 +64,8 @@ def main():
     snapshot = dict(updated=datetime.date.today().isoformat(), pull_requests=prs)
     (target / "snapshot.json").write_text(json.dumps(snapshot, indent=2)+"\n")
     for p in prs:
+        if (p["repo"], p["number"]) not in PR_DESIGN:
+            continue
         slug = p['repo'].replace('/', '-') + '-' + str(p['number'])
         for dark in (False, True):
             (target / f"{slug}-{'dark' if dark else 'light'}.svg").write_text(render(p,dark)+"\n")

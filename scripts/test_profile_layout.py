@@ -26,6 +26,15 @@ class ProfileLayoutTest(unittest.TestCase):
         self.assertEqual(block.count("<tr>"), len(PROJECTS))
         self.assertEqual(len(PROJECTS), len({p[0] for p in PROJECTS}))
 
+    def test_full_upstream_inventory(self):
+        from refresh_pr_cards import SELECTED
+        self.assertEqual(len(SELECTED), 24)
+        self.assertEqual(len(PROJECTS), 11)
+        self.assertEqual(set(SELECTED), {(p["repo"], p["number"]) for p in self.prs})
+        self.assertEqual(len(SELECTED), len(set(SELECTED)))
+        block = contribution_section(self.prs)
+        self.assertIn("Closed without merge", block)
+
     def test_local_images_exist(self):
         readme = render_readme(self.prs)
         for path in re.findall(r'(?:src|srcset)="(\./[^\"]+)"', readme):

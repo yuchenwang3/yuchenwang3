@@ -51,28 +51,58 @@ def research_section():
 
 
 PROJECTS = [
+    ("modelscope/ms-swift", "ms-swift", 109945100),
     ("flashinfer-ai/flashinfer", "FlashInfer", 145061914),
+    ("vllm-project/vime", "vime", 136984999),
+    ("NVIDIA-NeMo/Emerging-Optimizers", "Emerging Optimizers", 213689629),
     ("vllm-project/vllm", "vLLM", 136984999),
     ("NVIDIA/Megatron-LM", "Megatron-LM", 1728152),
     ("NVIDIA-NeMo/RL", "NeMo RL", 213689629),
-    ("NVIDIA-NeMo/Emerging-Optimizers", "Emerging Optimizers", 213689629),
+    ("sgl-project/sglang", "SGLang", 147780389),
+    ("verl-project/verl", "verl", 212961691),
     ("NousResearch/hermes-agent", "Hermes Agent", 134168893),
+    ("NVIDIA-NeMo/Gym", "NeMo Gym", 213689629),
 ]
+
+PR_LABELS = {
+    ("modelscope/ms-swift", 9598): "Add order-preserving packing",
+    ("modelscope/ms-swift", 9602): "Warm up NCCL before training",
+    ("modelscope/ms-swift", 9599): "Pass through Muon Nesterov settings",
+    ("modelscope/ms-swift", 9591): "Expose Muon coefficient selection",
+    ("modelscope/ms-swift", 9600): "Align MoE router configuration types",
+    ("vllm-project/vime", 337): "Forward recompute flags; fix hybrid models",
+    ("vllm-project/vllm", 48284): "Skip layerwise reload for unquantized models",
+    ("NVIDIA/Megatron-LM", 5400): "Route GDN input projections to Adam",
+    ("NVIDIA/Megatron-LM", 5431): "Exclude GDN input projections from global clipping",
+    ("NVIDIA/Megatron-LM", 5395): "Skip gradient clipping for Muon",
+    ("NVIDIA-NeMo/RL", 2962): "Sanitize non-finite async log probabilities",
+    ("NVIDIA-NeMo/RL", 2907): "Read environment names from multi-dataset configs",
+    ("sgl-project/sglang", 38063): "Explain cold MXFP4 JIT startup",
+    ("sgl-project/sglang", 31621): "Honor weight-check exclusions during reset",
+    ("verl-project/verl", 7597): "Validate actor FSDP strategy",
+    ("NVIDIA-NeMo/Gym", 1788): "Make rollout failures recoverable",
+}
 
 
 def contribution_section(prs):
     rows = []
     for repo, name, avatar in PROJECTS:
         contributions = []
-        for p in prs:
+        closed = []
+        for p in sorted(prs, key=lambda p: {"merged": 0, "open": 1, "closed": 2}[p["state"]]):
             if p["repo"] != repo:
                 continue
-            design = PR_DESIGN[(repo, p["number"])]
-            label = " ".join(design[4])
+            key = (repo, p["number"])
+            label = PR_LABELS.get(key)
+            if label is None:
+                label = " ".join(PR_DESIGN[key][4]) if key in PR_DESIGN else p["title"]
             # One status per PR: never imply an open proposal has merged.
             color = {"merged": "8250df", "open": "1a7f37", "closed": "656d76"}[p["state"]]
             status = button(f'#{p["number"]} · {p["state"]}', p["url"], color)
-            contributions.append(f'<p>{escape(label)}<br>{status}</p>')
+            item = f'<p>{escape(label)}<br>{status}</p>'
+            (closed if p["state"] == "closed" else contributions).append(item)
+        if closed:
+            contributions.append('<details><summary>Closed without merge</summary>' + "".join(closed) + '</details>')
         if not contributions:
             continue
         rows.append(f'''<tr>
