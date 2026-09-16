@@ -1,97 +1,68 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/editorial-header-dark.svg">
-  <img width="100%" src="./assets/editorial-header-light.svg" alt="Yuchen (Ean) Wang — agentic post-training, ML systems, and open-source engineering">
+<source media="(prefers-color-scheme: dark)" srcset="./assets/editorial-header-dark.svg">
+<img width="100%" src="./assets/editorial-header-light.svg" alt="Yuchen (Ean) Wang — agentic post-training and ML systems">
 </picture>
-
-<p align="center">
-  <a href="https://yuchenwang3.github.io/"><img src="https://img.shields.io/badge/Website-Portfolio-3843D0?style=for-the-badge&amp;logo=githubpages&amp;logoColor=white" alt="Personal website"></a>
-  <a href="https://yuchenwang3.github.io/CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-B31B1B?style=for-the-badge" alt="Download CV"></a>
-  <a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&amp;logo=googlescholar&amp;logoColor=white" alt="Google Scholar"></a>
-  <a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn"></a>
-  <a href="mailto:yuchenwang0303@gmail.com"><img src="https://img.shields.io/badge/Email-465468?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email Yuchen"></a>
-</p>
 
 Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 
+<a href="https://yuchenwang3.github.io/"><img src="https://img.shields.io/badge/Website-30363D?style=flat-square" alt="Website"></a> <a href="https://yuchenwang3.github.io/CV.pdf"><img src="https://img.shields.io/badge/CV-30363D?style=flat-square" alt="CV"></a> <a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Scholar-30363D?style=flat-square" alt="Scholar"></a> <a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-30363D?style=flat-square" alt="LinkedIn"></a> <a href="mailto:yuchenwang0303@gmail.com"><img src="https://img.shields.io/badge/Email-30363D?style=flat-square" alt="Email"></a>
+
 ## Research
 
-<div>
-<a href="https://accio-lab.github.io/occamy/"><picture>
-<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/research/occamy-compact-dark.svg">
-<source media="(max-width: 600px)" srcset="./assets/research/occamy-compact-light.svg">
-<source media="(prefers-color-scheme: dark)" srcset="./assets/research/occamy-dark.svg">
-<img width="100%" src="./assets/research/occamy-light.svg" alt="Occamy-1.0 — 35B-A3B agent model; execution-grounded data and post-training.">
-</picture></a>
-</div>
+<table>
+<tr>
+<td width="32%" align="center"><a href="https://accio-lab.github.io/occamy/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/research/occamy-mark-dark.svg"><img width="100%" src="./assets/research/occamy-mark.svg" alt="Occamy-1.0: official logo"></picture></a></td>
+<td width="68%"><h3><a href="https://accio-lab.github.io/occamy/">Occamy-1.0</a></h3>
+<p>35B-A3B agent model for long-horizon tool use.<br><sub>Execution-grounded data · Agentic post-training</sub></p>
+<p><a href="https://arxiv.org/abs/2609.11977"><img src="https://img.shields.io/badge/Report-30363D?style=flat-square" alt="Report"></a> <a href="https://accio-lab.github.io/occamy/"><img src="https://img.shields.io/badge/Demo-30363D?style=flat-square" alt="Demo"></a> <a href="https://huggingface.co/Accio-Lab/Occamy-1.0"><img src="https://img.shields.io/badge/Model-30363D?style=flat-square" alt="Model"></a> <a href="https://github.com/Accio-Lab/occamy"><img src="https://img.shields.io/badge/Code-30363D?style=flat-square" alt="Code"></a></p></td>
+</tr>
+<tr>
+<td width="32%" align="center"><a href="https://yuchenwang3.github.io/projects/cineflow/"><img width="100%" src="./assets/research/cineflow-system.png" alt="CineFlow: figure from the project report"></a></td>
+<td width="68%"><h3><a href="https://yuchenwang3.github.io/projects/cineflow/">CineFlow</a></h3>
+<p>Dependency-driven parallel video generation.<br><sub>1.7–5.5× end-to-end speedup in the reported evaluation</sub></p>
+<p><a href="https://yuchenwang3.github.io/projects/cineflow/"><img src="https://img.shields.io/badge/Project-30363D?style=flat-square" alt="Project"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf"><img src="https://img.shields.io/badge/Report-30363D?style=flat-square" alt="Report"></a></p></td>
+</tr>
+<tr>
+<td width="32%" align="center"><a href="https://yuchenwang3.github.io/projects/prepack/"><img width="100%" src="./assets/research/prefill-timeline.png" alt="Dynamic Prefill: figure from the project report"></a></td>
+<td width="68%"><h3><a href="https://yuchenwang3.github.io/projects/prepack/">Dynamic Prefill</a></h3>
+<p>Adaptive batching and prompt packing for LLM serving.<br><sub>Up to 20% lower TTFT on the reported traces</sub></p>
+<p><a href="https://yuchenwang3.github.io/assets/pdf/projects/dynamic-prefill-online-packing-report.pdf"><img src="https://img.shields.io/badge/Report-30363D?style=flat-square" alt="Report"></a> <a href="https://github.com/Winlere/prepack-workspace"><img src="https://img.shields.io/badge/Code-30363D?style=flat-square" alt="Code"></a></p></td>
+</tr>
+</table>
 
-<p>
-  <a href="https://arxiv.org/abs/2609.11977"><img src="https://img.shields.io/badge/arXiv-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="Occamy arXiv report"></a>
-  <a href="https://accio-lab.github.io/occamy/"><img src="https://img.shields.io/badge/Website-16725C?style=for-the-badge&amp;logo=githubpages&amp;logoColor=white" alt="Occamy project website"></a>
-  <a href="https://huggingface.co/Accio-Lab/Occamy-1.0"><img src="https://img.shields.io/badge/Model-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=222222" alt="Occamy model on Hugging Face"></a>
-  <a href="https://github.com/Accio-Lab/occamy"><img src="https://img.shields.io/badge/Code-24292F?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Occamy source code"></a>
-</p>
+<a href="https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf"><img src="https://img.shields.io/badge/CUDA%20Attention-30363D?style=flat-square" alt="CUDA Attention"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf"><img src="https://img.shields.io/badge/RL%20for%20Legal%20Reasoning-30363D?style=flat-square" alt="RL for Legal Reasoning"></a>
 
-<div>
-<a href="https://yuchenwang3.github.io/projects/cineflow/"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/research/cineflow-dark.svg">
-<img width="410" src="./assets/research/cineflow-light.svg" alt="CineFlow — dependency-aware video generation; 1.7–5.5× speedup in the reported evaluation.">
-</picture></a>
-<a href="https://yuchenwang3.github.io/projects/prepack/"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/research/prefill-dark.svg">
-<img width="410" src="./assets/research/prefill-light.svg" alt="Dynamic Prefill — adaptive prompt packing; up to 20% lower TTFT on the reported traces.">
-</picture></a>
-</div>
-
-<p>
-  <a href="https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf"><img src="https://img.shields.io/badge/CUDA_Attention-507B23?style=for-the-badge&amp;logo=nvidia&amp;logoColor=white" alt="CUDA attention kernels report"></a>
-  <a href="https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf"><img src="https://img.shields.io/badge/RL_for_Legal_Reasoning-536482?style=for-the-badge" alt="RL for legal reasoning thesis"></a>
-</p>
-
-## Open-source engineering
-
-<p>
-  <a href="https://yuchenwang3.github.io/projects/open-source-systems/"><img src="https://img.shields.io/badge/Engineering_Notes-3843D0?style=for-the-badge" alt="Engineering notes and validation details"></a>
-</p>
+## Open-source contributions
 
 <!-- PR-PREVIEWS:START -->
 
-<div>
-<a href="https://github.com/flashinfer-ai/flashinfer/pull/4984"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/flashinfer-ai-flashinfer-4984-dark.svg">
-  <img width="410" src="./assets/prs/flashinfer-ai-flashinfer-4984-light.svg" alt="flashinfer-ai/flashinfer #4984: fix: apply calibration scales to ragged FP8 KV prefill">
-</picture></a>
-<a href="https://github.com/vllm-project/vllm/pull/54699"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/vllm-project-vllm-54699-dark.svg">
-  <img width="410" src="./assets/prs/vllm-project-vllm-54699-light.svg" alt="vllm-project/vllm #54699: [Bugfix][MoE] Convert FlashInfer BF16 weights in place">
-</picture></a>
-<a href="https://github.com/NVIDIA-NeMo/RL/pull/3943"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-RL-3943-dark.svg">
-  <img width="410" src="./assets/prs/NVIDIA-NeMo-RL-3943-light.svg" alt="NVIDIA-NeMo/RL #3943: perf(distillation): defer teacher top-k Ray payloads">
-</picture></a>
-<a href="https://github.com/NousResearch/hermes-agent/pull/100693"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-100693-dark.svg">
-  <img width="410" src="./assets/prs/NousResearch-hermes-agent-100693-light.svg" alt="NousResearch/hermes-agent #100693: fix(tools): resolve local schema refs during arg coercion">
-</picture></a>
-<a href="https://github.com/NVIDIA-NeMo/Emerging-Optimizers/pull/230"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-dark.svg">
-  <img width="410" src="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-light.svg" alt="NVIDIA-NeMo/Emerging-Optimizers #230: fix(muon_utils): keep newton_schulz scale-invariant for small-norm inputs (#229)">
-</picture></a>
-<a href="https://github.com/NVIDIA/Megatron-LM/pull/5396"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5396-dark.svg">
-  <img width="410" src="./assets/prs/NVIDIA-Megatron-LM-5396-light.svg" alt="NVIDIA/Megatron-LM #5396: perf(gated_delta_net): fold q/k L2-norm into the gated_delta_rule kernel">
-</picture></a>
-<a href="https://github.com/NVIDIA/Megatron-LM/pull/5463"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5463-dark.svg">
-  <img width="410" src="./assets/prs/NVIDIA-Megatron-LM-5463-light.svg" alt="NVIDIA/Megatron-LM #5463: feat(recompute): add mamba to recompute_modules">
-</picture></a>
-<a href="https://github.com/NousResearch/hermes-agent/pull/102549"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-102549-dark.svg">
-  <img width="410" src="./assets/prs/NousResearch-hermes-agent-102549-light.svg" alt="NousResearch/hermes-agent #102549: fix(desktop): wait for pooled SSH teardown before reconnecting">
-</picture></a>
-</div>
+<table>
+<tr>
+<td width="28%"><a href="https://github.com/flashinfer-ai/flashinfer"><img src="https://avatars.githubusercontent.com/u/145061914?s=64&amp;v=4" width="30" height="30" alt="flashinfer-ai organization avatar"><br><strong>FlashInfer</strong></a></td>
+<td width="72%"><p>Calibrate FP8 attention<br><a href="https://github.com/flashinfer-ai/flashinfer/pull/4984"><img src="https://img.shields.io/badge/%234984%20%C2%B7%20merged-8250df?style=flat-square" alt="#4984 · merged"></a></p></td>
+</tr>
+<tr>
+<td width="28%"><a href="https://github.com/vllm-project/vllm"><img src="https://avatars.githubusercontent.com/u/136984999?s=64&amp;v=4" width="30" height="30" alt="vllm-project organization avatar"><br><strong>vLLM</strong></a></td>
+<td width="72%"><p>Convert MoE weights in place<br><a href="https://github.com/vllm-project/vllm/pull/54699"><img src="https://img.shields.io/badge/%2354699%20%C2%B7%20open-1a7f37?style=flat-square" alt="#54699 · open"></a></p></td>
+</tr>
+<tr>
+<td width="28%"><a href="https://github.com/NVIDIA/Megatron-LM"><img src="https://avatars.githubusercontent.com/u/1728152?s=64&amp;v=4" width="30" height="30" alt="NVIDIA organization avatar"><br><strong>Megatron-LM</strong></a></td>
+<td width="72%"><p>Fuse GDN Q/K normalization<br><a href="https://github.com/NVIDIA/Megatron-LM/pull/5396"><img src="https://img.shields.io/badge/%235396%20%C2%B7%20open-1a7f37?style=flat-square" alt="#5396 · open"></a></p><p>Recompute Mamba selectively<br><a href="https://github.com/NVIDIA/Megatron-LM/pull/5463"><img src="https://img.shields.io/badge/%235463%20%C2%B7%20open-1a7f37?style=flat-square" alt="#5463 · open"></a></p></td>
+</tr>
+<tr>
+<td width="28%"><a href="https://github.com/NVIDIA-NeMo/RL"><img src="https://avatars.githubusercontent.com/u/213689629?s=64&amp;v=4" width="30" height="30" alt="NVIDIA-NeMo organization avatar"><br><strong>NeMo RL</strong></a></td>
+<td width="72%"><p>Move references, not teacher payloads<br><a href="https://github.com/NVIDIA-NeMo/RL/pull/3943"><img src="https://img.shields.io/badge/%233943%20%C2%B7%20open-1a7f37?style=flat-square" alt="#3943 · open"></a></p></td>
+</tr>
+<tr>
+<td width="28%"><a href="https://github.com/NVIDIA-NeMo/Emerging-Optimizers"><img src="https://avatars.githubusercontent.com/u/213689629?s=64&amp;v=4" width="30" height="30" alt="NVIDIA-NeMo organization avatar"><br><strong>Emerging Optimizers</strong></a></td>
+<td width="72%"><p>Keep Muon scale-invariant<br><a href="https://github.com/NVIDIA-NeMo/Emerging-Optimizers/pull/230"><img src="https://img.shields.io/badge/%23230%20%C2%B7%20merged-8250df?style=flat-square" alt="#230 · merged"></a></p></td>
+</tr>
+<tr>
+<td width="28%"><a href="https://github.com/NousResearch/hermes-agent"><img src="https://avatars.githubusercontent.com/u/134168893?s=64&amp;v=4" width="30" height="30" alt="NousResearch organization avatar"><br><strong>Hermes Agent</strong></a></td>
+<td width="72%"><p>Resolve nested tool schemas<br><a href="https://github.com/NousResearch/hermes-agent/pull/100693"><img src="https://img.shields.io/badge/%23100693%20%C2%B7%20open-1a7f37?style=flat-square" alt="#100693 · open"></a></p><p>Make SSH reconnects race-safe<br><a href="https://github.com/NousResearch/hermes-agent/pull/102549"><img src="https://img.shields.io/badge/%23102549%20%C2%B7%20open-1a7f37?style=flat-square" alt="#102549 · open"></a></p></td>
+</tr>
+</table>
 
-<p>
-  <a href="https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&amp;type=pullrequests"><img src="https://img.shields.io/badge/All_Contributions-24292F?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="All upstream pull requests"></a>
-</p>
+<a href="https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&amp;type=pullrequests"><img src="https://img.shields.io/badge/All%20contributions%20%E2%86%97-30363D?style=flat-square" alt="All contributions ↗"></a> <a href="https://yuchenwang3.github.io/projects/open-source-systems/"><img src="https://img.shields.io/badge/Engineering%20notes%20%E2%86%97-30363D?style=flat-square" alt="Engineering notes ↗"></a>
 
 <!-- PR-PREVIEWS:END -->
