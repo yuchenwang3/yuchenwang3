@@ -76,7 +76,8 @@ def main():
     readme = ROOT / 'README.md'
     before, tail = readme.read_text().split('<!-- PR-PREVIEWS:START -->', 1)
     _, after = tail.split('<!-- PR-PREVIEWS:END -->', 1)
-    block = '\n\n' + '\n'.join(cards) + '\n\n[All upstream contributions](https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests) · Previews refresh daily.\n\n'
+    # Start a GFM HTML block so the first <source> stays inside its <picture>.
+    block = '\n\n<div>\n' + '\n'.join(cards) + '\n</div>\n\n[All upstream contributions](https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests) · Previews refresh daily.\n\n'
     readme.write_text(before + '<!-- PR-PREVIEWS:START -->' + block + '<!-- PR-PREVIEWS:END -->' + after)
     print(f"Updated {len(prs)} public PR previews")
 

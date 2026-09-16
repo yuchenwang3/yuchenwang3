@@ -39,6 +39,7 @@ Other projects: [CUDA attention kernels](https://yuchenwang3.github.io/assets/pd
 
 <!-- PR-PREVIEWS:START -->
 
+<div>
 <a href="https://github.com/flashinfer-ai/flashinfer/pull/4984"><picture>
 <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/flashinfer-ai-flashinfer-4984-dark.svg">
 <img width="49%" src="./assets/prs/flashinfer-ai-flashinfer-4984-light.svg" alt="flashinfer-ai/flashinfer #4984: fix: apply calibration scales to ragged FP8 KV prefill">
@@ -71,6 +72,7 @@ Other projects: [CUDA attention kernels](https://yuchenwang3.github.io/assets/pd
 <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-102549-dark.svg">
 <img width="49%" src="./assets/prs/NousResearch-hermes-agent-102549-light.svg" alt="NousResearch/hermes-agent #102549: fix(desktop): wait for pooled SSH teardown before reconnecting">
 </picture></a>
+</div>
 
 [All upstream contributions](https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests) · Previews refresh daily.
 
