@@ -16,6 +16,8 @@ Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba 
 
 <div>
 <a href="https://accio-lab.github.io/occamy/"><picture>
+<source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/research/occamy-compact-dark.svg">
+<source media="(max-width: 600px)" srcset="./assets/research/occamy-compact-light.svg">
 <source media="(prefers-color-scheme: dark)" srcset="./assets/research/occamy-dark.svg">
 <img width="100%" src="./assets/research/occamy-light.svg" alt="Occamy-1.0 — 35B-A3B agent model; execution-grounded data and post-training.">
 </picture></a>
