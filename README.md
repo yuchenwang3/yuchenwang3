@@ -1,10 +1,20 @@
-# Yuchen (Ean) Wang
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/editorial-header-dark.svg">
+  <img width="100%" src="./assets/editorial-header-light.svg" alt="Yuchen (Ean) Wang — agentic post-training, ML systems, and open-source engineering">
+</picture>
+
+<p align="center">
+  <a href="https://yuchenwang3.github.io/"><img src="https://img.shields.io/badge/Website-Portfolio-3843D0?style=for-the-badge&amp;logo=githubpages&amp;logoColor=white" alt="Personal website"></a>
+  <a href="https://yuchenwang3.github.io/CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-B31B1B?style=for-the-badge" alt="Download CV"></a>
+  <a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&amp;logo=googlescholar&amp;logoColor=white" alt="Google Scholar"></a>
+  <a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn"></a>
+</p>
 
 I work on agentic post-training and ML systems. I am an M.S. student in Computer Science at UIUC and a research intern with Alibaba's Accio team. Previously, I studied AI at Peking University in the Zhi Class.
 
 My interests include long-horizon tool use, reinforcement learning, efficient training and inference, and video generation.
 
-[Website](https://yuchenwang3.github.io/) · [CV](https://yuchenwang3.github.io/CV.pdf) · [Google Scholar](https://scholar.google.com/citations?user=NharhG8AAAAJ) · [LinkedIn](https://www.linkedin.com/in/yuchen3) · [Email](mailto:yuchenwang0303@gmail.com)
+[Get in touch](mailto:yuchenwang0303@gmail.com)
 
 ## Research
 
@@ -24,7 +34,7 @@ Other projects: [CUDA attention kernels](https://yuchenwang3.github.io/assets/pd
 
 [Engineering notes](https://yuchenwang3.github.io/projects/open-source-systems/) · [All pull requests](https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests)
 
-<details>
+<details open>
 <summary>PR previews · updated daily</summary>
 
 <!-- PR-PREVIEWS:START -->
