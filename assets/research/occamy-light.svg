@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<title id="title">Occamy-1.0</title><desc id="desc">35B-A3B agent model. Execution-grounded data and post-training.</desc>
+<rect x="1" y="1" width="1198" height="298" rx="14" fill="#f8faff" stroke="#d5def0"/>
+<g fill="#172442" font-family="Segoe UI,Arial,sans-serif">
+<path d="M34 28H1166" stroke="#16725c" stroke-width="3"/>
+ <text x="42" y="95" font-size="54" font-weight="700" letter-spacing="-2">Occamy-1.0</text>
+ <text x="44" y="133" font-size="23" fill="#536482">35B-A3B · Agentic post-training</text>
+ <text x="44" y="183" font-size="21">Execution-grounded data.</text>
+ <text x="44" y="215" font-size="21">Long-horizon tool use.</text>
+ <text x="44" y="265" font-size="16" fill="#16725c" letter-spacing="1.3">ACCIO TEAM · OPEN SOURCE ↗</text>
+ <g stroke="#d5def0" stroke-width="2" fill="none"><path d="M738 152H810M908 140L988 78M910 151H988M908 164L988 226"/><path d="M993 244H857V202" stroke-dasharray="5 5"/></g>
+ <rect x="620" y="124" width="119" height="56" rx="13" fill="#e8f4ee" stroke="#d5def0"/>
+ <text x="679" y="158" text-anchor="middle" font-size="19">Task</text>
+ <circle cx="858" cy="152" r="51" fill="#e8f4ee" stroke="#16725c" stroke-width="2"/>
+ <g fill="#16725c"><circle cx="841" cy="141" r="5"/><circle cx="875" cy="141" r="5"/><path d="M839 163Q858 181 878 162" stroke="#16725c" fill="none" stroke-width="3"/></g>
+ <g fill="#e8f4ee" stroke="#d5def0"><rect x="988" y="50" width="164" height="52" rx="12"/><rect x="988" y="126" width="164" height="52" rx="12"/><rect x="988" y="202" width="164" height="52" rx="12"/></g>
+ <g font-size="18" text-anchor="middle"><text x="1070" y="82">Files</text><text x="1070" y="158">Browser</text><text x="1070" y="234">Tools</text></g>
+</g></svg>

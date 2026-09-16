@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="330" viewBox="0 0 600 330" role="img" aria-labelledby="title desc">
+<title id="title">Dynamic Prefill</title><desc id="desc">Adaptive prompt packing with time-to-first-token feedback, up to 20 percent lower TTFT on the reported traces.</desc>
+<rect x="1" y="1" width="598" height="328" rx="14" fill="#f8faff" stroke="#d5def0"/>
+<g fill="#172442" font-family="Segoe UI,Arial,sans-serif">
+<text x="30" y="54" font-size="32" font-weight="700" letter-spacing="-.7">Dynamic Prefill</text>
+ <text x="30" y="85" font-size="18" fill="#536482">Adaptive packing · Live latency feedback</text>
+ <g fill="#faf1e6" stroke="#d5def0"><rect x="36" y="117" width="208" height="37" rx="5"/><rect x="36" y="166" width="208" height="37" rx="5"/><rect x="36" y="215" width="208" height="23" rx="5"/></g>
+ <g fill="#9a5c27"><rect x="40" y="121" width="87" height="29" rx="3"/><rect x="40" y="170" width="137" height="29" rx="3"/><rect x="40" y="219" width="62" height="15" rx="3"/></g>
+ <path d="M267 174H312M302 164L312 174L302 184" stroke="#9a5c27" stroke-width="2.5" fill="none"/>
+ <g fill="#faf1e6" stroke="#d5def0"><rect x="336" y="117" width="230" height="48" rx="5"/><rect x="336" y="182" width="230" height="48" rx="5"/></g>
+ <g fill="#9a5c27"><rect x="340" y="121" width="92" height="40" rx="3"/><rect x="437" y="121" width="125" height="40" rx="3" opacity=".65"/><rect x="340" y="186" width="64" height="40" rx="3"/><rect x="409" y="186" width="96" height="40" rx="3" opacity=".65"/><rect x="510" y="186" width="52" height="40" rx="3" opacity=".4"/></g>
+ <path d="M30 264H570" stroke="#d5def0"/>
+ <text x="30" y="300" font-size="23" font-weight="650" fill="#9a5c27">Up to 20% lower TTFT</text><text x="570" y="299" font-size="17" text-anchor="end" fill="#536482">UIUC ↗</text>
+</g></svg>

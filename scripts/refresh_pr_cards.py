@@ -71,7 +71,7 @@ def main():
         slug = p['repo'].replace('/', '-') + '-' + str(p['number'])
         cards.append(f'''<a href="{p['url']}"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/{slug}-dark.svg">
-  <img width="49%" src="./assets/prs/{slug}-light.svg" alt="{html.escape(p['repo'])} #{p['number']}: {html.escape(p['title'])}">
+  <img width="410" src="./assets/prs/{slug}-light.svg" alt="{html.escape(p['repo'])} #{p['number']}: {html.escape(p['title'])}">
 </picture></a>''')
     readme = ROOT / 'README.md'
     before, tail = readme.read_text().split('<!-- PR-PREVIEWS:START -->', 1)

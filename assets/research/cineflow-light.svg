@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="330" viewBox="0 0 600 330" role="img" aria-labelledby="title desc">
+<title id="title">CineFlow</title><desc id="desc">Dependency-aware video generation, 1.7 to 5.5 times faster across the reported evaluation.</desc>
+<rect x="1" y="1" width="598" height="328" rx="14" fill="#f8faff" stroke="#d5def0"/>
+<g fill="#172442" font-family="Segoe UI,Arial,sans-serif">
+<text x="30" y="54" font-size="32" font-weight="700" letter-spacing="-.7">CineFlow</text>
+ <text x="30" y="85" font-size="18" fill="#536482">Dependency-aware video generation</text>
+ <g fill="none" stroke="#454faf" stroke-width="2"><path d="M114 171L209 135M114 171L209 209M267 135L374 135M267 209L374 209M432 135L502 171M432 209L502 171"/></g>
+ <g fill="#edf0ff" stroke="#454faf" stroke-width="1.5"><rect x="56" y="144" width="60" height="54" rx="9"/><rect x="208" y="108" width="60" height="54" rx="9"/><rect x="208" y="182" width="60" height="54" rx="9"/><rect x="373" y="108" width="60" height="54" rx="9"/><rect x="373" y="182" width="60" height="54" rx="9"/><rect x="501" y="144" width="46" height="54" rx="9"/></g>
+ <g fill="#454faf"><path d="M79 158L94 171L79 184Z"/><path d="M231 121L245 135L231 148Z"/><path d="M231 195L245 209L231 222Z"/><path d="M396 121L410 135L396 148Z"/><path d="M396 195L410 209L396 222Z"/><path d="M517 158L533 171L517 184Z"/></g>
+ <path d="M30 264H570" stroke="#d5def0"/>
+ <text x="30" y="300" font-size="23" font-weight="650" fill="#454faf">1.7–5.5× speedup</text><text x="570" y="299" font-size="17" text-anchor="end" fill="#536482">UIUC ↗</text>
+</g></svg>
