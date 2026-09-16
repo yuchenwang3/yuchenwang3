@@ -8,9 +8,10 @@
   <a href="https://yuchenwang3.github.io/CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-B31B1B?style=for-the-badge" alt="Download CV"></a>
   <a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&amp;logo=googlescholar&amp;logoColor=white" alt="Google Scholar"></a>
   <a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge" alt="LinkedIn"></a>
+  <a href="mailto:yuchenwang0303@gmail.com"><img src="https://img.shields.io/badge/Email-465468?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email Yuchen"></a>
 </p>
 
-Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class. [Get in touch ↗](mailto:yuchenwang0303@gmail.com)
+Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 
 ## Research
 
@@ -23,7 +24,12 @@ Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba 
 </picture></a>
 </div>
 
-[arXiv](https://arxiv.org/abs/2609.11977) · [Website](https://accio-lab.github.io/occamy/) · [Model](https://huggingface.co/Accio-Lab/Occamy-1.0) · [Code](https://github.com/Accio-Lab/occamy)
+<p>
+  <a href="https://arxiv.org/abs/2609.11977"><img src="https://img.shields.io/badge/arXiv-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="Occamy arXiv report"></a>
+  <a href="https://accio-lab.github.io/occamy/"><img src="https://img.shields.io/badge/Website-16725C?style=for-the-badge&amp;logo=githubpages&amp;logoColor=white" alt="Occamy project website"></a>
+  <a href="https://huggingface.co/Accio-Lab/Occamy-1.0"><img src="https://img.shields.io/badge/Model-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=222222" alt="Occamy model on Hugging Face"></a>
+  <a href="https://github.com/Accio-Lab/occamy"><img src="https://img.shields.io/badge/Code-24292F?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Occamy source code"></a>
+</p>
 
 <div>
 <a href="https://yuchenwang3.github.io/projects/cineflow/"><picture>
@@ -36,11 +42,16 @@ Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba 
 </picture></a>
 </div>
 
-Other projects: [CUDA attention kernels](https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf) · [RL for legal reasoning](https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf)
+<p>
+  <a href="https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf"><img src="https://img.shields.io/badge/CUDA_Attention-507B23?style=for-the-badge&amp;logo=nvidia&amp;logoColor=white" alt="CUDA attention kernels report"></a>
+  <a href="https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf"><img src="https://img.shields.io/badge/RL_for_Legal_Reasoning-536482?style=for-the-badge" alt="RL for legal reasoning thesis"></a>
+</p>
 
 ## Open-source engineering
 
-[Engineering notes](https://yuchenwang3.github.io/projects/open-source-systems/)
+<p>
+  <a href="https://yuchenwang3.github.io/projects/open-source-systems/"><img src="https://img.shields.io/badge/Engineering_Notes-3843D0?style=for-the-badge" alt="Engineering notes and validation details"></a>
+</p>
 
 <details open>
 <summary>PR previews · updated daily</summary>
@@ -82,7 +93,9 @@ Other projects: [CUDA attention kernels](https://yuchenwang3.github.io/assets/pd
 </picture></a>
 </div>
 
-[All upstream contributions](https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests) · Previews refresh daily.
+<p>
+  <a href="https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&amp;type=pullrequests"><img src="https://img.shields.io/badge/All_Contributions-24292F?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="All upstream pull requests"></a>
+</p>
 
 <!-- PR-PREVIEWS:END -->
 
