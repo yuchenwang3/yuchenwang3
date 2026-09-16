@@ -85,11 +85,18 @@ PR_LABELS = {
 
 
 def contribution_section(prs):
+    # Retain the full snapshot for history/refresh, but only show active or
+    # merged work on the profile. Closed-only projects disappear automatically.
+    visible = [p for p in prs if p["state"] in ("merged", "open")]
+    merged_count = sum(p["state"] == "merged" for p in visible)
+    open_count = sum(p["state"] == "open" for p in visible)
+    project_count = len({p["repo"] for p in visible})
+    summary = (f'<p><strong>{merged_count} merged</strong> · '
+               f'<strong>{open_count} open</strong> · {project_count} projects</p>')
     rows = []
     for repo, name, avatar in PROJECTS:
         contributions = []
-        closed = []
-        for p in sorted(prs, key=lambda p: {"merged": 0, "open": 1, "closed": 2}[p["state"]]):
+        for p in sorted(visible, key=lambda p: {"merged": 0, "open": 1}[p["state"]]):
             if p["repo"] != repo:
                 continue
             key = (repo, p["number"])
@@ -97,23 +104,20 @@ def contribution_section(prs):
             if label is None:
                 label = " ".join(PR_DESIGN[key][4]) if key in PR_DESIGN else p["title"]
             # One status per PR: never imply an open proposal has merged.
-            color = {"merged": "8250df", "open": "1a7f37", "closed": "656d76"}[p["state"]]
+            color = {"merged": "8250df", "open": "1a7f37"}[p["state"]]
             status = button(f'#{p["number"]} · {p["state"]}', p["url"], color)
-            item = f'<p>{escape(label)}<br>{status}</p>'
-            (closed if p["state"] == "closed" else contributions).append(item)
-        if closed:
-            contributions.append('<details><summary>Closed without merge</summary>' + "".join(closed) + '</details>')
+            contributions.append(f'<p>{status} {escape(label)}</p>')
         if not contributions:
             continue
         rows.append(f'''<tr>
-<td width="28%"><a href="https://github.com/{repo}"><img src="https://avatars.githubusercontent.com/u/{avatar}?s=64&amp;v=4" width="30" height="30" alt="{repo.split('/')[0]} organization avatar"><br><strong>{name}</strong></a></td>
+<td width="28%" valign="top"><a href="https://github.com/{repo}"><img src="https://avatars.githubusercontent.com/u/{avatar}?s=64&amp;v=4" width="30" height="30" alt="{repo.split('/')[0]} organization avatar"><br><strong>{name}</strong></a></td>
 <td width="72%">{"".join(contributions)}</td>
 </tr>''')
     footer = " ".join([
         button("All contributions ↗", "https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests"),
         button("Engineering notes ↗", "https://yuchenwang3.github.io/projects/open-source-systems/"),
     ])
-    return "\n\n<table>\n" + "\n".join(rows) + "\n</table>\n\n" + footer + "\n\n"
+    return "\n\n" + summary + "\n\n<table>\n" + "\n".join(rows) + "\n</table>\n\n" + footer + "\n\n"
 
 
 def render_readme(prs):
@@ -122,7 +126,7 @@ def render_readme(prs):
 <img width="100%" src="./assets/editorial-header-light.svg" alt="Yuchen (Ean) Wang — agentic post-training and ML systems">
 </picture>
 
-Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
+M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 
 '''
     links = [("Website", "https://yuchenwang3.github.io/"), ("CV", "https://yuchenwang3.github.io/CV.pdf"),
