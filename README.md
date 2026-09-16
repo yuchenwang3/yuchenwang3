@@ -1,159 +1,69 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/editorial-header-dark.svg">
-  <img src="./assets/editorial-header-light.svg" alt="Yuchen Ean Wang — agentic post-training, ML systems, and open-source engineering">
-</picture>
+# Yuchen (Ean) Wang
 
-<div align="center">
+I work on agentic post-training and ML systems. I am an M.S. student in Computer Science at UIUC and a research intern with Alibaba's Accio team. Previously, I studied AI at Peking University in the Zhi Class.
 
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=3843D0&center=true&vCenter=true&width=860&lines=Yuchen+Wang+%7C+Agentic+LLM+Research;Post-training+%C3%97+Systems+%C3%97+Open+Source" alt="Yuchen Wang — Agentic LLM Research" />
+My interests include long-horizon tool use, reinforcement learning, efficient training and inference, and video generation.
 
-  <p>
-    <a href="https://huggingface.co/Accio-Lab/Occamy-1.0"><img src="https://img.shields.io/badge/Occamy--1.0-35B--A3B-FFD21E?style=for-the-badge&logo=huggingface&logoColor=111111" alt="Occamy-1.0" /></a>
-    <a href="https://yuchenwang3.github.io"><img src="https://img.shields.io/badge/Portfolio-Research%20%26%20Systems-3843D0?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio" /></a>
-    <a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-Profile-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar" /></a>
-  </p>
+[Website](https://yuchenwang3.github.io/) · [CV](https://yuchenwang3.github.io/CV.pdf) · [Google Scholar](https://scholar.google.com/citations?user=NharhG8AAAAJ) · [LinkedIn](https://www.linkedin.com/in/yuchen3) · [Email](mailto:yuchenwang0303@gmail.com)
 
-  <p>
-    <a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-Yuchen%20Wang-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-    <a href="https://yuchenwang3.github.io/CV.pdf"><img src="https://img.shields.io/badge/CV-PDF-B31B1B?style=flat-square&logo=adobeacrobatreader&logoColor=white" alt="CV" /></a>
-    <img src="https://komarev.com/ghpvc/?username=yuchenwang3&base=953&style=flat-square&color=3843D0" alt="Profile views" />
-    <a href="https://gitviewsmap.onrender.com/yuchenwang3"><img src="https://img.shields.io/badge/Visitor%20Map-approximate%20locations-4B55D4?style=flat-square&logo=googlemaps&logoColor=white" alt="Approximate visitor map" /></a>
-  </p>
+## Research
 
-</div>
+- **[Occamy-1.0](https://accio-lab.github.io/occamy/)** — Core contributor to a 35B-A3B agent model. I built execution-grounded data and post-training infrastructure: verifier-gated collection, token-exact replay, state recovery, and compaction-aware training traces. The released model improves Claw-Eval average from 69.5 to 82.2 and AutomationBench strict pass from 7.5% to 27.6%. [arXiv](https://arxiv.org/abs/2609.11977) · [Website](https://accio-lab.github.io/occamy/) · [Model](https://huggingface.co/Accio-Lab/Occamy-1.0) · [Code](https://github.com/Accio-Lab/occamy)
+- **[CineFlow](https://yuchenwang3.github.io/projects/cineflow/)** — Dependency-aware video generation with semantic DAGs and runtime scheduling, without retraining. Across three video models on 8×H100: 1.7–5.5× end-to-end speedup and 5.4–17.3% higher VBench overall.
+- **[Dynamic Prefill Optimization](https://yuchenwang3.github.io/projects/prepack/)** — AIMD control with p95 TTFT feedback and length-aware prompt packing; up to 20% lower TTFT on production-style traces.
 
-<table>
-  <tr>
-    <td valign="top" width="50%">
-      <h3>🔬 Now</h3>
-      <p><strong>Research Intern @ Alibaba U.S. · Accio Team</strong><br />Execution-grounded data, agentic post-training, and reliable long-horizon tool use.</p>
-      <p><strong>M.S. Computer Science @ UIUC</strong><br />B.S. in Intelligent Science and Technology (AI), Peking University Zhi Class.</p>
-    </td>
-    <td valign="top" width="50%">
-      <h3>⚙️ Systems</h3>
-      <p>Open-source engineering across <strong>NeMo, Megatron-LM, vLLM/Vime, SGLang, and ModelScope</strong>.</p>
-      <p>Training reliability · long-context kernels · CUDA · RL infrastructure · inference serving</p>
-    </td>
-  </tr>
-</table>
+Other projects: [CUDA attention kernels](https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf) · [RL for legal reasoning](https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf)
 
-## 🦦 Occamy-1.0
+## Open-source engineering
 
-**Occamy-1.0: Open Pareto-frontier 35B Intelligence for Co-work**
+- **[vLLM](https://github.com/vllm-project/vllm/pull/54699):** In-place BF16 MoE conversion, halving TP2 conversion peak allocation from 7.88 to 3.94 GiB.
+- **[NeMo RL](https://github.com/NVIDIA-NeMo/RL/pull/3943):** Deferred teacher top-k payloads, with 4.44–5.31× speedup in controlled Ray transfer measurements.
+- **[FlashInfer](https://github.com/flashinfer-ai/flashinfer/pull/4984) / [Emerging Optimizers](https://github.com/NVIDIA-NeMo/Emerging-Optimizers/pull/230):** FP8 KV calibration and scale-invariant small-norm Muon normalization.
+- **[Megatron-LM](https://github.com/NVIDIA/Megatron-LM/pull/5396):** Fused GatedDeltaNet Q/K normalization and [selective Mamba recompute](https://github.com/NVIDIA/Megatron-LM/pull/5463).
+- **[Hermes Agent](https://github.com/NousResearch/hermes-agent/pull/100693) / [NeMo Gym](https://github.com/NVIDIA-NeMo/Gym/pull/2726):** Tool-argument coercion, [SSH teardown/reconnect](https://github.com/NousResearch/hermes-agent/pull/102549), and co-authored cross-process HTTP error propagation.
 
-Core contributor to **Occamy-1.0**, a **35A3B** co-work model with Alibaba's Accio Team.
-I architected and delivered execution-grounded data and post-training infrastructure
-for long-horizon tool use. The team's recipe combines SFT, HDPO, expert merging,
-and SAO over a **15K-trajectory, 403M-token SFT corpus**.
+[Engineering notes](https://yuchenwang3.github.io/projects/open-source-systems/) · [All pull requests](https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests)
 
-My work includes verifier-gated task admission, token-exact replay, state
-reconstruction, and training traces that preserve task-level outcomes across
-context rewrites. The latest report records **82.2 Claw-Eval average / 71.4
-Pass³**, **49.16 WildClawBench**, and **27.6% AutomationBench strict pass rate**.
-The released model reaches the **low-cost knee of the cost–performance Pareto frontier**
-in the report's four-benchmark comparison. These are team-level model results.
-
-[Project & results](https://yuchenwang3.github.io/projects/occamy-1-0/) ·
-[Research website](https://accio-lab.github.io/occamy/) ·
-[Paper PDF](https://accio-lab.github.io/occamy/report/occamy1.0.pdf) ·
-[Model](https://huggingface.co/Accio-Lab/Occamy-1.0) ·
-[Code](https://github.com/Accio-Lab/occamy)
-
-## 🧩 Open-source systems engineering
+<details>
+<summary>PR previews · updated daily</summary>
 
 <!-- PR-PREVIEWS:START -->
 
 <a href="https://github.com/flashinfer-ai/flashinfer/pull/4984"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/flashinfer-ai-flashinfer-4984-dark.svg">
-  <img width="49%" src="./assets/prs/flashinfer-ai-flashinfer-4984-light.svg" alt="flashinfer-ai/flashinfer #4984: fix: apply calibration scales to ragged FP8 KV prefill">
+<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/flashinfer-ai-flashinfer-4984-dark.svg">
+<img width="49%" src="./assets/prs/flashinfer-ai-flashinfer-4984-light.svg" alt="flashinfer-ai/flashinfer #4984: fix: apply calibration scales to ragged FP8 KV prefill">
 </picture></a>
 <a href="https://github.com/vllm-project/vllm/pull/54699"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/vllm-project-vllm-54699-dark.svg">
-  <img width="49%" src="./assets/prs/vllm-project-vllm-54699-light.svg" alt="vllm-project/vllm #54699: [Bugfix][MoE] Convert FlashInfer BF16 weights in place">
+<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/vllm-project-vllm-54699-dark.svg">
+<img width="49%" src="./assets/prs/vllm-project-vllm-54699-light.svg" alt="vllm-project/vllm #54699: [Bugfix][MoE] Convert FlashInfer BF16 weights in place">
 </picture></a>
 <a href="https://github.com/NVIDIA-NeMo/RL/pull/3943"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-RL-3943-dark.svg">
-  <img width="49%" src="./assets/prs/NVIDIA-NeMo-RL-3943-light.svg" alt="NVIDIA-NeMo/RL #3943: perf(distillation): defer teacher top-k Ray payloads">
+<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-RL-3943-dark.svg">
+<img width="49%" src="./assets/prs/NVIDIA-NeMo-RL-3943-light.svg" alt="NVIDIA-NeMo/RL #3943: perf(distillation): defer teacher top-k Ray payloads">
 </picture></a>
 <a href="https://github.com/NousResearch/hermes-agent/pull/100693"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-100693-dark.svg">
-  <img width="49%" src="./assets/prs/NousResearch-hermes-agent-100693-light.svg" alt="NousResearch/hermes-agent #100693: fix(tools): resolve local schema refs during arg coercion">
+<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-100693-dark.svg">
+<img width="49%" src="./assets/prs/NousResearch-hermes-agent-100693-light.svg" alt="NousResearch/hermes-agent #100693: fix(tools): resolve local schema refs during arg coercion">
 </picture></a>
 <a href="https://github.com/NVIDIA-NeMo/Emerging-Optimizers/pull/230"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-dark.svg">
-  <img width="49%" src="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-light.svg" alt="NVIDIA-NeMo/Emerging-Optimizers #230: fix(muon_utils): keep newton_schulz scale-invariant for small-norm inputs (#229)">
+<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-dark.svg">
+<img width="49%" src="./assets/prs/NVIDIA-NeMo-Emerging-Optimizers-230-light.svg" alt="NVIDIA-NeMo/Emerging-Optimizers #230: fix(muon_utils): keep newton_schulz scale-invariant for small-norm inputs (#229)">
 </picture></a>
 <a href="https://github.com/NVIDIA/Megatron-LM/pull/5396"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5396-dark.svg">
-  <img width="49%" src="./assets/prs/NVIDIA-Megatron-LM-5396-light.svg" alt="NVIDIA/Megatron-LM #5396: perf(gated_delta_net): fold q/k L2-norm into the gated_delta_rule kernel">
+<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5396-dark.svg">
+<img width="49%" src="./assets/prs/NVIDIA-Megatron-LM-5396-light.svg" alt="NVIDIA/Megatron-LM #5396: perf(gated_delta_net): fold q/k L2-norm into the gated_delta_rule kernel">
 </picture></a>
 <a href="https://github.com/NVIDIA/Megatron-LM/pull/5463"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5463-dark.svg">
-  <img width="49%" src="./assets/prs/NVIDIA-Megatron-LM-5463-light.svg" alt="NVIDIA/Megatron-LM #5463: feat(recompute): add mamba to recompute_modules">
+<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NVIDIA-Megatron-LM-5463-dark.svg">
+<img width="49%" src="./assets/prs/NVIDIA-Megatron-LM-5463-light.svg" alt="NVIDIA/Megatron-LM #5463: feat(recompute): add mamba to recompute_modules">
 </picture></a>
 <a href="https://github.com/NousResearch/hermes-agent/pull/102549"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-102549-dark.svg">
-  <img width="49%" src="./assets/prs/NousResearch-hermes-agent-102549-light.svg" alt="NousResearch/hermes-agent #102549: fix(desktop): wait for pooled SSH teardown before reconnecting">
+<source media="(prefers-color-scheme: dark)" srcset="./assets/prs/NousResearch-hermes-agent-102549-dark.svg">
+<img width="49%" src="./assets/prs/NousResearch-hermes-agent-102549-light.svg" alt="NousResearch/hermes-agent #102549: fix(desktop): wait for pooled SSH teardown before reconnecting">
 </picture></a>
 
 [All upstream contributions](https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests) · Previews refresh daily.
 
 <!-- PR-PREVIEWS:END -->
 
-### Selected engineering work
-
-- **[FlashInfer #4984](https://github.com/flashinfer-ai/flashinfer/pull/4984)** — corrected K/V calibration for ragged FP8 prefill; now included upstream.
-- **[vLLM #54699](https://github.com/vllm-project/vllm/pull/54699)** — latest follow-up preserves reload padding and reconstructs kernel views from restored tensors, including cross-process IPC coverage; the 120B memory result below comes from the earlier lifecycle validation.
-- **[Hermes #100693](https://github.com/NousResearch/hermes-agent/pull/100693) / [#102549](https://github.com/NousResearch/hermes-agent/pull/102549)** — schema-reference tool argument coercion and ownership-checked cleanup of idle SSH backends.
-- **[NeMo Gym #2726](https://github.com/NVIDIA-NeMo/Gym/pull/2726)** — co-authored pickle-safe propagation of cross-process HTTP failures.
-
-| Area                         | Selected contribution                                                                                                                                                                                                                                                                                                                          |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Optimizer stability          | Scale-invariant Newton–Schulz for small-norm Muon inputs in [NVIDIA NeMo Emerging Optimizers #230](https://github.com/NVIDIA-NeMo/Emerging-Optimizers/pull/230)                                                                                                                                                                                |
-| Hybrid-model training        | Recompute propagation and Mamba + attention + MoE runtime fixes in [vLLM/Vime #337](https://github.com/vllm-project/vime/pull/337)                                                                                                                                                                                                             |
-| Training throughput          | Order-preserving sequence packing, NCCL warmup, and Muon correctness across [ModelScope ms-swift #9598](https://github.com/modelscope/ms-swift/pull/9598), [#9602](https://github.com/modelscope/ms-swift/pull/9602), [#9599](https://github.com/modelscope/ms-swift/pull/9599), and [#9591](https://github.com/modelscope/ms-swift/pull/9591) |
-| Large-model serving          | In-place FlashInfer BF16 MoE conversion in [vLLM #54699](https://github.com/vllm-project/vllm/pull/54699), halving TP2 peak allocation from **7.88 to 3.94 GiB** and validating real 120B load, generation, and 3/3 sleep-wake cycles on 8×B200                                                                              |
-| Distributed transfer         | Controlled Ray transfer path in [NeMo RL #3943](https://github.com/NVIDIA-NeMo/RL/pull/3943), delivering **4.44–5.31× speedup** while limiting driver RSS deltas to 0.1–0.3 MB                                                                                                                                                                 |
-| Long-context kernels         | Fused GatedDeltaNet Q/K normalization for 128K SFT in [Megatron-LM #5396](https://github.com/NVIDIA/Megatron-LM/pull/5396) and selective Mamba recompute in [#5463](https://github.com/NVIDIA/Megatron-LM/pull/5463)                                                                                                                           |
-| RL and inference reliability | Non-finite rollout-logprob sanitization in [NeMo RL #2962](https://github.com/NVIDIA-NeMo/RL/pull/2962), GDN/Muon clipping and routing in [Megatron-LM #5395](https://github.com/NVIDIA/Megatron-LM/pull/5395), [#5400](https://github.com/NVIDIA/Megatron-LM/pull/5400), and [#5431](https://github.com/NVIDIA/Megatron-LM/pull/5431), skipped-tensor checks in [SGLang #31621](https://github.com/sgl-project/sglang/pull/31621), and authoritative FSDP strategy in [verl #7597](https://github.com/verl-project/verl/pull/7597) |
-
-## 📚 Papers and projects
-
-- **[CineFlow](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/cineflow-paper.pdf)** — the first dependency-driven video-diffusion inference system, evaluated across Wan2.2-5B, CogVideoX-5B, and HunyuanVideo on 8×H100; **1.7–5.5× speedup**, **1.30–2.02× lower P90 latency**, and **5.4–17.3% higher VBench overall**.
-- **[Dynamic Prefill Optimization](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/dynamic-prefill-online-packing-report.pdf)** — AIMD control with p95 TTFT feedback and greedy/DP prompt packing; up to **20% lower TTFT** on production-style traces.
-- **[FlashAttention-style CUDA Optimization](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/gpt2-processing-unit-report.pdf)** — tiled online softmax and kernel fusion for GPT-2; roughly **10× lower HBM traffic** and up to **9% end-to-end speedup**.
-- **[RL for Legal Reasoning](https://raw.githubusercontent.com/yuchenwang3/yuchenwang3.github.io/main/assets/pdf/projects/legal-reasoning-thesis.pdf)** — advised by Prof. Yansong Feng; Zero-RL → distilled-CoT SFT → GRPO, reaching **57.6% accuracy**.
-
-## 🛠️ Stack
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=111111" alt="Hugging Face" />
-  <img src="https://img.shields.io/badge/vLLM-111111?style=for-the-badge" alt="vLLM" />
-  <img src="https://img.shields.io/badge/Megatron--LM-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="Megatron-LM" />
-  <img src="https://img.shields.io/badge/SGLang-4B55D4?style=for-the-badge" alt="SGLang" />
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuchenwang3&theme=github_dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuchenwang3&theme=github" />
-    <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuchenwang3&theme=github" alt="GitHub stars, commits, pull requests, issues, and contributions" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuchenwang3&theme=github_dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuchenwang3&theme=github" />
-    <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuchenwang3&theme=github" alt="Top GitHub repository languages" />
-  </picture>
-</p>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake.svg" />
-  <img alt="GitHub contribution grid animation" src="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/github-snake.svg" />
-</picture>
-
-<p align="center"><em>To an unceasing future. 致永无止境的明天。</em></p>
+</details>
