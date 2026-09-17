@@ -32,7 +32,7 @@ class ProfileLayoutTest(unittest.TestCase):
 
     def test_full_upstream_inventory(self):
         from refresh_pr_cards import SELECTED
-        self.assertEqual(len(SELECTED), 26)
+        self.assertEqual(len(SELECTED), 29)
         self.assertEqual(len(PROJECTS), 12)
         self.assertEqual(set(SELECTED), {(p["repo"], p["number"]) for p in self.prs})
         self.assertEqual(len(SELECTED), len(set(SELECTED)))
@@ -73,6 +73,18 @@ class ProfileLayoutTest(unittest.TestCase):
             self.assertTrue((ROOT / path).is_file(), path)
         self.assertNotIn('width="410"', readme)
         self.assertNotIn("<script", readme)
+
+    def test_cineflow_is_a_paper(self):
+        readme = render_readme(self.prs)
+        self.assertIn('badge/Paper-30363D', readme)
+        self.assertIn('CineFlow: figure from the paper', readme)
+
+    def test_latest_contributions_are_tracked(self):
+        keys = {(p["repo"], p["number"]) for p in self.prs}
+        for key in [("sgl-project/sglang", 39765),
+                    ("NousResearch/hermes-agent", 113511),
+                    ("NousResearch/hermes-agent", 113538)]:
+            self.assertIn(key, keys)
 
     def test_refresh_preserves_outside_block(self):
         readme = render_readme(self.prs)

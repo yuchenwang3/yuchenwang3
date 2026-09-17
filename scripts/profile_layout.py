@@ -25,7 +25,7 @@ def research_section():
          "Dependency-driven parallel video generation.",
          "1.7–5.5× end-to-end speedup in the reported evaluation",
          [("Project", "https://yuchenwang3.github.io/projects/cineflow/"),
-          ("Report", "https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf")]),
+          ("Paper", "https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf")]),
         ("Dynamic Prefill", "prefill-timeline", "png",
          "https://yuchenwang3.github.io/projects/prepack/",
          "Adaptive batching and prompt packing for LLM serving.",
@@ -35,7 +35,7 @@ def research_section():
     ]
     rows = []
     for name, stem, ext, url, summary, detail, links in projects:
-        visual = f'<img width="100%" src="./assets/research/{stem}.{ext}" alt="{escape(name)}: '+("official logo" if ext == "svg" else "figure from the project report")+'">'
+        visual = f'<img width="100%" src="./assets/research/{stem}.{ext}" alt="{escape(name)}: '+("official logo" if ext == "svg" else "figure from the paper" if name == "CineFlow" else "figure from the project report")+'">'
         if ext == "svg":
             visual = f'<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/research/{stem}-dark.svg">{visual}</picture>'
         rows.append(f'''<tr>
@@ -66,6 +66,9 @@ PROJECTS = [
 ]
 
 PR_LABELS = {
+    ("sgl-project/sglang", 39765): "Fix Mamba cache publication under overlap scheduling",
+    ("NousResearch/hermes-agent", 113511): "Control partial-stream continuation for batch evaluation",
+    ("NousResearch/hermes-agent", 113538): "Clarify API retry budgets and streaming defaults",
     ("modelscope/ms-swift", 9598): "Add order-preserving packing",
     ("modelscope/ms-swift", 9602): "Warm up NCCL before training",
     ("modelscope/ms-swift", 9599): "Pass through Muon Nesterov settings",

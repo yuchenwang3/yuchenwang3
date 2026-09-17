@@ -11,6 +11,9 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 SELECTED = [
     ("flashinfer-ai/flashinfer", 4984),
     ("vllm-project/vllm", 54699),
+    ("sgl-project/sglang", 39765),
+    ("NousResearch/hermes-agent", 113511),
+    ("NousResearch/hermes-agent", 113538),
     ("NVIDIA-NeMo/RL", 3943),
     ("NousResearch/hermes-agent", 100693),
     ("NVIDIA-NeMo/Emerging-Optimizers", 230),

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "pull_requests": [
     {
       "repo": "flashinfer-ai/flashinfer",
@@ -23,8 +23,50 @@
       "additions": 667,
       "deletions": 68,
       "files": 9,
-      "updated": "2026-09-16T17:31:11Z",
-      "head": "921dbd03064ca0d766ae5f3f92b135f48f9678f6",
+      "updated": "2026-09-17T16:25:04Z",
+      "head": "b518575e26a2a32aebc69fa5958df4e5afb0369c",
+      "role": "author",
+      "credit_url": null,
+      "state": "merged"
+    },
+    {
+      "repo": "sgl-project/sglang",
+      "number": 39765,
+      "title": "[Fix] Publish Mamba prefill cache updates before preparing the next batch",
+      "url": "https://github.com/sgl-project/sglang/pull/39765",
+      "additions": 247,
+      "deletions": 5,
+      "files": 2,
+      "updated": "2026-09-16T08:28:55Z",
+      "head": "f273a50b44db1be65bb337dd81e2cddee1db3f10",
+      "role": "author",
+      "credit_url": null,
+      "state": "open"
+    },
+    {
+      "repo": "NousResearch/hermes-agent",
+      "number": 113511,
+      "title": "feat(agent): allow disabling partial-stream continuation",
+      "url": "https://github.com/NousResearch/hermes-agent/pull/113511",
+      "additions": 175,
+      "deletions": 14,
+      "files": 6,
+      "updated": "2026-09-16T22:12:22Z",
+      "head": "53d3b1bf6c9fc203695cfa187b22acfa995bd97c",
+      "role": "author",
+      "credit_url": null,
+      "state": "open"
+    },
+    {
+      "repo": "NousResearch/hermes-agent",
+      "number": 113538,
+      "title": "docs: clarify API retry budgets and streaming defaults",
+      "url": "https://github.com/NousResearch/hermes-agent/pull/113538",
+      "additions": 14,
+      "deletions": 12,
+      "files": 4,
+      "updated": "2026-09-16T23:30:53Z",
+      "head": "f3d8c5da8d5d26978072515dbc12dbc7f08f36a9",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -107,8 +149,8 @@
       "additions": 53,
       "deletions": 0,
       "files": 2,
-      "updated": "2026-09-16T07:23:58Z",
-      "head": "1585ef2543b74a9072c18984a44e8bfe474eb1c8",
+      "updated": "2026-09-17T17:00:53Z",
+      "head": "0ef6dc4baa08e5c8c6a7b153c4f7cf9466995b2c",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -303,8 +345,8 @@
       "additions": 11,
       "deletions": 0,
       "files": 2,
-      "updated": "2026-09-16T06:36:18Z",
-      "head": "84172fafc16129e3b29448c74272bd97aa99e804",
+      "updated": "2026-09-17T17:00:55Z",
+      "head": "cad0e99dc560b33289406a114809b4a02ff8158e",
       "role": "author",
       "credit_url": null,
       "state": "open"

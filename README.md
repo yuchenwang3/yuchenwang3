@@ -36,7 +36,7 @@ M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 
 <!-- PR-PREVIEWS:START -->
 
-<p><strong>8 merged</strong> · <strong>1 adopted solution</strong> · <strong>13 open</strong> · 12 projects</p>
+<p><strong>9 merged</strong> · <strong>1 adopted solution</strong> · <strong>15 open</strong> · 12 projects</p>
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/vllm-project/vllm"><img src="https://avatars.githubusercontent.com/u/136984999?s=64&amp;v=4" width="30" height="30" alt="vllm-project organization avatar"><br><strong>vLLM</strong></a></td>
-<td width="72%"><p><a href="https://github.com/vllm-project/vllm/pull/54699"><img src="https://img.shields.io/badge/%2354699%20%C2%B7%20open-1a7f37?style=flat-square" alt="#54699 · open"></a> Convert MoE weights in place</p></td>
+<td width="72%"><p><a href="https://github.com/vllm-project/vllm/pull/54699"><img src="https://img.shields.io/badge/%2354699%20%C2%B7%20merged-8250df?style=flat-square" alt="#54699 · merged"></a> Convert MoE weights in place</p></td>
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NVIDIA/Megatron-LM"><img src="https://avatars.githubusercontent.com/u/1728152?s=64&amp;v=4" width="30" height="30" alt="NVIDIA organization avatar"><br><strong>Megatron-LM</strong></a></td>
@@ -77,7 +77,7 @@ M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/sgl-project/sglang"><img src="https://avatars.githubusercontent.com/u/147780389?s=64&amp;v=4" width="30" height="30" alt="sgl-project organization avatar"><br><strong>SGLang</strong></a></td>
-<td width="72%"><p><a href="https://github.com/sgl-project/sglang/pull/38063"><img src="https://img.shields.io/badge/%2338063%20%C2%B7%20open-1a7f37?style=flat-square" alt="#38063 · open"></a> Explain cold MXFP4 JIT startup</p><p><a href="https://github.com/sgl-project/sglang/pull/31621"><img src="https://img.shields.io/badge/%2331621%20%C2%B7%20open-1a7f37?style=flat-square" alt="#31621 · open"></a> Honor weight-check exclusions during reset</p></td>
+<td width="72%"><p><a href="https://github.com/sgl-project/sglang/pull/39765"><img src="https://img.shields.io/badge/%2339765%20%C2%B7%20open-1a7f37?style=flat-square" alt="#39765 · open"></a> Fix Mamba cache publication under overlap scheduling</p><p><a href="https://github.com/sgl-project/sglang/pull/38063"><img src="https://img.shields.io/badge/%2338063%20%C2%B7%20open-1a7f37?style=flat-square" alt="#38063 · open"></a> Explain cold MXFP4 JIT startup</p><p><a href="https://github.com/sgl-project/sglang/pull/31621"><img src="https://img.shields.io/badge/%2331621%20%C2%B7%20open-1a7f37?style=flat-square" alt="#31621 · open"></a> Honor weight-check exclusions during reset</p></td>
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/verl-project/verl"><img src="https://avatars.githubusercontent.com/u/212961691?s=64&amp;v=4" width="30" height="30" alt="verl-project organization avatar"><br><strong>verl</strong></a></td>
@@ -85,7 +85,7 @@ M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NousResearch/hermes-agent"><img src="https://avatars.githubusercontent.com/u/134168893?s=64&amp;v=4" width="30" height="30" alt="NousResearch organization avatar"><br><strong>Hermes Agent</strong></a></td>
-<td width="72%"><p><a href="https://github.com/NousResearch/hermes-agent/pull/100693"><img src="https://img.shields.io/badge/%23100693%20%C2%B7%20open-1a7f37?style=flat-square" alt="#100693 · open"></a> Resolve nested tool schemas</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/102549"><img src="https://img.shields.io/badge/%23102549%20%C2%B7%20open-1a7f37?style=flat-square" alt="#102549 · open"></a> Make SSH reconnects race-safe</p></td>
+<td width="72%"><p><a href="https://github.com/NousResearch/hermes-agent/pull/113511"><img src="https://img.shields.io/badge/%23113511%20%C2%B7%20open-1a7f37?style=flat-square" alt="#113511 · open"></a> Control partial-stream continuation for batch evaluation</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/113538"><img src="https://img.shields.io/badge/%23113538%20%C2%B7%20open-1a7f37?style=flat-square" alt="#113538 · open"></a> Clarify API retry budgets and streaming defaults</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/100693"><img src="https://img.shields.io/badge/%23100693%20%C2%B7%20open-1a7f37?style=flat-square" alt="#100693 · open"></a> Resolve nested tool schemas</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/102549"><img src="https://img.shields.io/badge/%23102549%20%C2%B7%20open-1a7f37?style=flat-square" alt="#102549 · open"></a> Make SSH reconnects race-safe</p></td>
 </tr>
 </table>
 
