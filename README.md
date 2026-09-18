@@ -11,6 +11,7 @@ M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 <a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Scholar-4285F4?style=for-the-badge&amp;logo=googlescholar&amp;logoColor=white" alt="Scholar"></a>
 <a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
 <a href="mailto:yuchenwang0303@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email"></a>
+<a href="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/main/assets/wechat-qr.jpg"><img src="https://img.shields.io/badge/WeChat%20%C2%B7%20eangyc-07C160?style=for-the-badge&amp;logo=wechat&amp;logoColor=white" alt="WeChat · eangyc"></a>
 </p>
 
 ## Research

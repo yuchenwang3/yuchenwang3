@@ -15,6 +15,12 @@ class ProfileLayoutTest(unittest.TestCase):
     def test_deterministic_readme(self):
         self.assertEqual((ROOT / "README.md").read_text(), render_readme(self.prs))
 
+    def test_wechat_links_to_original_qr(self):
+        readme = render_readme(self.prs)
+        self.assertIn('alt="WeChat · eangyc"', readme)
+        self.assertIn('href="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/main/assets/wechat-qr.jpg"', readme)
+        self.assertTrue((ROOT / "assets/wechat-qr.jpg").is_file())
+
     def test_every_active_or_merged_pr_is_preserved(self):
         block = contribution_section(self.prs)
         for p in self.prs:
