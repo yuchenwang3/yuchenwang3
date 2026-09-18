@@ -6,7 +6,24 @@ from profile_art import PR_DESIGN
 
 
 def button(label, url, color="30363D"):
-    badge = f"https://img.shields.io/badge/{quote(label, safe='')}-{color}?style=flat-square"
+    styles = {
+        "Website": ("181717", "vercel"), "CV": ("455A64", "readthedocs"),
+        "Scholar": ("4285F4", "googlescholar"), "LinkedIn": ("0A66C2", "linkedin"),
+        "Email": ("D14836", "gmail"), "Report": ("B31B1B", "arxiv"),
+        "Paper": ("B31B1B", "arxiv"), "Demo": ("087F5B", "vercel"),
+        "Model": ("FFD21E", "huggingface"), "Code": ("181717", "github"),
+        "Project": ("087F5B", "vercel"), "CUDA Attention": ("537C15", "nvidia"),
+        "RL for Legal Reasoning": ("6554A4", "readthedocs"),
+        "All contributions ↗": ("181717", "github"),
+        "Engineering notes ↗": ("455A64", "readthedocs"),
+    }
+    style = "flat-square"
+    extra = ""
+    if label in styles:
+        color, logo = styles[label]
+        style = "for-the-badge"
+        extra = f"&amp;logo={logo}&amp;logoColor={'black' if label == 'Model' else 'white'}"
+    badge = f"https://img.shields.io/badge/{quote(label, safe='')}-{color}?style={style}{extra}"
     return f'<a href="{escape(url, quote=True)}"><img src="{badge}" alt="{escape(label)}"></a>'
 
 
@@ -145,4 +162,4 @@ M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
     links = [("Website", "https://yuchenwang3.github.io/"), ("CV", "https://yuchenwang3.github.io/CV.pdf"),
              ("Scholar", "https://scholar.google.com/citations?user=NharhG8AAAAJ"),
              ("LinkedIn", "https://www.linkedin.com/in/yuchen3"), ("Email", "mailto:yuchenwang0303@gmail.com")]
-    return header + " ".join(button(*link) for link in links) + "\n\n" + research_section() + "\n## Open-source contributions\n\n<!-- PR-PREVIEWS:START -->" + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n"
+    return header + '<p align="center">\n' + "\n".join(button(*link) for link in links) + "\n</p>\n\n" + research_section() + "\n## Open-source contributions\n\n<!-- PR-PREVIEWS:START -->" + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n"

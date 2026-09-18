@@ -5,7 +5,13 @@
 
 M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 
-<a href="https://yuchenwang3.github.io/"><img src="https://img.shields.io/badge/Website-30363D?style=flat-square" alt="Website"></a> <a href="https://yuchenwang3.github.io/CV.pdf"><img src="https://img.shields.io/badge/CV-30363D?style=flat-square" alt="CV"></a> <a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Scholar-30363D?style=flat-square" alt="Scholar"></a> <a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-30363D?style=flat-square" alt="LinkedIn"></a> <a href="mailto:yuchenwang0303@gmail.com"><img src="https://img.shields.io/badge/Email-30363D?style=flat-square" alt="Email"></a>
+<p align="center">
+<a href="https://yuchenwang3.github.io/"><img src="https://img.shields.io/badge/Website-181717?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Website"></a>
+<a href="https://yuchenwang3.github.io/CV.pdf"><img src="https://img.shields.io/badge/CV-455A64?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=white" alt="CV"></a>
+<a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Scholar-4285F4?style=for-the-badge&amp;logo=googlescholar&amp;logoColor=white" alt="Scholar"></a>
+<a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:yuchenwang0303@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email"></a>
+</p>
 
 ## Research
 
@@ -14,23 +20,23 @@ M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 <td width="32%" align="center"><a href="https://accio-lab.github.io/occamy/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/research/occamy-mark-dark.svg"><img width="100%" src="./assets/research/occamy-mark.svg" alt="Occamy-1.0: official logo"></picture></a></td>
 <td width="68%"><h3><a href="https://accio-lab.github.io/occamy/">Occamy-1.0</a></h3>
 <p>35B-A3B agent model for long-horizon tool use.<br><sub>Execution-grounded data · Agentic post-training</sub></p>
-<p><a href="https://arxiv.org/abs/2609.11977"><img src="https://img.shields.io/badge/Report-30363D?style=flat-square" alt="Report"></a> <a href="https://accio-lab.github.io/occamy/"><img src="https://img.shields.io/badge/Demo-30363D?style=flat-square" alt="Demo"></a> <a href="https://huggingface.co/Accio-Lab/Occamy-1.0"><img src="https://img.shields.io/badge/Model-30363D?style=flat-square" alt="Model"></a> <a href="https://github.com/Accio-Lab/occamy"><img src="https://img.shields.io/badge/Code-30363D?style=flat-square" alt="Code"></a></p></td>
+<p><a href="https://arxiv.org/abs/2609.11977"><img src="https://img.shields.io/badge/Report-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="Report"></a> <a href="https://accio-lab.github.io/occamy/"><img src="https://img.shields.io/badge/Demo-087F5B?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Demo"></a> <a href="https://huggingface.co/Accio-Lab/Occamy-1.0"><img src="https://img.shields.io/badge/Model-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=black" alt="Model"></a> <a href="https://github.com/Accio-Lab/occamy"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Code"></a></p></td>
 </tr>
 <tr>
 <td width="32%" align="center"><a href="https://yuchenwang3.github.io/projects/cineflow/"><img width="100%" src="./assets/research/cineflow-system.png" alt="CineFlow: figure from the paper"></a></td>
 <td width="68%"><h3><a href="https://yuchenwang3.github.io/projects/cineflow/">CineFlow</a></h3>
 <p>Dependency-driven parallel video generation.<br><sub>1.7–5.5× end-to-end speedup in the reported evaluation</sub></p>
-<p><a href="https://yuchenwang3.github.io/projects/cineflow/"><img src="https://img.shields.io/badge/Project-30363D?style=flat-square" alt="Project"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf"><img src="https://img.shields.io/badge/Paper-30363D?style=flat-square" alt="Paper"></a></p></td>
+<p><a href="https://yuchenwang3.github.io/projects/cineflow/"><img src="https://img.shields.io/badge/Project-087F5B?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Project"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf"><img src="https://img.shields.io/badge/Paper-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="Paper"></a></p></td>
 </tr>
 <tr>
 <td width="32%" align="center"><a href="https://yuchenwang3.github.io/projects/prepack/"><img width="100%" src="./assets/research/prefill-timeline.png" alt="Dynamic Prefill: figure from the project report"></a></td>
 <td width="68%"><h3><a href="https://yuchenwang3.github.io/projects/prepack/">Dynamic Prefill</a></h3>
 <p>Adaptive batching and prompt packing for LLM serving.<br><sub>Up to 20% lower TTFT on the reported traces</sub></p>
-<p><a href="https://yuchenwang3.github.io/assets/pdf/projects/dynamic-prefill-online-packing-report.pdf"><img src="https://img.shields.io/badge/Report-30363D?style=flat-square" alt="Report"></a> <a href="https://github.com/Winlere/prepack-workspace"><img src="https://img.shields.io/badge/Code-30363D?style=flat-square" alt="Code"></a></p></td>
+<p><a href="https://yuchenwang3.github.io/assets/pdf/projects/dynamic-prefill-online-packing-report.pdf"><img src="https://img.shields.io/badge/Report-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="Report"></a> <a href="https://github.com/Winlere/prepack-workspace"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Code"></a></p></td>
 </tr>
 </table>
 
-<a href="https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf"><img src="https://img.shields.io/badge/CUDA%20Attention-30363D?style=flat-square" alt="CUDA Attention"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf"><img src="https://img.shields.io/badge/RL%20for%20Legal%20Reasoning-30363D?style=flat-square" alt="RL for Legal Reasoning"></a>
+<a href="https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf"><img src="https://img.shields.io/badge/CUDA%20Attention-537C15?style=for-the-badge&amp;logo=nvidia&amp;logoColor=white" alt="CUDA Attention"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf"><img src="https://img.shields.io/badge/RL%20for%20Legal%20Reasoning-6554A4?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=white" alt="RL for Legal Reasoning"></a>
 
 ## Open-source contributions
 
@@ -89,6 +95,6 @@ M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
 </tr>
 </table>
 
-<a href="https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&amp;type=pullrequests"><img src="https://img.shields.io/badge/All%20contributions%20%E2%86%97-30363D?style=flat-square" alt="All contributions ↗"></a> <a href="https://yuchenwang3.github.io/projects/open-source-systems/"><img src="https://img.shields.io/badge/Engineering%20notes%20%E2%86%97-30363D?style=flat-square" alt="Engineering notes ↗"></a>
+<a href="https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&amp;type=pullrequests"><img src="https://img.shields.io/badge/All%20contributions%20%E2%86%97-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="All contributions ↗"></a> <a href="https://yuchenwang3.github.io/projects/open-source-systems/"><img src="https://img.shields.io/badge/Engineering%20notes%20%E2%86%97-455A64?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=white" alt="Engineering notes ↗"></a>
 
 <!-- PR-PREVIEWS:END -->

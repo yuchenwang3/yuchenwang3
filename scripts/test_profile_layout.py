@@ -76,7 +76,7 @@ class ProfileLayoutTest(unittest.TestCase):
 
     def test_cineflow_is_a_paper(self):
         readme = render_readme(self.prs)
-        self.assertIn('badge/Paper-30363D', readme)
+        self.assertIn('badge/Paper-B31B1B?style=for-the-badge', readme)
         self.assertIn('CineFlow: figure from the paper', readme)
 
     def test_latest_contributions_are_tracked(self):
