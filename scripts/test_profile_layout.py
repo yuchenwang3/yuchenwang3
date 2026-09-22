@@ -34,7 +34,7 @@ class ProfileLayoutTest(unittest.TestCase):
         block = contribution_section(self.prs)
         visible = [p for p in self.prs if p["state"] in ("open", "merged")]
         for heading, is_featured in [("Highlights", True), ("More contributions", False)]:
-            group = block.split(f"### {heading}\n", 1)[1].split("</table>", 1)[0]
+            group = block.split(f"### {heading}\n", 1)[1].split("### More contributions", 1)[0]
             projects = {p["repo"] for p in visible
                         if ((p["repo"], p["number"]) in HIGHLIGHTS) == is_featured}
             self.assertEqual(group.count("<tr>"), len(projects))
@@ -65,7 +65,46 @@ class ProfileLayoutTest(unittest.TestCase):
         self.assertEqual(len(SELECTED), len(set(SELECTED)))
         block = contribution_section(self.prs)
         self.assertNotIn("Closed without merge", block)
-        self.assertNotIn("<details>", block)
+        self.assertIn("<details>", block)
+
+    def test_remainder_is_collapsed_by_repository(self):
+        block = contribution_section(self.prs)
+        featured, remainder = block.split("### More contributions", 1)
+        self.assertNotIn('<details', featured)
+        self.assertNotIn('<details open', remainder)
+        groups = re.findall(r'<details>\n(.*?)\n</details>', remainder, re.S)
+        repos = {p['repo'] for p in self.prs if p['state'] in ('merged', 'open')
+                 and (p['repo'], p['number']) not in HIGHLIGHTS}
+        self.assertEqual(len(groups), len(repos))
+        for group in groups:
+            self.assertIn('<summary><strong>', group)
+            self.assertEqual(group.count('<tr>'), 1)
+
+    def test_highlight_metrics_keep_benchmark_scope(self):
+        block = contribution_section(self.prs)
+        self.assertIn('7.88 → 3.94 GiB in the exact-shape TP2 benchmark', block)
+        self.assertIn('4.4–5.3× faster transfers in a controlled Ray benchmark', block)
+        self.assertNotIn('faster training', block)
+
+    def test_research_and_contributions_precede_widgets(self):
+        readme = render_readme(self.prs)
+        sections = ['## Research', '## Open-source contributions', '## On GitHub', '## Contribution trail']
+        positions = [readme.index(section) for section in sections]
+        self.assertEqual(positions, sorted(positions))
+
+    def test_contact_assets_have_equal_size_and_theme_support(self):
+        import xml.etree.ElementTree as ET
+        from render_contacts import CONTACTS, contact_svg, contact_button
+        self.assertEqual(len(CONTACTS), 6)
+        for key in CONTACTS:
+            self.assertIn('prefers-color-scheme: dark', contact_button(key))
+            for dark in (False, True):
+                source = contact_svg(key, dark)
+                svg = ET.fromstring(source)
+                self.assertEqual((svg.attrib['width'], svg.attrib['height']), ('104', '30'))
+                path = ROOT / f'assets/contacts/{key}-{"dark" if dark else "light"}.svg'
+                self.assertEqual(path.read_text(), source)
+                self.assertNotIn('<script', source)
 
     def test_status_transitions_update_visibility_and_counts(self):
         pr = dict(self.prs[0])
@@ -176,6 +215,8 @@ class ProfileLayoutTest(unittest.TestCase):
             svg = signature_svg(dark)
             self.assertEqual(ET.fromstring(svg).attrib['height'], '52')
             self.assertIn('prefers-reduced-motion', svg)
+            self.assertIn('animation: write 3s linear 1 both', svg)
+            self.assertNotIn('infinite', svg)
             self.assertIn('𝓨𝓾𝓬𝓱𝓮𝓷', svg)
             self.assertNotIn('<script', svg)
 

@@ -3,6 +3,7 @@ from html import escape
 from urllib.parse import quote
 
 from profile_art import PR_DESIGN
+from render_contacts import CONTACTS, contact_button
 from status_badges import status_link
 
 
@@ -86,12 +87,18 @@ PROJECTS = [
 ]
 
 PR_LABELS = {
+    ("vllm-project/vllm", 54699): "Remove full-weight copies during MoE loading; conversion peak 7.88 → 3.94 GiB in the exact-shape TP2 benchmark",
+    ("NVIDIA-NeMo/RL", 3943): "Bypass driver tensor materialization in distillation; 4.4–5.3× faster transfers in a controlled Ray benchmark",
+    ("NVIDIA/Megatron-LM", 5396): "Fuse GDN Q/K normalization to remove an extra backward activation buffer",
+    ("NVIDIA/Megatron-LM", 5463): "Enable selective Mamba mixer recompute to save activation memory without full-layer recomputation",
+    ("flashinfer-ai/flashinfer", 4984): "Restore K/V calibration in FP8 KV prefill, correcting silently mis-scaled attention outputs",
+    ("NousResearch/hermes-agent", 100693): "Resolve local schema references so nested tool arguments reach handlers as objects, not JSON strings",
     ("NVIDIA-NeMo/RL", 4193): "Render evaluation prompts as complete conversations",
     ("NVIDIA-NeMo/RL", 4176): "Unify worker selection through configuration",
     ("sgl-project/sglang", 40103): "Reject developer messages silently dropped by templates",
     ("verl-project/verl", 7906): "Track response truncation across context limits",
     ("huggingface/trl", 7294): "Fix async checkpoint resume after stale rollout drops",
-    ("sgl-project/sglang", 39765): "Fix Mamba cache publication under overlap scheduling",
+    ("sgl-project/sglang", 39765): "Publish Mamba cache updates before dependent batches capture stale KV mappings",
     ("NousResearch/hermes-agent", 113511): "Control partial-stream continuation for batch evaluation",
     ("NousResearch/hermes-agent", 113538): "Clarify API retry budgets and streaming defaults",
     ("modelscope/ms-swift", 9598): "Add order-preserving packing",
@@ -111,12 +118,12 @@ PR_LABELS = {
     ("verl-project/verl", 7597): "Validate actor FSDP strategy",
     ("NVIDIA-NeMo/Gym", 1788): "Make rollout failures recoverable",
     ("NVIDIA-NeMo/Gym", 2726): "Preserve HTTP errors across process boundaries",
-    ("Dao-AILab/flash-attention", 2507): "Stabilize backward JIT keys without CPU–GPU sync",
+    ("Dao-AILab/flash-attention", 2507): "Prevent redundant backward-kernel recompilation with stable cache keys, without CPU–GPU sync",
 }
 
 
 # Curated technical highlights, independent of merge state. The remainder stays
-# visible below, and every PR is rendered exactly once across the two groups.
+# available in repository disclosures, with every PR rendered exactly once.
 HIGHLIGHTS = [
     ("vllm-project/vllm", 54699),
     ("NVIDIA-NeMo/RL", 3943),
@@ -177,10 +184,21 @@ def contribution_section(prs):
     if featured:
         sections.append("### Highlights\n\n" + contribution_table(featured, featured_order))
     if remainder:
-        sections.append("### More contributions\n\n" + contribution_table(
-            sorted(remainder, key=lambda p: {"merged": 0, "open": 1}[p["state"]]),
-            [repo for repo, _, _ in PROJECTS],
-        ))
+        disclosures = []
+        for repo, name, _ in PROJECTS:
+            contributions = sorted(
+                (p for p in remainder if p["repo"] == repo),
+                key=lambda p: {"merged": 0, "open": 1}[p["state"]],
+            )
+            if not contributions:
+                continue
+            count = len(contributions)
+            disclosures.append(
+                f'<details>\n<summary><strong>{escape(name)}</strong> · '
+                f'{count} contribution{"s" if count != 1 else ""}</summary>\n\n'
+                + contribution_table(contributions, [repo]) + '\n\n</details>'
+            )
+        sections.append("### More contributions\n\n" + "\n\n".join(disclosures))
     footer = " ".join([
         button("All contributions ↗", "https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests"),
         button("Engineering notes ↗", "https://yuchenwang3.github.io/projects/open-source-systems/"),
@@ -211,11 +229,11 @@ Agentic post-training & ML systems.<br>
 M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
 
 '''
-    links = [("Website", "https://yuchenwang3.github.io/"), ("CV", "https://yuchenwang3.github.io/CV.pdf"),
-             ("Scholar", "https://scholar.google.com/citations?user=NharhG8AAAAJ"),
-             ("LinkedIn", "https://www.linkedin.com/in/yuchen3"), ("Email", "mailto:yuchenwang0303@gmail.com"),
-             ("WeChat · eangyc", "https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/main/assets/wechat-qr.jpg")]
-    return header + '<p>\n' + "\n".join(button(*link) for link in links) + "\n</p>\n\n" + widget_section() + research_section() + "\n## Open-source contributions\n\n<!-- PR-PREVIEWS:START -->" + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n" + snake_section()
+    contacts = '<p>\n' + "\n".join(contact_button(key) for key in CONTACTS) + "\n</p>\n\n"
+    return (header + contacts + research_section()
+            + "\n## Open-source contributions\n\n<!-- PR-PREVIEWS:START -->"
+            + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n"
+            + "\n## On GitHub\n\n" + widget_section() + snake_section())
 
 
 def widget_section():
