@@ -144,7 +144,7 @@ class ProfileLayoutTest(unittest.TestCase):
     def test_compact_header_and_clickable_widgets(self):
         readme = render_readme(self.prs)
         self.assertNotIn('editorial-header', readme)
-        self.assertIn('### Yuchen (Ean) Wang', readme)
+        self.assertIn('Yuchen (Ean) Wang — handwritten typing signature', readme)
         self.assertIn('img.shields.io/github/followers/yuchenwang3', readme)
         self.assertIn('img.shields.io/github/stars/yuchenwang3', readme)
         for kind in ('activity', 'languages'):
@@ -165,6 +165,19 @@ class ProfileLayoutTest(unittest.TestCase):
         empty = dict(data, languages={}, calendar={'weeks': [], 'totalContributions': 0})
         ET.fromstring(render_widget(empty, 'languages'))
         ET.fromstring(render_widget(empty, 'activity'))
+
+    def test_signature_and_affiliations(self):
+        import xml.etree.ElementTree as ET
+        from render_signature import signature_svg
+        readme = render_readme(self.prs)
+        for org in ('illinois', 'Accio-Lab', 'alibaba'):
+            self.assertIn(f'[@{org}](https://github.com/{org})', readme)
+        for dark in (False, True):
+            svg = signature_svg(dark)
+            self.assertEqual(ET.fromstring(svg).attrib['height'], '52')
+            self.assertIn('prefers-reduced-motion', svg)
+            self.assertIn('𝓨𝓾𝓬𝓱𝓮𝓷', svg)
+            self.assertNotIn('<script', svg)
 
 
 if __name__ == "__main__":

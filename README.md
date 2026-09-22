@@ -1,6 +1,11 @@
-### Yuchen (Ean) Wang
+<a id="yuchen-ean-wang"></a>
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/signature-dark.svg">
+<img width="430" src="./assets/signature-light.svg" alt="Yuchen (Ean) Wang — handwritten typing signature">
+</picture>
 
-Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba Accio.
+Agentic post-training & ML systems.<br>
+M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
 
 <p>
 <a href="https://yuchenwang3.github.io/"><img src="https://img.shields.io/badge/Website-181717?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Website"></a>

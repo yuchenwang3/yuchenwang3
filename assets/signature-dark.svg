@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="52" viewBox="0 0 430 52" role="img" aria-labelledby="title">
+<title id="title">Yuchen (Ean) Wang — handwritten typing signature</title>
+<style>
+.reveal { animation: write 7s linear infinite; }
+@keyframes write { 0% { width:0; } 48%,92%,100% { width:420px; } }
+@media (prefers-reduced-motion: reduce) { .reveal { animation:none; } }
+</style>
+<defs><clipPath id="writing"><rect class="reveal" width="420" height="52"/></clipPath></defs>
+<text x="2" y="36" fill="#a3c6ff" font-family="Georgia,serif" font-size="30" clip-path="url(#writing)">𝓨𝓾𝓬𝓱𝓮𝓷 (𝓔𝓪𝓷) 𝓦𝓪𝓷𝓰</text>
+</svg>
