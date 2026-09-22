@@ -1,8 +1,9 @@
-<a id="yuchen-ean-wang"></a>
+<p><a id="yuchen-ean-wang"></a>
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="./assets/signature-dark.svg">
 <img width="430" src="./assets/signature-light.svg" alt="Yuchen (Ean) Wang — handwritten typing signature">
 </picture>
+</p>
 
 Agentic post-training & ML systems.<br>
 M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
