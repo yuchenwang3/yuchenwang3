@@ -115,28 +115,33 @@ PR_LABELS = {
 }
 
 
-def contribution_section(prs):
-    # Retain the full snapshot for history/refresh, but only show active or
-    # merged work on the profile. Closed-only projects disappear automatically.
-    visible = [p for p in prs if p["state"] in ("merged", "open")]
-    merged_count = sum(p["state"] == "merged" and p.get("role") != "adopted_solution" for p in visible)
-    adopted_count = sum(p["state"] == "merged" and p.get("role") == "adopted_solution" for p in visible)
-    open_count = sum(p["state"] == "open" for p in visible)
-    project_count = len({p["repo"] for p in visible})
-    adopted_summary = f'<strong>{adopted_count} adopted solution{("s" if adopted_count != 1 else "")}</strong> · ' if adopted_count else ""
-    summary = (f'<p><strong>{merged_count} merged</strong> · ' + adopted_summary +
-               f'<strong>{open_count} open</strong> · {project_count} projects</p>')
+# Curated technical highlights, independent of merge state. The remainder stays
+# visible below, and every PR is rendered exactly once across the two groups.
+HIGHLIGHTS = [
+    ("vllm-project/vllm", 54699),
+    ("NVIDIA-NeMo/RL", 3943),
+    ("NVIDIA/Megatron-LM", 5396),
+    ("NVIDIA/Megatron-LM", 5463),
+    ("Dao-AILab/flash-attention", 2507),
+    ("flashinfer-ai/flashinfer", 4984),
+    ("sgl-project/sglang", 39765),
+    ("NousResearch/hermes-agent", 100693),
+]
+
+
+def contribution_table(prs, project_order):
+    projects = {repo: (name, avatar) for repo, name, avatar in PROJECTS}
     rows = []
-    for repo, name, avatar in PROJECTS:
+    for repo in project_order:
+        name, avatar = projects[repo]
         contributions = []
-        for p in sorted(visible, key=lambda p: {"merged": 0, "open": 1}[p["state"]]):
+        for p in prs:
             if p["repo"] != repo:
                 continue
             key = (repo, p["number"])
             label = PR_LABELS.get(key)
             if label is None:
                 label = " ".join(PR_DESIGN[key][4]) if key in PR_DESIGN else p["title"]
-            # One status per PR: never imply an open proposal has merged.
             status = status_link(p)
             credit = ""
             if p.get("role") == "coauthor":
@@ -150,11 +155,37 @@ def contribution_section(prs):
 <td width="28%" valign="top"><a href="https://github.com/{repo}"><img src="https://avatars.githubusercontent.com/u/{avatar}?s=64&amp;v=4" width="30" height="30" alt="{repo.split('/')[0]} organization avatar"><br><strong>{name}</strong></a></td>
 <td width="72%">{"".join(contributions)}</td>
 </tr>''')
+    return "<table>\n" + "\n".join(rows) + "\n</table>" if rows else ""
+
+
+def contribution_section(prs):
+    # Retain the full snapshot for history/refresh, but only show active or
+    # merged work on the profile. Closed-only projects disappear automatically.
+    visible = [p for p in prs if p["state"] in ("merged", "open")]
+    merged_count = sum(p["state"] == "merged" and p.get("role") != "adopted_solution" for p in visible)
+    adopted_count = sum(p["state"] == "merged" and p.get("role") == "adopted_solution" for p in visible)
+    open_count = sum(p["state"] == "open" for p in visible)
+    project_count = len({p["repo"] for p in visible})
+    adopted_summary = f'<strong>{adopted_count} adopted solution{("s" if adopted_count != 1 else "")}</strong> · ' if adopted_count else ""
+    summary = (f'<p><strong>{merged_count} merged</strong> · ' + adopted_summary +
+               f'<strong>{open_count} open</strong> · {project_count} projects</p>')
+    by_key = {(p["repo"], p["number"]): p for p in visible}
+    featured = [by_key[key] for key in HIGHLIGHTS if key in by_key]
+    remainder = [p for p in visible if (p["repo"], p["number"]) not in HIGHLIGHTS]
+    featured_order = list(dict.fromkeys(p["repo"] for p in featured))
+    sections = []
+    if featured:
+        sections.append("### Highlights\n\n" + contribution_table(featured, featured_order))
+    if remainder:
+        sections.append("### More contributions\n\n" + contribution_table(
+            sorted(remainder, key=lambda p: {"merged": 0, "open": 1}[p["state"]]),
+            [repo for repo, _, _ in PROJECTS],
+        ))
     footer = " ".join([
         button("All contributions ↗", "https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests"),
         button("Engineering notes ↗", "https://yuchenwang3.github.io/projects/open-source-systems/"),
     ])
-    return "\n\n" + summary + "\n\n<table>\n" + "\n".join(rows) + "\n</table>\n\n" + footer + "\n\n"
+    return "\n\n" + summary + "\n\n" + "\n\n".join(sections) + "\n\n" + footer + "\n\n"
 
 
 def snake_section():

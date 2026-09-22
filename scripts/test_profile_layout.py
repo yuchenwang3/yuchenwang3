@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 import unittest
 
-from profile_layout import contribution_section, render_readme, PROJECTS
+from profile_layout import contribution_section, render_readme, PROJECTS, HIGHLIGHTS
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -30,11 +30,32 @@ class ProfileLayoutTest(unittest.TestCase):
             self.assertEqual(block.count(f'href="{p["url"]}"'), 1)
             self.assertIn(f'#{p["number"]} · {p["state"]}', block)
 
-    def test_one_row_per_project(self):
+    def test_one_row_per_project_in_each_group(self):
         block = contribution_section(self.prs)
-        visible_projects = {p["repo"] for p in self.prs if p["state"] in ("open", "merged")}
-        self.assertEqual(block.count("<tr>"), len(visible_projects))
+        visible = [p for p in self.prs if p["state"] in ("open", "merged")]
+        for heading, is_featured in [("Highlights", True), ("More contributions", False)]:
+            group = block.split(f"### {heading}\n", 1)[1].split("</table>", 1)[0]
+            projects = {p["repo"] for p in visible
+                        if ((p["repo"], p["number"]) in HIGHLIGHTS) == is_featured}
+            self.assertEqual(group.count("<tr>"), len(projects))
         self.assertEqual(len(PROJECTS), len({p[0] for p in PROJECTS}))
+
+    def test_highlights_are_first_without_duplicates(self):
+        block = contribution_section(self.prs)
+        featured, remainder = block.split("### More contributions", 1)
+        positions = []
+        for repo, number in HIGHLIGHTS:
+            url = f'https://github.com/{repo}/pull/{number}'
+            positions.append(featured.index(f'href="{url}"'))
+            self.assertNotIn(f'href="{url}"', remainder)
+        self.assertEqual(positions, sorted(positions))
+        self.assertEqual(len(HIGHLIGHTS), len(set(HIGHLIGHTS)))
+
+    def test_closed_highlight_is_not_displayed(self):
+        pr = next(p for p in self.prs if (p['repo'], p['number']) == HIGHLIGHTS[0])
+        block = contribution_section([dict(pr, state='closed')])
+        self.assertNotIn('### Highlights', block)
+        self.assertNotIn(pr['url'], block)
 
     def test_full_upstream_inventory(self):
         from refresh_pr_cards import SELECTED
