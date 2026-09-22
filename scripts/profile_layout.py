@@ -3,6 +3,7 @@ from html import escape
 from urllib.parse import quote
 
 from profile_art import PR_DESIGN
+from status_badges import status_link
 
 
 def button(label, url, color="30363D"):
@@ -81,9 +82,15 @@ PROJECTS = [
     ("sgl-project/sglang", "SGLang", 147780389),
     ("verl-project/verl", "verl", 212961691),
     ("NousResearch/hermes-agent", "Hermes Agent", 134168893),
+    ("huggingface/trl", "TRL", 25720743),
 ]
 
 PR_LABELS = {
+    ("NVIDIA-NeMo/RL", 4193): "Render evaluation prompts as complete conversations",
+    ("NVIDIA-NeMo/RL", 4176): "Unify worker selection through configuration",
+    ("sgl-project/sglang", 40103): "Reject developer messages silently dropped by templates",
+    ("verl-project/verl", 7906): "Track response truncation across context limits",
+    ("huggingface/trl", 7294): "Fix async checkpoint resume after stale rollout drops",
     ("sgl-project/sglang", 39765): "Fix Mamba cache publication under overlap scheduling",
     ("NousResearch/hermes-agent", 113511): "Control partial-stream continuation for batch evaluation",
     ("NousResearch/hermes-agent", 113538): "Clarify API retry budgets and streaming defaults",
@@ -130,8 +137,7 @@ def contribution_section(prs):
             if label is None:
                 label = " ".join(PR_DESIGN[key][4]) if key in PR_DESIGN else p["title"]
             # One status per PR: never imply an open proposal has merged.
-            color = {"merged": "8250df", "open": "1a7f37"}[p["state"]]
-            status = button(f'#{p["number"]} · {p["state"]}', p["url"], color)
+            status = status_link(p)
             credit = ""
             if p.get("role") == "coauthor":
                 credit = "<br><sub>Co-author</sub>"
@@ -151,6 +157,17 @@ def contribution_section(prs):
     return "\n\n" + summary + "\n\n<table>\n" + "\n".join(rows) + "\n</table>\n\n" + footer + "\n\n"
 
 
+def snake_section():
+    base = "https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/"
+    return f'''\n## Contribution trail
+
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="{base}github-snake-dark.svg">
+<img width="100%" src="{base}github-snake.svg" alt="Snake animation of my GitHub contribution history">
+</picture>
+'''
+
+
 def render_readme(prs):
     header = '''<picture>
 <source media="(prefers-color-scheme: dark)" srcset="./assets/editorial-header-dark.svg">
@@ -164,4 +181,4 @@ M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
              ("Scholar", "https://scholar.google.com/citations?user=NharhG8AAAAJ"),
              ("LinkedIn", "https://www.linkedin.com/in/yuchen3"), ("Email", "mailto:yuchenwang0303@gmail.com"),
              ("WeChat · eangyc", "https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/main/assets/wechat-qr.jpg")]
-    return header + '<p align="center">\n' + "\n".join(button(*link) for link in links) + "\n</p>\n\n" + research_section() + "\n## Open-source contributions\n\n<!-- PR-PREVIEWS:START -->" + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n"
+    return header + '<p align="center">\n' + "\n".join(button(*link) for link in links) + "\n</p>\n\n" + research_section() + "\n## Open-source contributions\n\n<!-- PR-PREVIEWS:START -->" + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n" + snake_section()

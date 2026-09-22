@@ -38,8 +38,8 @@ class ProfileLayoutTest(unittest.TestCase):
 
     def test_full_upstream_inventory(self):
         from refresh_pr_cards import SELECTED
-        self.assertEqual(len(SELECTED), 29)
-        self.assertEqual(len(PROJECTS), 12)
+        self.assertEqual(len(SELECTED), 34)
+        self.assertEqual(len(PROJECTS), 13)
         self.assertEqual(set(SELECTED), {(p["repo"], p["number"]) for p in self.prs})
         self.assertEqual(len(SELECTED), len(set(SELECTED)))
         block = contribution_section(self.prs)
@@ -85,9 +85,30 @@ class ProfileLayoutTest(unittest.TestCase):
         self.assertIn('badge/Paper-B31B1B?style=for-the-badge', readme)
         self.assertIn('CineFlow: figure from the paper', readme)
 
+    def test_status_badges_are_theme_aware_and_valid(self):
+        import xml.etree.ElementTree as ET
+        from status_badges import render_status, status_link
+        for state in ('open', 'merged'):
+            pr = dict(self.prs[0], state=state)
+            self.assertIn('prefers-color-scheme: dark', status_link(pr))
+            for dark in (False, True):
+                svg = ET.fromstring(render_status(pr, dark))
+                self.assertEqual(svg.attrib['height'], '26')
+                self.assertIn(state, svg.attrib['aria-label'])
+        with self.assertRaises(ValueError):
+            render_status(dict(self.prs[0], state='closed'))
+
+    def test_snake_uses_existing_daily_output(self):
+        readme = render_readme(self.prs)
+        self.assertIn('/output/github-snake.svg', readme)
+        self.assertIn('/output/github-snake-dark.svg', readme)
+        self.assertEqual(readme.count('## Contribution trail'), 1)
+
     def test_latest_contributions_are_tracked(self):
         keys = {(p["repo"], p["number"]) for p in self.prs}
-        for key in [("sgl-project/sglang", 39765),
+        for key in [("NVIDIA-NeMo/RL", 4193), ("NVIDIA-NeMo/RL", 4176),
+                    ("sgl-project/sglang", 40103), ("verl-project/verl", 7906),
+                    ("huggingface/trl", 7294), ("sgl-project/sglang", 39765),
                     ("NousResearch/hermes-agent", 113511),
                     ("NousResearch/hermes-agent", 113538)]:
             self.assertIn(key, keys)

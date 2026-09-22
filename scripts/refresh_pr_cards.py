@@ -6,9 +6,15 @@ import pathlib
 import subprocess
 from profile_art import render_pr, PR_DESIGN
 from profile_layout import contribution_section
+from status_badges import badge_stem, render_status
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SELECTED = [
+    ("NVIDIA-NeMo/RL", 4193),
+    ("NVIDIA-NeMo/RL", 4176),
+    ("sgl-project/sglang", 40103),
+    ("verl-project/verl", 7906),
+    ("huggingface/trl", 7294),
     ("flashinfer-ai/flashinfer", 4984),
     ("vllm-project/vllm", 54699),
     ("sgl-project/sglang", 39765),
@@ -94,6 +100,14 @@ def main():
     target.mkdir(parents=True, exist_ok=True)
     snapshot = dict(updated=datetime.date.today().isoformat(), pull_requests=prs)
     (target / "snapshot.json").write_text(json.dumps(snapshot, indent=2)+"\n")
+    badges = target / 'status'
+    badges.mkdir(exist_ok=True)
+    for p in prs:
+        if p['state'] not in ('open', 'merged'):
+            continue
+        for dark in (False, True):
+            path = badges / f"{badge_stem(p)}-{'dark' if dark else 'light'}.svg"
+            path.write_text(render_status(p, dark))
     for p in prs:
         if (p["repo"], p["number"]) not in PR_DESIGN:
             continue
