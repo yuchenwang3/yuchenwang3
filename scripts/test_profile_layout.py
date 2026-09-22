@@ -106,6 +106,17 @@ class ProfileLayoutTest(unittest.TestCase):
                 self.assertEqual(path.read_text(), source)
                 self.assertNotIn('<script', source)
 
+    def test_visible_contact_buttons_keep_original_brand_styles(self):
+        from profile_layout import button
+        from render_contacts import CONTACTS
+        readme = render_readme(self.prs)
+        for label, url in CONTACTS.values():
+            self.assertIn(button(label, url), readme)
+        self.assertIn('badge/Email-D14836?style=for-the-badge', readme)
+        self.assertIn('badge/LinkedIn-0A66C2?style=for-the-badge', readme)
+        self.assertIn('badge/WeChat%20%C2%B7%20eangyc-07C160?style=for-the-badge', readme)
+        self.assertNotIn('./assets/contacts/', readme)
+
     def test_status_transitions_update_visibility_and_counts(self):
         pr = dict(self.prs[0])
         pr["state"] = "open"

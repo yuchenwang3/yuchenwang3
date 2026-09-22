@@ -3,7 +3,7 @@ from html import escape
 from urllib.parse import quote
 
 from profile_art import PR_DESIGN
-from render_contacts import CONTACTS, contact_button
+from render_contacts import CONTACTS
 from status_badges import status_link
 
 
@@ -229,7 +229,7 @@ Agentic post-training & ML systems.<br>
 M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
 
 '''
-    contacts = '<p>\n' + "\n".join(contact_button(key) for key in CONTACTS) + "\n</p>\n\n"
+    contacts = '<p>\n' + "\n".join(button(label, url) for label, url in CONTACTS.values()) + "\n</p>\n\n"
     return (header + contacts + research_section()
             + "\n## Open-source contributions\n\n<!-- PR-PREVIEWS:START -->"
             + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n"

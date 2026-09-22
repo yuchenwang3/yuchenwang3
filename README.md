@@ -9,12 +9,12 @@ Agentic post-training & ML systems.<br>
 M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
 
 <p>
-<a href="https://yuchenwang3.github.io/" title="Website"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contacts/website-dark.svg"><img width="104" height="30" src="./assets/contacts/website-light.svg" alt="Website"></picture></a>
-<a href="https://yuchenwang3.github.io/CV.pdf" title="CV"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contacts/cv-dark.svg"><img width="104" height="30" src="./assets/contacts/cv-light.svg" alt="CV"></picture></a>
-<a href="https://scholar.google.com/citations?user=NharhG8AAAAJ" title="Scholar"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contacts/scholar-dark.svg"><img width="104" height="30" src="./assets/contacts/scholar-light.svg" alt="Scholar"></picture></a>
-<a href="https://www.linkedin.com/in/yuchen3" title="LinkedIn"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contacts/linkedin-dark.svg"><img width="104" height="30" src="./assets/contacts/linkedin-light.svg" alt="LinkedIn"></picture></a>
-<a href="mailto:yuchenwang0303@gmail.com" title="Email"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contacts/email-dark.svg"><img width="104" height="30" src="./assets/contacts/email-light.svg" alt="Email"></picture></a>
-<a href="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/main/assets/wechat-qr.jpg" title="WeChat · eangyc"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contacts/wechat-dark.svg"><img width="104" height="30" src="./assets/contacts/wechat-light.svg" alt="WeChat · eangyc"></picture></a>
+<a href="https://yuchenwang3.github.io/"><img src="https://img.shields.io/badge/Website-181717?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Website"></a>
+<a href="https://yuchenwang3.github.io/CV.pdf"><img src="https://img.shields.io/badge/CV-455A64?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=white" alt="CV"></a>
+<a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Scholar-4285F4?style=for-the-badge&amp;logo=googlescholar&amp;logoColor=white" alt="Scholar"></a>
+<a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
+<a href="mailto:yuchenwang0303@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email"></a>
+<a href="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/main/assets/wechat-qr.jpg"><img src="https://img.shields.io/badge/WeChat%20%C2%B7%20eangyc-07C160?style=for-the-badge&amp;logo=wechat&amp;logoColor=white" alt="WeChat · eangyc"></a>
 </p>
 
 ## Research
