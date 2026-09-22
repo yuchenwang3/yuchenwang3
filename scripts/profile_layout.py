@@ -200,16 +200,32 @@ def snake_section():
 
 
 def render_readme(prs):
-    header = '''<picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/editorial-header-dark.svg">
-<img width="100%" src="./assets/editorial-header-light.svg" alt="Yuchen (Ean) Wang — agentic post-training and ML systems">
-</picture>
+    header = '''### Yuchen (Ean) Wang
 
-M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
+Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba Accio.
 
 '''
     links = [("Website", "https://yuchenwang3.github.io/"), ("CV", "https://yuchenwang3.github.io/CV.pdf"),
              ("Scholar", "https://scholar.google.com/citations?user=NharhG8AAAAJ"),
              ("LinkedIn", "https://www.linkedin.com/in/yuchen3"), ("Email", "mailto:yuchenwang0303@gmail.com"),
              ("WeChat · eangyc", "https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/main/assets/wechat-qr.jpg")]
-    return header + '<p align="center">\n' + "\n".join(button(*link) for link in links) + "\n</p>\n\n" + research_section() + "\n## Open-source contributions\n\n<!-- PR-PREVIEWS:START -->" + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n" + snake_section()
+    return header + '<p>\n' + "\n".join(button(*link) for link in links) + "\n</p>\n\n" + widget_section() + research_section() + "\n## Open-source contributions\n\n<!-- PR-PREVIEWS:START -->" + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n" + snake_section()
+
+
+def widget_section():
+    badges = '''<p>
+<a href="https://github.com/yuchenwang3?tab=followers"><img src="https://img.shields.io/github/followers/yuchenwang3?label=Follow&amp;style=social" alt="Follow on GitHub"></a>
+<a href="https://github.com/yuchenwang3?tab=repositories&amp;sort=stargazers"><img src="https://img.shields.io/github/stars/yuchenwang3?label=Stars&amp;style=social" alt="Stars on my repositories"></a>
+<a href="https://github.com/search?q=author%3Ayuchenwang3+is%3Apr+is%3Aopen&amp;type=pullrequests"><img src="https://img.shields.io/badge/PRs-in_flight-426dab?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Explore my open pull requests"></a>
+</p>
+'''
+    widgets = []
+    for kind, label, target in [
+        ("activity", "GitHub contribution rhythm over 26 weeks", "https://github.com/yuchenwang3?tab=overview"),
+        ("languages", "Primary languages of my public non-fork repositories", "https://github.com/yuchenwang3?tab=repositories"),
+    ]:
+        widgets.append(f'''<a href="{target}"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/widgets/{kind}-dark.svg">
+<img width="390" src="./assets/widgets/{kind}-light.svg" alt="{label}">
+</picture></a>''')
+    return badges + '\n<p>\n' + '\n'.join(widgets) + '\n</p>\n\n'

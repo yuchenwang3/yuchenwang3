@@ -141,6 +141,31 @@ class ProfileLayoutTest(unittest.TestCase):
         updated = before + "<!-- PR-PREVIEWS:START -->" + contribution_section(self.prs) + "<!-- PR-PREVIEWS:END -->" + after
         self.assertEqual(updated, readme)
 
+    def test_compact_header_and_clickable_widgets(self):
+        readme = render_readme(self.prs)
+        self.assertNotIn('editorial-header', readme)
+        self.assertIn('### Yuchen (Ean) Wang', readme)
+        self.assertIn('img.shields.io/github/followers/yuchenwang3', readme)
+        self.assertIn('img.shields.io/github/stars/yuchenwang3', readme)
+        for kind in ('activity', 'languages'):
+            for theme in ('light', 'dark'):
+                self.assertIn(f'./assets/widgets/{kind}-{theme}.svg', readme)
+
+    def test_widgets_are_valid_and_honest_about_language_scope(self):
+        import xml.etree.ElementTree as ET
+        from profile_widgets import render_widget
+        data = json.loads((ROOT / 'assets/widgets/snapshot.json').read_text())
+        for kind in ('activity', 'languages'):
+            for dark in (False, True):
+                source = render_widget(data, kind, dark)
+                svg = ET.fromstring(source)
+                self.assertEqual(svg.attrib['height'], '154')
+                self.assertNotIn('<script', source)
+                self.assertIn('not proficiency', source)
+        empty = dict(data, languages={}, calendar={'weeks': [], 'totalContributions': 0})
+        ET.fromstring(render_widget(empty, 'languages'))
+        ET.fromstring(render_widget(empty, 'activity'))
+
 
 if __name__ == "__main__":
     unittest.main()

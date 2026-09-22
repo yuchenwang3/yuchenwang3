@@ -1,17 +1,31 @@
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/editorial-header-dark.svg">
-<img width="100%" src="./assets/editorial-header-light.svg" alt="Yuchen (Ean) Wang — agentic post-training and ML systems">
-</picture>
+### Yuchen (Ean) Wang
 
-M.S. CS @ UIUC · Research intern @ Alibaba Accio · PKU Zhi Class.
+Agentic post-training & ML systems. M.S. CS @ UIUC · Research intern @ Alibaba Accio.
 
-<p align="center">
+<p>
 <a href="https://yuchenwang3.github.io/"><img src="https://img.shields.io/badge/Website-181717?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Website"></a>
 <a href="https://yuchenwang3.github.io/CV.pdf"><img src="https://img.shields.io/badge/CV-455A64?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=white" alt="CV"></a>
 <a href="https://scholar.google.com/citations?user=NharhG8AAAAJ"><img src="https://img.shields.io/badge/Scholar-4285F4?style=for-the-badge&amp;logo=googlescholar&amp;logoColor=white" alt="Scholar"></a>
 <a href="https://www.linkedin.com/in/yuchen3"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
 <a href="mailto:yuchenwang0303@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="Email"></a>
 <a href="https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/main/assets/wechat-qr.jpg"><img src="https://img.shields.io/badge/WeChat%20%C2%B7%20eangyc-07C160?style=for-the-badge&amp;logo=wechat&amp;logoColor=white" alt="WeChat · eangyc"></a>
+</p>
+
+<p>
+<a href="https://github.com/yuchenwang3?tab=followers"><img src="https://img.shields.io/github/followers/yuchenwang3?label=Follow&amp;style=social" alt="Follow on GitHub"></a>
+<a href="https://github.com/yuchenwang3?tab=repositories&amp;sort=stargazers"><img src="https://img.shields.io/github/stars/yuchenwang3?label=Stars&amp;style=social" alt="Stars on my repositories"></a>
+<a href="https://github.com/search?q=author%3Ayuchenwang3+is%3Apr+is%3Aopen&amp;type=pullrequests"><img src="https://img.shields.io/badge/PRs-in_flight-426dab?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Explore my open pull requests"></a>
+</p>
+
+<p>
+<a href="https://github.com/yuchenwang3?tab=overview"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/widgets/activity-dark.svg">
+<img width="390" src="./assets/widgets/activity-light.svg" alt="GitHub contribution rhythm over 26 weeks">
+</picture></a>
+<a href="https://github.com/yuchenwang3?tab=repositories"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/widgets/languages-dark.svg">
+<img width="390" src="./assets/widgets/languages-light.svg" alt="Primary languages of my public non-fork repositories">
+</picture></a>
 </p>
 
 ## Research
