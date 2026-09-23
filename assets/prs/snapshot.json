@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "pull_requests": [
     {
       "repo": "NVIDIA-NeMo/RL",
@@ -20,11 +20,11 @@
       "number": 4176,
       "title": "refactor(workers)!: unify worker class selection through config",
       "url": "https://github.com/NVIDIA-NeMo/RL/pull/4176",
-      "additions": 507,
+      "additions": 540,
       "deletions": 92,
       "files": 18,
-      "updated": "2026-09-22T00:27:17Z",
-      "head": "fe6d468e6f372be4665e352f63f2cdfbe62c543c",
+      "updated": "2026-09-22T18:14:37Z",
+      "head": "ea794c201418c35d848d5a245d14adeed6e4d4d2",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -121,8 +121,8 @@
       "additions": 175,
       "deletions": 14,
       "files": 6,
-      "updated": "2026-09-16T22:12:22Z",
-      "head": "53d3b1bf6c9fc203695cfa187b22acfa995bd97c",
+      "updated": "2026-09-22T18:14:23Z",
+      "head": "ce38a7680e34711a45831071008396882dbb7292",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -135,8 +135,8 @@
       "additions": 14,
       "deletions": 12,
       "files": 4,
-      "updated": "2026-09-16T23:30:53Z",
-      "head": "f3d8c5da8d5d26978072515dbc12dbc7f08f36a9",
+      "updated": "2026-09-22T18:14:14Z",
+      "head": "640c18becf6c1c6c2e999d47502c90b44ac938ab",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -342,11 +342,11 @@
       "number": 5431,
       "title": "fix(optimizer): isolate GDN in_proj from global grad-norm clip",
       "url": "https://github.com/NVIDIA/Megatron-LM/pull/5431",
-      "additions": 90,
+      "additions": 91,
       "deletions": 1,
       "files": 5,
-      "updated": "2026-09-18T08:41:06Z",
-      "head": "ceee3a95741d12873c3540433c18bb9d86715b6a",
+      "updated": "2026-09-22T20:25:10Z",
+      "head": "2f9217e3a4fdc0913af88f9f184bce8c0cdb6c26",
       "role": "author",
       "credit_url": null,
       "state": "open"
