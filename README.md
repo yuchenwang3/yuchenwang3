@@ -214,7 +214,6 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 <a href="https://github.com/yuchenwang3?tab=repositories&amp;sort=stargazers"><img src="https://img.shields.io/github/stars/yuchenwang3?label=Stars&amp;style=social" alt="Stars on my repositories"></a>
 <a href="https://github.com/search?q=author%3Ayuchenwang3+is%3Apr+is%3Aopen&amp;type=pullrequests"><img src="https://img.shields.io/badge/PRs-in_flight-426dab?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Explore my open pull requests"></a>
 <img src="https://komarev.com/ghpvc/?username=yuchenwang3&amp;base=953&amp;style=flat-square&amp;color=0A66C2" alt="Profile views">
-<a href="https://gitviewsmap.onrender.com/yuchenwang3"><img src="https://img.shields.io/badge/Visitor%20map-open-6C5CE7?style=flat-square&amp;logo=googlemaps&amp;logoColor=white" alt="Open visitor map"></a>
 </p>
 
 <p>
