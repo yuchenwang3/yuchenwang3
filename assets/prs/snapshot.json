@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "pull_requests": [
     {
       "repo": "NVIDIA-NeMo/RL",
@@ -20,11 +20,11 @@
       "number": 4176,
       "title": "refactor(workers)!: unify worker class selection through config",
       "url": "https://github.com/NVIDIA-NeMo/RL/pull/4176",
-      "additions": 540,
+      "additions": 535,
       "deletions": 92,
       "files": 18,
-      "updated": "2026-09-22T18:14:37Z",
-      "head": "ea794c201418c35d848d5a245d14adeed6e4d4d2",
+      "updated": "2026-09-24T14:55:46Z",
+      "head": "82b433e971b36e4c8adc49457ea799adbf09c54d",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -191,7 +191,7 @@
       "additions": 215,
       "deletions": 15,
       "files": 7,
-      "updated": "2026-09-22T00:26:54Z",
+      "updated": "2026-09-24T00:33:37Z",
       "head": "192d5d36464927714223d95d6b603f48d1560a31",
       "role": "author",
       "credit_url": null,
@@ -359,7 +359,7 @@
       "additions": 522,
       "deletions": 37,
       "files": 5,
-      "updated": "2026-09-22T00:26:53Z",
+      "updated": "2026-09-24T00:33:36Z",
       "head": "1add0b2151507c5603a316b2e84a617e7ca16961",
       "role": "author",
       "credit_url": null,
