@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "pull_requests": [
     {
       "repo": "NVIDIA-NeMo/RL",
@@ -37,8 +37,8 @@
       "additions": 166,
       "deletions": 0,
       "files": 2,
-      "updated": "2026-09-21T23:44:56Z",
-      "head": "03e9a1bfd2953741c00ffa3a83bfe7d3b8aa6e95",
+      "updated": "2026-10-03T23:07:19Z",
+      "head": "b49304c3c9f4a846246a376fae9a28a7478af842",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -51,7 +51,7 @@
       "additions": 412,
       "deletions": 17,
       "files": 16,
-      "updated": "2026-09-29T21:43:34Z",
+      "updated": "2026-10-03T21:51:05Z",
       "head": "2b5536028b6a17aa9d2ce5adf893093629f58b51",
       "role": "author",
       "credit_url": null,
@@ -107,8 +107,8 @@
       "additions": 247,
       "deletions": 5,
       "files": 2,
-      "updated": "2026-09-21T23:44:38Z",
-      "head": "f273a50b44db1be65bb337dd81e2cddee1db3f10",
+      "updated": "2026-10-03T23:07:13Z",
+      "head": "0b8607ec03cb10d6fb0afee433d1a879667ecb90",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -401,8 +401,8 @@
       "additions": 105,
       "deletions": 0,
       "files": 3,
-      "updated": "2026-09-16T07:26:32Z",
-      "head": "9eed62cf8a1271ae45ef324a2f5e6cf634b03302",
+      "updated": "2026-10-03T23:07:06Z",
+      "head": "0cff9347bd8030e29e058c236953436763ab88ab",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -410,13 +410,13 @@
     {
       "repo": "sgl-project/sglang",
       "number": 31621,
-      "title": "fix(weight-checker): skip _skip_weight_check tensors in _reset_tensors",
+      "title": "[Test] Cover tensors excluded from WeightChecker reset",
       "url": "https://github.com/sgl-project/sglang/pull/31621",
-      "additions": 11,
+      "additions": 9,
       "deletions": 0,
-      "files": 2,
-      "updated": "2026-09-22T17:55:16Z",
-      "head": "cad0e99dc560b33289406a114809b4a02ff8158e",
+      "files": 1,
+      "updated": "2026-10-03T23:26:02Z",
+      "head": "a3f146f34c02d5c75cbd3994ad5275a3b84137dd",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -429,7 +429,7 @@
       "additions": 133,
       "deletions": 10,
       "files": 5,
-      "updated": "2026-09-21T11:34:56Z",
+      "updated": "2026-10-03T21:49:12Z",
       "head": "96ad10eb7d52b3775edf925a4fe057fdfd4259bf",
       "role": "author",
       "credit_url": null,
