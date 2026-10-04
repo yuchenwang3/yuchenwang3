@@ -207,6 +207,10 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 
 <!-- PR-PREVIEWS:END -->
 
+## Academic service
+
+Reviewer, [WSDM 2027](https://www.wsdm-conference.org/2027/).
+
 ## On GitHub
 
 <p>
