@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-06",
   "pull_requests": [
     {
       "repo": "NVIDIA-NeMo/RL",
@@ -202,11 +202,11 @@
       "number": 5463,
       "title": "feat(recompute): add mamba to recompute_modules",
       "url": "https://github.com/NVIDIA/Megatron-LM/pull/5463",
-      "additions": 348,
+      "additions": 353,
       "deletions": 15,
       "files": 3,
-      "updated": "2026-10-05T21:17:29Z",
-      "head": "2f9dc4dbce999f3e43d1e75a7dd8aec5ec0ae6da",
+      "updated": "2026-10-06T19:12:01Z",
+      "head": "414aed8904680760ba20d594f11add499da5ba90",
       "role": "author",
       "credit_url": null,
       "state": "open"
