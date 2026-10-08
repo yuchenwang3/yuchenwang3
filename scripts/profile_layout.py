@@ -35,7 +35,7 @@ def research_section():
         ("Occamy-1.0", "occamy-mark", "svg",
          "https://accio-lab.github.io/occamy/",
          "35B-A3B agent model for long-horizon tool use.",
-         "Execution-grounded data · Agentic post-training",
+         "RL post-training · Training infrastructure",
          [("Report", "https://arxiv.org/abs/2609.11977"),
           ("Demo", "https://accio-lab.github.io/occamy/"),
           ("Model", "https://huggingface.co/Accio-Lab/Occamy-1.0"),
@@ -64,13 +64,18 @@ def research_section():
 <p>{summary}<br><sub>{detail}</sub></p>
 <p>{" ".join(button(label, target) for label, target in links)}</p></td>
 </tr>''')
-    return "## Research\n\n<table>\n" + "\n".join(rows) + "\n</table>\n\n" + " ".join([
+    raredx = '<a href="https://arxiv.org/abs/2609.35549"><img src="https://img.shields.io/badge/RareDx%20%C2%B7%20under%20review-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="RareDx: graph-grounded RL preprint under review"></a>'
+    return "## Research\n\n<table>\n" + "\n".join(rows) + "\n</table>\n\n" + " ".join([raredx,
         button("CUDA Attention", "https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf"),
         button("RL for Legal Reasoning", "https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf"),
     ]) + "\n"
 
 
 PROJECTS = [
+    ("huggingface/datasets", "HF Datasets", 25720743),
+    ("modelscope/mcore-bridge", "mcore-bridge", 109945100),
+    ("NVIDIA-NeMo/Megatron-Bridge", "Megatron Bridge", 213689629),
+    ("THUDM/slime", "slime", 48590610),
     ("modelscope/ms-swift", "ms-swift", 109945100),
     ("flashinfer-ai/flashinfer", "FlashInfer", 145061914),
     ("vllm-project/vime", "vime", 136984999),
@@ -87,6 +92,16 @@ PROJECTS = [
 ]
 
 PR_LABELS = {
+    ("huggingface/datasets", 8670): "Preserve source shards during streaming shuffle so four workers can share 19 shards",
+    ("modelscope/mcore-bridge", 211): "Score packed QSA within each document; 2.70× faster in an 8K synthetic selector benchmark",
+    ("modelscope/mcore-bridge", 212): "Preserve low-precision rounding in gated residual mixing",
+    ("modelscope/mcore-bridge", 213): "Bound PLE backward's extra workspace through chunked token reductions",
+    ("NVIDIA-NeMo/Megatron-Bridge", 6315): "Add Bridge-local Qwen4-Exp text-decoder support; GPU integration is pending",
+    ("NVIDIA-NeMo/Megatron-Bridge", 6312): "Make HF/Megatron comparison failures return a nonzero exit status",
+    ("NVIDIA/Megatron-LM", 7864): "Preserve native Adam step counters across checkpoint restoration",
+    ("NVIDIA/Megatron-LM", 7881): "Reuse packed chunkwise CP metadata across GDN and KDA layers",
+    ("vllm-project/vllm", 58219): "Clarify Qwen3 parser boundary tokens in custom grammars",
+    ("THUDM/slime", 2412): "Score fan-out rollout samples as a flat group",
     ("vllm-project/vllm", 54699): "Remove full-weight copies during MoE loading; conversion peak 7.88 → 3.94 GiB in the exact-shape TP2 benchmark",
     ("NVIDIA-NeMo/RL", 3943): "Bypass driver tensor materialization in distillation; 4.4–5.3× faster transfers in a controlled Ray benchmark",
     ("NVIDIA/Megatron-LM", 5396): "Fuse GDN Q/K normalization to remove an extra backward activation buffer",
@@ -125,6 +140,8 @@ PR_LABELS = {
 # Curated technical highlights, independent of merge state. The remainder stays
 # available in repository disclosures, with every PR rendered exactly once.
 HIGHLIGHTS = [
+    ("huggingface/datasets", 8670),
+    ("modelscope/mcore-bridge", 211),
     ("vllm-project/vllm", 54699),
     ("NVIDIA-NeMo/RL", 3943),
     ("NVIDIA/Megatron-LM", 5396),
@@ -233,6 +250,7 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
     return (header + contacts + research_section()
             + "\n## Open-source contributions\n\n<!-- PR-PREVIEWS:START -->"
             + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n"
+            + "\n## Academic service\n\nReviewer, [WSDM 2027](https://www.wsdm-conference.org/2027/).\n"
             + "\n## On GitHub\n\n" + widget_section() + snake_section())
 
 
@@ -241,6 +259,7 @@ def widget_section():
 <a href="https://github.com/yuchenwang3?tab=followers"><img src="https://img.shields.io/github/followers/yuchenwang3?label=Follow&amp;style=social" alt="Follow on GitHub"></a>
 <a href="https://github.com/yuchenwang3?tab=repositories&amp;sort=stargazers"><img src="https://img.shields.io/github/stars/yuchenwang3?label=Stars&amp;style=social" alt="Stars on my repositories"></a>
 <a href="https://github.com/search?q=author%3Ayuchenwang3+is%3Apr+is%3Aopen&amp;type=pullrequests"><img src="https://img.shields.io/badge/PRs-in_flight-426dab?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Explore my open pull requests"></a>
+<img src="https://komarev.com/ghpvc/?username=yuchenwang3&amp;base=953&amp;style=flat-square&amp;color=0A66C2" alt="Profile views">
 </p>
 '''
     widgets = []

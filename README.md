@@ -30,7 +30,7 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 <td width="32%" align="center"><a href="https://yuchenwang3.github.io/projects/cineflow/"><img width="100%" src="./assets/research/cineflow-system.png" alt="CineFlow: figure from the paper"></a></td>
 <td width="68%"><h3><a href="https://yuchenwang3.github.io/projects/cineflow/">CineFlow</a></h3>
 <p>Dependency-driven parallel video generation.<br><sub>1.7–5.5× end-to-end speedup in the reported evaluation</sub></p>
-<p><a href="https://yuchenwang3.github.io/projects/cineflow/"><img src="https://img.shields.io/badge/Project-087F5B?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Project"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf"><img src="https://img.shields.io/badge/Manuscript-455A64?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=white" alt="Manuscript PDF"></a></p></td>
+<p><a href="https://yuchenwang3.github.io/projects/cineflow/"><img src="https://img.shields.io/badge/Project-087F5B?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Project"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf"><img src="https://img.shields.io/badge/Paper-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="Paper"></a></p></td>
 </tr>
 <tr>
 <td width="32%" align="center"><a href="https://yuchenwang3.github.io/projects/prepack/"><img width="100%" src="./assets/research/prefill-timeline.png" alt="Dynamic Prefill: figure from the project report"></a></td>
@@ -46,11 +46,19 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 
 <!-- PR-PREVIEWS:START -->
 
-<p><strong>9 merged</strong> · <strong>1 adopted solution</strong> · <strong>20 open</strong> · 13 projects</p>
+<p><strong>11 merged</strong> · <strong>1 adopted solution</strong> · <strong>28 open</strong> · 17 projects</p>
 
 ### Highlights
 
 <table>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/huggingface/datasets"><img src="https://avatars.githubusercontent.com/u/25720743?s=64&amp;v=4" width="30" height="30" alt="huggingface organization avatar"><br><strong>HF Datasets</strong></a></td>
+<td width="72%"><p><a href="https://github.com/huggingface/datasets/pull/8670"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/huggingface-datasets-8670-dark.svg"><img height="26" src="./assets/prs/status/huggingface-datasets-8670-light.svg" alt="#8670 · merged"></picture></a> Preserve source shards during streaming shuffle so four workers can share 19 shards</p></td>
+</tr>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/modelscope/mcore-bridge"><img src="https://avatars.githubusercontent.com/u/109945100?s=64&amp;v=4" width="30" height="30" alt="modelscope organization avatar"><br><strong>mcore-bridge</strong></a></td>
+<td width="72%"><p><a href="https://github.com/modelscope/mcore-bridge/pull/211"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/modelscope-mcore-bridge-211-dark.svg"><img height="26" src="./assets/prs/status/modelscope-mcore-bridge-211-light.svg" alt="#211 · merged"></picture></a> Score packed QSA within each document; 2.70× faster in an 8K synthetic selector benchmark</p></td>
+</tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/vllm-project/vllm"><img src="https://avatars.githubusercontent.com/u/136984999?s=64&amp;v=4" width="30" height="30" alt="vllm-project organization avatar"><br><strong>vLLM</strong></a></td>
 <td width="72%"><p><a href="https://github.com/vllm-project/vllm/pull/54699"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/vllm-project-vllm-54699-dark.svg"><img height="26" src="./assets/prs/status/vllm-project-vllm-54699-light.svg" alt="#54699 · merged"></picture></a> Remove full-weight copies during MoE loading; conversion peak 7.88 → 3.94 GiB in the exact-shape TP2 benchmark</p></td>
@@ -82,6 +90,42 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 </table>
 
 ### More contributions
+
+<details>
+<summary><strong>mcore-bridge</strong> · 2 contributions</summary>
+
+<table>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/modelscope/mcore-bridge"><img src="https://avatars.githubusercontent.com/u/109945100?s=64&amp;v=4" width="30" height="30" alt="modelscope organization avatar"><br><strong>mcore-bridge</strong></a></td>
+<td width="72%"><p><a href="https://github.com/modelscope/mcore-bridge/pull/212"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/modelscope-mcore-bridge-212-dark.svg"><img height="26" src="./assets/prs/status/modelscope-mcore-bridge-212-light.svg" alt="#212 · open"></picture></a> Preserve low-precision rounding in gated residual mixing</p><p><a href="https://github.com/modelscope/mcore-bridge/pull/213"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/modelscope-mcore-bridge-213-dark.svg"><img height="26" src="./assets/prs/status/modelscope-mcore-bridge-213-light.svg" alt="#213 · open"></picture></a> Bound PLE backward&#x27;s extra workspace through chunked token reductions</p></td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary><strong>Megatron Bridge</strong> · 2 contributions</summary>
+
+<table>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge"><img src="https://avatars.githubusercontent.com/u/213689629?s=64&amp;v=4" width="30" height="30" alt="NVIDIA-NeMo organization avatar"><br><strong>Megatron Bridge</strong></a></td>
+<td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6315"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6315-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6315-light.svg" alt="#6315 · open"></picture></a> Add Bridge-local Qwen4-Exp text-decoder support; GPU integration is pending</p><p><a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6312"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6312-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6312-light.svg" alt="#6312 · open"></picture></a> Make HF/Megatron comparison failures return a nonzero exit status</p></td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary><strong>slime</strong> · 1 contribution</summary>
+
+<table>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/THUDM/slime"><img src="https://avatars.githubusercontent.com/u/48590610?s=64&amp;v=4" width="30" height="30" alt="THUDM organization avatar"><br><strong>slime</strong></a></td>
+<td width="72%"><p><a href="https://github.com/THUDM/slime/pull/2412"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/THUDM-slime-2412-dark.svg"><img height="26" src="./assets/prs/status/THUDM-slime-2412-light.svg" alt="#2412 · open"></picture></a> Score fan-out rollout samples as a flat group</p></td>
+</tr>
+</table>
+
+</details>
 
 <details>
 <summary><strong>ms-swift</strong> · 4 contributions</summary>
@@ -132,12 +176,24 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 </details>
 
 <details>
-<summary><strong>Megatron-LM</strong> · 3 contributions</summary>
+<summary><strong>vLLM</strong> · 1 contribution</summary>
+
+<table>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/vllm-project/vllm"><img src="https://avatars.githubusercontent.com/u/136984999?s=64&amp;v=4" width="30" height="30" alt="vllm-project organization avatar"><br><strong>vLLM</strong></a></td>
+<td width="72%"><p><a href="https://github.com/vllm-project/vllm/pull/58219"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/vllm-project-vllm-58219-dark.svg"><img height="26" src="./assets/prs/status/vllm-project-vllm-58219-light.svg" alt="#58219 · open"></picture></a> Clarify Qwen3 parser boundary tokens in custom grammars</p></td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary><strong>Megatron-LM</strong> · 5 contributions</summary>
 
 <table>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NVIDIA/Megatron-LM"><img src="https://avatars.githubusercontent.com/u/1728152?s=64&amp;v=4" width="30" height="30" alt="NVIDIA organization avatar"><br><strong>Megatron-LM</strong></a></td>
-<td width="72%"><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5400"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5400-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5400-light.svg" alt="#5400 · open"></picture></a> Route GDN input projections to Adam</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5431"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5431-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5431-light.svg" alt="#5431 · open"></picture></a> Exclude GDN input projections from global clipping</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5395"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5395-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5395-light.svg" alt="#5395 · open"></picture></a> Skip gradient clipping for Muon</p></td>
+<td width="72%"><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/7864"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-7864-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-7864-light.svg" alt="#7864 · open"></picture></a> Preserve native Adam step counters across checkpoint restoration</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/7881"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-7881-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-7881-light.svg" alt="#7881 · open"></picture></a> Reuse packed chunkwise CP metadata across GDN and KDA layers</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5400"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5400-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5400-light.svg" alt="#5400 · open"></picture></a> Route GDN input projections to Adam</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5431"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5431-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5431-light.svg" alt="#5431 · open"></picture></a> Exclude GDN input projections from global clipping</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5395"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5395-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5395-light.svg" alt="#5395 · open"></picture></a> Skip gradient clipping for Muon</p></td>
 </tr>
 </table>
 

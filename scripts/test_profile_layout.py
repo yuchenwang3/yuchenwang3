@@ -59,8 +59,8 @@ class ProfileLayoutTest(unittest.TestCase):
 
     def test_full_upstream_inventory(self):
         from refresh_pr_cards import SELECTED
-        self.assertEqual(len(SELECTED), 34)
-        self.assertEqual(len(PROJECTS), 13)
+        self.assertEqual(len(SELECTED), 44)
+        self.assertEqual(len(PROJECTS), 17)
         self.assertEqual(set(SELECTED), {(p["repo"], p["number"]) for p in self.prs})
         self.assertEqual(len(SELECTED), len(set(SELECTED)))
         block = contribution_section(self.prs)
@@ -178,6 +178,8 @@ class ProfileLayoutTest(unittest.TestCase):
     def test_latest_contributions_are_tracked(self):
         keys = {(p["repo"], p["number"]) for p in self.prs}
         for key in [("NVIDIA-NeMo/RL", 4193), ("NVIDIA-NeMo/RL", 4176),
+                    ("huggingface/datasets", 8670), ("modelscope/mcore-bridge", 211),
+                    ("NVIDIA-NeMo/Megatron-Bridge", 6315), ("NVIDIA/Megatron-LM", 7864),
                     ("sgl-project/sglang", 40103), ("verl-project/verl", 7906),
                     ("huggingface/trl", 7294), ("sgl-project/sglang", 39765),
                     ("NousResearch/hermes-agent", 113511),

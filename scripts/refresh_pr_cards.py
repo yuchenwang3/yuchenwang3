@@ -10,6 +10,16 @@ from status_badges import badge_stem, render_status
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SELECTED = [
+    ("huggingface/datasets", 8670),
+    ("modelscope/mcore-bridge", 211),
+    ("modelscope/mcore-bridge", 212),
+    ("modelscope/mcore-bridge", 213),
+    ("NVIDIA-NeMo/Megatron-Bridge", 6315),
+    ("NVIDIA-NeMo/Megatron-Bridge", 6312),
+    ("NVIDIA/Megatron-LM", 7864),
+    ("NVIDIA/Megatron-LM", 7881),
+    ("vllm-project/vllm", 58219),
+    ("THUDM/slime", 2412),
     ("NVIDIA-NeMo/RL", 4193),
     ("NVIDIA-NeMo/RL", 4176),
     ("sgl-project/sglang", 40103),
