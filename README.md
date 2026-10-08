@@ -57,19 +57,19 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/modelscope/mcore-bridge"><img src="https://avatars.githubusercontent.com/u/109945100?s=64&amp;v=4" width="30" height="30" alt="modelscope organization avatar"><br><strong>mcore-bridge</strong></a></td>
-<td width="72%"><p><a href="https://github.com/modelscope/mcore-bridge/pull/211"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/modelscope-mcore-bridge-211-dark.svg"><img height="26" src="./assets/prs/status/modelscope-mcore-bridge-211-light.svg" alt="#211 · merged"></picture></a> Score packed QSA within each document; 2.70× faster in an 8K synthetic selector benchmark</p></td>
+<td width="72%"><p><a href="https://github.com/modelscope/mcore-bridge/pull/211"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/modelscope-mcore-bridge-211-dark.svg"><img height="26" src="./assets/prs/status/modelscope-mcore-bridge-211-light.svg" alt="#211 · merged"></picture></a> Score packed QSA within each document; 2.70× faster in an 8K synthetic selector benchmark</p><details><summary>2 more PRs in this repository</summary><p><a href="https://github.com/modelscope/mcore-bridge/pull/212"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/modelscope-mcore-bridge-212-dark.svg"><img height="26" src="./assets/prs/status/modelscope-mcore-bridge-212-light.svg" alt="#212 · open"></picture></a> Preserve low-precision rounding in gated residual mixing</p><p><a href="https://github.com/modelscope/mcore-bridge/pull/213"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/modelscope-mcore-bridge-213-dark.svg"><img height="26" src="./assets/prs/status/modelscope-mcore-bridge-213-light.svg" alt="#213 · open"></picture></a> Bound PLE backward&#x27;s extra workspace through chunked token reductions</p></details></td>
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/vllm-project/vllm"><img src="https://avatars.githubusercontent.com/u/136984999?s=64&amp;v=4" width="30" height="30" alt="vllm-project organization avatar"><br><strong>vLLM</strong></a></td>
-<td width="72%"><p><a href="https://github.com/vllm-project/vllm/pull/54699"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/vllm-project-vllm-54699-dark.svg"><img height="26" src="./assets/prs/status/vllm-project-vllm-54699-light.svg" alt="#54699 · merged"></picture></a> Remove full-weight copies during MoE loading; conversion peak 7.88 → 3.94 GiB in the exact-shape TP2 benchmark</p></td>
+<td width="72%"><p><a href="https://github.com/vllm-project/vllm/pull/54699"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/vllm-project-vllm-54699-dark.svg"><img height="26" src="./assets/prs/status/vllm-project-vllm-54699-light.svg" alt="#54699 · merged"></picture></a> Remove full-weight copies during MoE loading; conversion peak 7.88 → 3.94 GiB in the exact-shape TP2 benchmark</p><details><summary>1 more PR in this repository</summary><p><a href="https://github.com/vllm-project/vllm/pull/58219"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/vllm-project-vllm-58219-dark.svg"><img height="26" src="./assets/prs/status/vllm-project-vllm-58219-light.svg" alt="#58219 · open"></picture></a> Clarify Qwen3 parser boundary tokens in custom grammars</p></details></td>
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NVIDIA-NeMo/RL"><img src="https://avatars.githubusercontent.com/u/213689629?s=64&amp;v=4" width="30" height="30" alt="NVIDIA-NeMo organization avatar"><br><strong>NeMo RL</strong></a></td>
-<td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/3943"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-3943-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-3943-light.svg" alt="#3943 · open"></picture></a> Bypass driver tensor materialization in distillation; 4.4–5.3× faster transfers in a controlled Ray benchmark</p></td>
+<td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/3943"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-3943-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-3943-light.svg" alt="#3943 · open"></picture></a> Bypass driver tensor materialization in distillation; 4.4–5.3× faster transfers in a controlled Ray benchmark</p><details><summary>3 more PRs in this repository</summary><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/4193"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-4193-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-4193-light.svg" alt="#4193 · open"></picture></a> Render evaluation prompts as complete conversations</p><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/4176"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-4176-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-4176-light.svg" alt="#4176 · open"></picture></a> Unify worker selection through configuration</p><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/2962"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-2962-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-2962-light.svg" alt="#2962 · open"></picture></a> Sanitize non-finite async log probabilities</p></details></td>
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NVIDIA/Megatron-LM"><img src="https://avatars.githubusercontent.com/u/1728152?s=64&amp;v=4" width="30" height="30" alt="NVIDIA organization avatar"><br><strong>Megatron-LM</strong></a></td>
-<td width="72%"><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5396"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5396-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5396-light.svg" alt="#5396 · open"></picture></a> Fuse GDN Q/K normalization to remove an extra backward activation buffer</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5463"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5463-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5463-light.svg" alt="#5463 · open"></picture></a> Enable selective Mamba mixer recompute to save activation memory without full-layer recomputation</p></td>
+<td width="72%"><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5396"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5396-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5396-light.svg" alt="#5396 · open"></picture></a> Fuse GDN Q/K normalization to remove an extra backward activation buffer</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5463"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5463-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5463-light.svg" alt="#5463 · open"></picture></a> Enable selective Mamba mixer recompute to save activation memory without full-layer recomputation</p><details><summary>5 more PRs in this repository</summary><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/7864"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-7864-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-7864-light.svg" alt="#7864 · open"></picture></a> Preserve native Adam step counters across checkpoint restoration</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/7881"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-7881-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-7881-light.svg" alt="#7881 · open"></picture></a> Reuse packed chunkwise CP metadata across GDN and KDA layers</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5400"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5400-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5400-light.svg" alt="#5400 · open"></picture></a> Route GDN input projections to Adam</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5431"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5431-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5431-light.svg" alt="#5431 · open"></picture></a> Exclude GDN input projections from global clipping</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5395"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5395-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5395-light.svg" alt="#5395 · open"></picture></a> Skip gradient clipping for Muon</p></details></td>
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/Dao-AILab/flash-attention"><img src="https://avatars.githubusercontent.com/u/139507659?s=64&amp;v=4" width="30" height="30" alt="Dao-AILab organization avatar"><br><strong>FlashAttention</strong></a></td>
@@ -81,27 +81,15 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/sgl-project/sglang"><img src="https://avatars.githubusercontent.com/u/147780389?s=64&amp;v=4" width="30" height="30" alt="sgl-project organization avatar"><br><strong>SGLang</strong></a></td>
-<td width="72%"><p><a href="https://github.com/sgl-project/sglang/pull/39765"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-39765-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-39765-light.svg" alt="#39765 · open"></picture></a> Publish Mamba cache updates before dependent batches capture stale KV mappings</p></td>
+<td width="72%"><p><a href="https://github.com/sgl-project/sglang/pull/39765"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-39765-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-39765-light.svg" alt="#39765 · open"></picture></a> Publish Mamba cache updates before dependent batches capture stale KV mappings</p><details><summary>3 more PRs in this repository</summary><p><a href="https://github.com/sgl-project/sglang/pull/40103"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-40103-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-40103-light.svg" alt="#40103 · open"></picture></a> Reject developer messages silently dropped by templates</p><p><a href="https://github.com/sgl-project/sglang/pull/38063"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-38063-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-38063-light.svg" alt="#38063 · open"></picture></a> Explain cold MXFP4 JIT startup</p><p><a href="https://github.com/sgl-project/sglang/pull/31621"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-31621-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-31621-light.svg" alt="#31621 · open"></picture></a> Honor weight-check exclusions during reset</p></details></td>
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NousResearch/hermes-agent"><img src="https://avatars.githubusercontent.com/u/134168893?s=64&amp;v=4" width="30" height="30" alt="NousResearch organization avatar"><br><strong>Hermes Agent</strong></a></td>
-<td width="72%"><p><a href="https://github.com/NousResearch/hermes-agent/pull/100693"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-100693-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-100693-light.svg" alt="#100693 · open"></picture></a> Resolve local schema references so nested tool arguments reach handlers as objects, not JSON strings</p></td>
+<td width="72%"><p><a href="https://github.com/NousResearch/hermes-agent/pull/100693"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-100693-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-100693-light.svg" alt="#100693 · open"></picture></a> Resolve local schema references so nested tool arguments reach handlers as objects, not JSON strings</p><details><summary>3 more PRs in this repository</summary><p><a href="https://github.com/NousResearch/hermes-agent/pull/113511"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113511-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113511-light.svg" alt="#113511 · open"></picture></a> Control partial-stream continuation for batch evaluation</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/113538"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113538-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113538-light.svg" alt="#113538 · open"></picture></a> Clarify API retry budgets and streaming defaults</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/102549"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-102549-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-102549-light.svg" alt="#102549 · open"></picture></a> Make SSH reconnects race-safe</p></details></td>
 </tr>
 </table>
 
 ### More contributions
-
-<details>
-<summary><strong>mcore-bridge</strong> · 2 contributions</summary>
-
-<table>
-<tr>
-<td width="28%" valign="top"><a href="https://github.com/modelscope/mcore-bridge"><img src="https://avatars.githubusercontent.com/u/109945100?s=64&amp;v=4" width="30" height="30" alt="modelscope organization avatar"><br><strong>mcore-bridge</strong></a></td>
-<td width="72%"><p><a href="https://github.com/modelscope/mcore-bridge/pull/212"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/modelscope-mcore-bridge-212-dark.svg"><img height="26" src="./assets/prs/status/modelscope-mcore-bridge-212-light.svg" alt="#212 · open"></picture></a> Preserve low-precision rounding in gated residual mixing</p><p><a href="https://github.com/modelscope/mcore-bridge/pull/213"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/modelscope-mcore-bridge-213-dark.svg"><img height="26" src="./assets/prs/status/modelscope-mcore-bridge-213-light.svg" alt="#213 · open"></picture></a> Bound PLE backward&#x27;s extra workspace through chunked token reductions</p></td>
-</tr>
-</table>
-
-</details>
 
 <details>
 <summary><strong>Megatron Bridge</strong> · 2 contributions</summary>
@@ -176,72 +164,12 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 </details>
 
 <details>
-<summary><strong>vLLM</strong> · 1 contribution</summary>
-
-<table>
-<tr>
-<td width="28%" valign="top"><a href="https://github.com/vllm-project/vllm"><img src="https://avatars.githubusercontent.com/u/136984999?s=64&amp;v=4" width="30" height="30" alt="vllm-project organization avatar"><br><strong>vLLM</strong></a></td>
-<td width="72%"><p><a href="https://github.com/vllm-project/vllm/pull/58219"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/vllm-project-vllm-58219-dark.svg"><img height="26" src="./assets/prs/status/vllm-project-vllm-58219-light.svg" alt="#58219 · open"></picture></a> Clarify Qwen3 parser boundary tokens in custom grammars</p></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary><strong>Megatron-LM</strong> · 5 contributions</summary>
-
-<table>
-<tr>
-<td width="28%" valign="top"><a href="https://github.com/NVIDIA/Megatron-LM"><img src="https://avatars.githubusercontent.com/u/1728152?s=64&amp;v=4" width="30" height="30" alt="NVIDIA organization avatar"><br><strong>Megatron-LM</strong></a></td>
-<td width="72%"><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/7864"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-7864-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-7864-light.svg" alt="#7864 · open"></picture></a> Preserve native Adam step counters across checkpoint restoration</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/7881"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-7881-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-7881-light.svg" alt="#7881 · open"></picture></a> Reuse packed chunkwise CP metadata across GDN and KDA layers</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5400"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5400-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5400-light.svg" alt="#5400 · open"></picture></a> Route GDN input projections to Adam</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5431"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5431-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5431-light.svg" alt="#5431 · open"></picture></a> Exclude GDN input projections from global clipping</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5395"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5395-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5395-light.svg" alt="#5395 · open"></picture></a> Skip gradient clipping for Muon</p></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary><strong>NeMo RL</strong> · 3 contributions</summary>
-
-<table>
-<tr>
-<td width="28%" valign="top"><a href="https://github.com/NVIDIA-NeMo/RL"><img src="https://avatars.githubusercontent.com/u/213689629?s=64&amp;v=4" width="30" height="30" alt="NVIDIA-NeMo organization avatar"><br><strong>NeMo RL</strong></a></td>
-<td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/4193"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-4193-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-4193-light.svg" alt="#4193 · open"></picture></a> Render evaluation prompts as complete conversations</p><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/4176"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-4176-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-4176-light.svg" alt="#4176 · open"></picture></a> Unify worker selection through configuration</p><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/2962"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-2962-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-2962-light.svg" alt="#2962 · open"></picture></a> Sanitize non-finite async log probabilities</p></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary><strong>SGLang</strong> · 3 contributions</summary>
-
-<table>
-<tr>
-<td width="28%" valign="top"><a href="https://github.com/sgl-project/sglang"><img src="https://avatars.githubusercontent.com/u/147780389?s=64&amp;v=4" width="30" height="30" alt="sgl-project organization avatar"><br><strong>SGLang</strong></a></td>
-<td width="72%"><p><a href="https://github.com/sgl-project/sglang/pull/40103"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-40103-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-40103-light.svg" alt="#40103 · open"></picture></a> Reject developer messages silently dropped by templates</p><p><a href="https://github.com/sgl-project/sglang/pull/38063"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-38063-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-38063-light.svg" alt="#38063 · open"></picture></a> Explain cold MXFP4 JIT startup</p><p><a href="https://github.com/sgl-project/sglang/pull/31621"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-31621-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-31621-light.svg" alt="#31621 · open"></picture></a> Honor weight-check exclusions during reset</p></td>
-</tr>
-</table>
-
-</details>
-
-<details>
 <summary><strong>verl</strong> · 2 contributions</summary>
 
 <table>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/verl-project/verl"><img src="https://avatars.githubusercontent.com/u/212961691?s=64&amp;v=4" width="30" height="30" alt="verl-project organization avatar"><br><strong>verl</strong></a></td>
 <td width="72%"><p><a href="https://github.com/verl-project/verl/pull/7906"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/verl-project-verl-7906-dark.svg"><img height="26" src="./assets/prs/status/verl-project-verl-7906-light.svg" alt="#7906 · open"></picture></a> Track response truncation across context limits</p><p><a href="https://github.com/verl-project/verl/pull/7597"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/verl-project-verl-7597-dark.svg"><img height="26" src="./assets/prs/status/verl-project-verl-7597-light.svg" alt="#7597 · open"></picture></a> Validate actor FSDP strategy</p></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary><strong>Hermes Agent</strong> · 3 contributions</summary>
-
-<table>
-<tr>
-<td width="28%" valign="top"><a href="https://github.com/NousResearch/hermes-agent"><img src="https://avatars.githubusercontent.com/u/134168893?s=64&amp;v=4" width="30" height="30" alt="NousResearch organization avatar"><br><strong>Hermes Agent</strong></a></td>
-<td width="72%"><p><a href="https://github.com/NousResearch/hermes-agent/pull/113511"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113511-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113511-light.svg" alt="#113511 · open"></picture></a> Control partial-stream continuation for batch evaluation</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/113538"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113538-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113538-light.svg" alt="#113538 · open"></picture></a> Clarify API retry budgets and streaming defaults</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/102549"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-102549-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-102549-light.svg" alt="#102549 · open"></picture></a> Make SSH reconnects race-safe</p></td>
 </tr>
 </table>
 
@@ -273,7 +201,6 @@ Reviewer, [WSDM 2027](https://www.wsdm-conference.org/2027/).
 <a href="https://github.com/yuchenwang3?tab=followers"><img src="https://img.shields.io/github/followers/yuchenwang3?label=Follow&amp;style=social" alt="Follow on GitHub"></a>
 <a href="https://github.com/yuchenwang3?tab=repositories&amp;sort=stargazers"><img src="https://img.shields.io/github/stars/yuchenwang3?label=Stars&amp;style=social" alt="Stars on my repositories"></a>
 <a href="https://github.com/search?q=author%3Ayuchenwang3+is%3Apr+is%3Aopen&amp;type=pullrequests"><img src="https://img.shields.io/badge/PRs-in_flight-426dab?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Explore my open pull requests"></a>
-<img src="https://komarev.com/ghpvc/?username=yuchenwang3&amp;base=953&amp;style=flat-square&amp;color=0A66C2" alt="Profile views">
 </p>
 
 <p>

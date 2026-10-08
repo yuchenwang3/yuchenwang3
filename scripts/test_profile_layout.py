@@ -33,10 +33,10 @@ class ProfileLayoutTest(unittest.TestCase):
     def test_one_row_per_project_in_each_group(self):
         block = contribution_section(self.prs)
         visible = [p for p in self.prs if p["state"] in ("open", "merged")]
+        featured_repos = {repo for repo, number in HIGHLIGHTS if (repo, number) in {(p["repo"], p["number"]) for p in visible}}
         for heading, is_featured in [("Highlights", True), ("More contributions", False)]:
             group = block.split(f"### {heading}\n", 1)[1].split("### More contributions", 1)[0]
-            projects = {p["repo"] for p in visible
-                        if ((p["repo"], p["number"]) in HIGHLIGHTS) == is_featured}
+            projects = {p["repo"] for p in visible if (p["repo"] in featured_repos) == is_featured}
             self.assertEqual(group.count("<tr>"), len(projects))
         self.assertEqual(len(PROJECTS), len({p[0] for p in PROJECTS}))
 
@@ -70,11 +70,13 @@ class ProfileLayoutTest(unittest.TestCase):
     def test_remainder_is_collapsed_by_repository(self):
         block = contribution_section(self.prs)
         featured, remainder = block.split("### More contributions", 1)
-        self.assertNotIn('<details', featured)
+        self.assertIn('<details><summary>1 more PR in this repository</summary>', featured)
+        self.assertNotIn('<details open', featured)
         self.assertNotIn('<details open', remainder)
         groups = re.findall(r'<details>\n(.*?)\n</details>', remainder, re.S)
+        featured_repos = {repo for repo, _ in HIGHLIGHTS}
         repos = {p['repo'] for p in self.prs if p['state'] in ('merged', 'open')
-                 and (p['repo'], p['number']) not in HIGHLIGHTS}
+                 and p['repo'] not in featured_repos}
         self.assertEqual(len(groups), len(repos))
         for group in groups:
             self.assertIn('<summary><strong>', group)
@@ -133,6 +135,20 @@ class ProfileLayoutTest(unittest.TestCase):
         for state in ("open", "merged"):
             count = sum(p["state"] == state and (state != "merged" or p.get("role") != "adopted_solution") for p in self.prs)
             self.assertIn(f"<strong>{count} {state}</strong>", block)
+
+    def test_featured_repositories_are_not_repeated(self):
+        block = contribution_section(self.prs)
+        featured, remainder = block.split("### More contributions", 1)
+        for repo in {repo for repo, _ in HIGHLIGHTS}:
+            name = next(name for item, name, _ in PROJECTS if item == repo)
+            self.assertEqual(featured.count(f"<strong>{name}</strong>"), 1)
+            self.assertNotIn(f"<summary><strong>{name}</strong>", remainder)
+        self.assertIn("1 more PR in this repository", featured)
+
+    def test_profile_does_not_claim_visitor_identity_or_inflated_views(self):
+        readme = render_readme(self.prs)
+        self.assertNotIn("komarev.com", readme)
+        self.assertNotIn("Profile views", readme)
 
     def test_attribution_is_explicit(self):
         block = contribution_section(self.prs)

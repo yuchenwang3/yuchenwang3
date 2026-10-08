@@ -153,15 +153,13 @@ HIGHLIGHTS = [
 ]
 
 
-def contribution_table(prs, project_order):
+def contribution_table(prs, project_order, secondary=None):
     projects = {repo: (name, avatar) for repo, name, avatar in PROJECTS}
     rows = []
     for repo in project_order:
         name, avatar = projects[repo]
         contributions = []
-        for p in prs:
-            if p["repo"] != repo:
-                continue
+        def contribution_line(p):
             key = (repo, p["number"])
             label = PR_LABELS.get(key)
             if label is None:
@@ -172,7 +170,15 @@ def contribution_table(prs, project_order):
                 credit = "<br><sub>Co-author</sub>"
             elif p.get("role") == "adopted_solution":
                 credit = f'<br><sub><a href="{escape(p["credit_url"], quote=True)}">Solution adopted by the PR author</a></sub>'
-            contributions.append(f'<p>{status} {escape(label)}{credit}</p>')
+            return f'<p>{status} {escape(label)}{credit}</p>'
+        contributions.extend(contribution_line(p) for p in prs if p["repo"] == repo)
+        extra = [p for p in (secondary or []) if p["repo"] == repo]
+        if extra:
+            count = len(extra)
+            contributions.append(
+                f'<details><summary>{count} more PR{"s" if count != 1 else ""} in this repository</summary>'
+                + "".join(contribution_line(p) for p in extra) + '</details>'
+            )
         if not contributions:
             continue
         rows.append(f'''<tr>
@@ -195,11 +201,13 @@ def contribution_section(prs):
                f'<strong>{open_count} open</strong> · {project_count} projects</p>')
     by_key = {(p["repo"], p["number"]): p for p in visible}
     featured = [by_key[key] for key in HIGHLIGHTS if key in by_key]
-    remainder = [p for p in visible if (p["repo"], p["number"]) not in HIGHLIGHTS]
     featured_order = list(dict.fromkeys(p["repo"] for p in featured))
+    featured_repos = set(featured_order)
+    secondary = [p for p in visible if p["repo"] in featured_repos and (p["repo"], p["number"]) not in HIGHLIGHTS]
+    remainder = [p for p in visible if p["repo"] not in featured_repos]
     sections = []
     if featured:
-        sections.append("### Highlights\n\n" + contribution_table(featured, featured_order))
+        sections.append("### Highlights\n\n" + contribution_table(featured, featured_order, secondary))
     if remainder:
         disclosures = []
         for repo, name, _ in PROJECTS:
@@ -259,7 +267,6 @@ def widget_section():
 <a href="https://github.com/yuchenwang3?tab=followers"><img src="https://img.shields.io/github/followers/yuchenwang3?label=Follow&amp;style=social" alt="Follow on GitHub"></a>
 <a href="https://github.com/yuchenwang3?tab=repositories&amp;sort=stargazers"><img src="https://img.shields.io/github/stars/yuchenwang3?label=Stars&amp;style=social" alt="Stars on my repositories"></a>
 <a href="https://github.com/search?q=author%3Ayuchenwang3+is%3Apr+is%3Aopen&amp;type=pullrequests"><img src="https://img.shields.io/badge/PRs-in_flight-426dab?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Explore my open pull requests"></a>
-<img src="https://komarev.com/ghpvc/?username=yuchenwang3&amp;base=953&amp;style=flat-square&amp;color=0A66C2" alt="Profile views">
 </p>
 '''
     widgets = []
