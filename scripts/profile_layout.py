@@ -35,7 +35,7 @@ def research_section():
         ("Occamy-1.0", "occamy-mark", "svg",
          "https://accio-lab.github.io/occamy/",
          "35B-A3B agent model for long-horizon tool use.",
-         "RL post-training · Training infrastructure",
+         "Core contributor · Post-training algorithms, infrastructure &amp; data",
          [("Report", "https://arxiv.org/abs/2609.11977"),
           ("Demo", "https://accio-lab.github.io/occamy/"),
           ("Model", "https://huggingface.co/Accio-Lab/Occamy-1.0"),
@@ -43,7 +43,7 @@ def research_section():
         ("CineFlow", "cineflow-system", "png",
          "https://yuchenwang3.github.io/projects/cineflow/",
          "Dependency-driven parallel video generation.",
-         "1.7–5.5× end-to-end speedup in the reported evaluation",
+         "Co-first author · 1.7–5.5× end-to-end speedup in the reported evaluation",
          [("Project", "https://yuchenwang3.github.io/projects/cineflow/"),
           ("Paper", "https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf")]),
         ("Dynamic Prefill", "prefill-timeline", "png",
@@ -64,7 +64,7 @@ def research_section():
 <p>{summary}<br><sub>{detail}</sub></p>
 <p>{" ".join(button(label, target) for label, target in links)}</p></td>
 </tr>''')
-    raredx = '<a href="https://arxiv.org/abs/2609.35549"><img src="https://img.shields.io/badge/RareDx%20%C2%B7%20under%20review-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="RareDx: graph-grounded RL preprint under review"></a>'
+    raredx = '<a href="https://arxiv.org/abs/2609.35549"><img src="https://img.shields.io/badge/RareDx%20%C2%B7%20Co--first%20author-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="RareDx: co-first author; graph-grounded RL for rare disease diagnosis"></a>'
     return "## Research\n\n<table>\n" + "\n".join(rows) + "\n</table>\n\n" + " ".join([raredx,
         button("CUDA Attention", "https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf"),
         button("RL for Legal Reasoning", "https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf"),

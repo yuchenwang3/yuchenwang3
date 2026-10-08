@@ -23,13 +23,13 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 <tr>
 <td width="32%" align="center"><a href="https://accio-lab.github.io/occamy/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/research/occamy-mark-dark.svg"><img width="100%" src="./assets/research/occamy-mark.svg" alt="Occamy-1.0: official logo"></picture></a></td>
 <td width="68%"><h3><a href="https://accio-lab.github.io/occamy/">Occamy-1.0</a></h3>
-<p>35B-A3B agent model for long-horizon tool use.<br><sub>RL post-training · Training infrastructure</sub></p>
+<p>35B-A3B agent model for long-horizon tool use.<br><sub>Core contributor · Post-training algorithms, infrastructure &amp; data</sub></p>
 <p><a href="https://arxiv.org/abs/2609.11977"><img src="https://img.shields.io/badge/Report-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="Report"></a> <a href="https://accio-lab.github.io/occamy/"><img src="https://img.shields.io/badge/Demo-087F5B?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Demo"></a> <a href="https://huggingface.co/Accio-Lab/Occamy-1.0"><img src="https://img.shields.io/badge/Model-FFD21E?style=for-the-badge&amp;logo=huggingface&amp;logoColor=black" alt="Model"></a> <a href="https://github.com/Accio-Lab/occamy"><img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Code"></a></p></td>
 </tr>
 <tr>
 <td width="32%" align="center"><a href="https://yuchenwang3.github.io/projects/cineflow/"><img width="100%" src="./assets/research/cineflow-system.png" alt="CineFlow: figure from the paper"></a></td>
 <td width="68%"><h3><a href="https://yuchenwang3.github.io/projects/cineflow/">CineFlow</a></h3>
-<p>Dependency-driven parallel video generation.<br><sub>1.7–5.5× end-to-end speedup in the reported evaluation</sub></p>
+<p>Dependency-driven parallel video generation.<br><sub>Co-first author · 1.7–5.5× end-to-end speedup in the reported evaluation</sub></p>
 <p><a href="https://yuchenwang3.github.io/projects/cineflow/"><img src="https://img.shields.io/badge/Project-087F5B?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Project"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf"><img src="https://img.shields.io/badge/Paper-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="Paper"></a></p></td>
 </tr>
 <tr>
@@ -40,7 +40,7 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 </tr>
 </table>
 
-<a href="https://arxiv.org/abs/2609.35549"><img src="https://img.shields.io/badge/RareDx%20%C2%B7%20under%20review-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="RareDx: graph-grounded RL preprint under review"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf"><img src="https://img.shields.io/badge/CUDA%20Attention-537C15?style=for-the-badge&amp;logo=nvidia&amp;logoColor=white" alt="CUDA Attention"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf"><img src="https://img.shields.io/badge/RL%20for%20Legal%20Reasoning-6554A4?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=white" alt="RL for Legal Reasoning"></a>
+<a href="https://arxiv.org/abs/2609.35549"><img src="https://img.shields.io/badge/RareDx%20%C2%B7%20Co--first%20author-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="RareDx: co-first author; graph-grounded RL for rare disease diagnosis"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf"><img src="https://img.shields.io/badge/CUDA%20Attention-537C15?style=for-the-badge&amp;logo=nvidia&amp;logoColor=white" alt="CUDA Attention"></a> <a href="https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf"><img src="https://img.shields.io/badge/RL%20for%20Legal%20Reasoning-6554A4?style=for-the-badge&amp;logo=readthedocs&amp;logoColor=white" alt="RL for Legal Reasoning"></a>
 
 ## Open-source contributions
 

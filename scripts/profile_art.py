@@ -54,7 +54,7 @@ def research(name, dark=False, compact=False):
     if name == "occamy":
         if compact:
             b += text(30, 65, "Occamy-1.0", 42, ink, 500, SERIF)
-            b += text(32, 100, "Data & agentic post-training", 20, muted)
+            b += text(32, 100, "Post-training algorithms · Infra · Data", 20, muted)
             b += text(30, 175, "35B", 45, a, 650)
             b += text(30, 202, "total parameters", 17, muted)
             b += text(190, 175, "3B", 45, a, 650)
@@ -68,11 +68,11 @@ def research(name, dark=False, compact=False):
             b += line(207, 306, 268, 306, c["line"], 2)
             b += line(369, 306, 437, 306, c["line"], 2)
             b += line(30, 339, 570, 339, c["line"])
-            b += text(30, 371, "ACCIO · OPEN MODEL", 15, muted, 500, MONO)
+            b += text(30, 371, "ACCIO · CORE CONTRIBUTOR", 15, muted, 500, MONO)
             b += text(554, 371, "↗", 24, a)
         else:
             b += text(42, 99, "Occamy-1.0", 64, ink, 500, SERIF)
-            b += text(44, 140, "Execution-grounded data & agentic post-training", 25, muted)
+            b += text(44, 140, "Post-training algorithms, infrastructure & data", 25, muted)
             b += text(44, 210, "35B", 44, a, 650)
             b += text(150, 209, "total", 19, muted)
             b += text(243, 210, "3B", 44, a, 650)
@@ -84,9 +84,9 @@ def research(name, dark=False, compact=False):
                 b += text(x, 291, label, 18, a, 550, MONO)
             for x1, x2 in [(111, 203), (269, 370), (493, 600)]:
                 b += line(x1, 285, x2, 285, c["line"], 2)
-            b += text(44, 329, "ACCIO TEAM", 14, muted, 500, MONO, letter_spacing="2")
+            b += text(44, 329, "ACCIO · CORE CONTRIBUTOR", 14, muted, 500, MONO, letter_spacing="2")
             b += text(1148, 324, "OPEN MODEL ↗", 17, a, 500, MONO, text_anchor="end")
-        return svg(w,h,"Occamy-1.0","35B-A3B agent model. Schematic task loop: plan, act, recover, complete.",b)
+        return svg(w,h,"Occamy-1.0","35B-A3B agent model. Core contributor to post-training algorithms, infrastructure, and data. Schematic task loop: plan, act, recover, complete.",b)
     if name == "cineflow":
         b += text(30, 66, "CineFlow", 42, ink, 500, SERIF)
         b += text(31, 99, "Dependency-aware video generation", 21, muted)
@@ -116,9 +116,9 @@ def research(name, dark=False, compact=False):
         b += f'<path d="M164 218L164 228L388 228L388 237" stroke="{a}" stroke-width="1.5" fill="none"/>'
         b += line(30,327,570,327,c["line"])
         b += text(30,368,"1.7–5.5×",29,a,650)
-        b += text(200,367,"reported speedup",18,muted)
+        b += text(200,367,"Co-first author · reported speedup",18,muted)
         b += text(560,367,"↗",25,a)
-        return svg(w,h,"CineFlow","Schematic of parallel video scenes with dependencies; reported 1.7–5.5x speedup.",b)
+        return svg(w,h,"CineFlow","Co-first author. Schematic of parallel video scenes with dependencies; reported 1.7–5.5x speedup.",b)
     b += text(30,66,"Dynamic Prefill",39,ink,500,SERIF)
     b += text(31,99,"Better packing. Less waiting.",21,muted)
     b += text(30,141,"ARRIVING PROMPTS",13,muted,500,MONO)
