@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "pull_requests": [
     {
       "repo": "NVIDIA-NeMo/RL",
@@ -146,11 +146,11 @@
       "number": 3943,
       "title": "perf(distillation): defer teacher top-k Ray payloads",
       "url": "https://github.com/NVIDIA-NeMo/RL/pull/3943",
-      "additions": 536,
-      "deletions": 19,
-      "files": 10,
-      "updated": "2026-10-06T20:24:38Z",
-      "head": "733659d1f600d2d0bd2c8782362e81241cbc8b6f",
+      "additions": 586,
+      "deletions": 26,
+      "files": 11,
+      "updated": "2026-10-08T19:25:00Z",
+      "head": "3487617a7b6a8512d9daa9afdda23088d631b099",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -191,8 +191,8 @@
       "additions": 248,
       "deletions": 17,
       "files": 7,
-      "updated": "2026-10-07T16:21:54Z",
-      "head": "fb1eeceee37ca6e527df15a9b0ab5429d8b09803",
+      "updated": "2026-10-08T08:26:55Z",
+      "head": "18ae9cec85d30fe2f76382ca049a924f300159f0",
       "role": "author",
       "credit_url": null,
       "state": "open"
