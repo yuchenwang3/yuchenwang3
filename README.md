@@ -46,7 +46,7 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 
 <!-- PR-PREVIEWS:START -->
 
-<p><strong>12 merged</strong> · <strong>1 adopted solution</strong> · <strong>27 open</strong> · 17 projects</p>
+<p><strong>12 merged</strong> · <strong>1 adopted solution</strong> · <strong>26 open</strong> · 17 projects</p>
 
 ### Highlights
 
@@ -82,10 +82,6 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/sgl-project/sglang"><img src="https://avatars.githubusercontent.com/u/147780389?s=64&amp;v=4" width="30" height="30" alt="sgl-project organization avatar"><br><strong>SGLang</strong></a></td>
 <td width="72%"><p><a href="https://github.com/sgl-project/sglang/pull/39765"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-39765-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-39765-light.svg" alt="#39765 · open"></picture></a> Publish Mamba cache updates before dependent batches capture stale KV mappings</p><details><summary>3 more PRs in this repository</summary><p><a href="https://github.com/sgl-project/sglang/pull/40103"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-40103-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-40103-light.svg" alt="#40103 · open"></picture></a> Reject developer messages silently dropped by templates</p><p><a href="https://github.com/sgl-project/sglang/pull/38063"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-38063-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-38063-light.svg" alt="#38063 · open"></picture></a> Explain cold MXFP4 JIT startup</p><p><a href="https://github.com/sgl-project/sglang/pull/31621"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-31621-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-31621-light.svg" alt="#31621 · open"></picture></a> Honor weight-check exclusions during reset</p></details></td>
-</tr>
-<tr>
-<td width="28%" valign="top"><a href="https://github.com/NousResearch/hermes-agent"><img src="https://avatars.githubusercontent.com/u/134168893?s=64&amp;v=4" width="30" height="30" alt="NousResearch organization avatar"><br><strong>Hermes Agent</strong></a></td>
-<td width="72%"><p><a href="https://github.com/NousResearch/hermes-agent/pull/100693"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-100693-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-100693-light.svg" alt="#100693 · open"></picture></a> Resolve local schema references so nested tool arguments reach handlers as objects, not JSON strings</p><details><summary>3 more PRs in this repository</summary><p><a href="https://github.com/NousResearch/hermes-agent/pull/113511"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113511-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113511-light.svg" alt="#113511 · open"></picture></a> Control partial-stream continuation for batch evaluation</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/113538"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113538-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113538-light.svg" alt="#113538 · open"></picture></a> Clarify API retry budgets and streaming defaults</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/102549"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-102549-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-102549-light.svg" alt="#102549 · open"></picture></a> Make SSH reconnects race-safe</p></details></td>
 </tr>
 </table>
 
@@ -170,6 +166,18 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/verl-project/verl"><img src="https://avatars.githubusercontent.com/u/212961691?s=64&amp;v=4" width="30" height="30" alt="verl-project organization avatar"><br><strong>verl</strong></a></td>
 <td width="72%"><p><a href="https://github.com/verl-project/verl/pull/7906"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/verl-project-verl-7906-dark.svg"><img height="26" src="./assets/prs/status/verl-project-verl-7906-light.svg" alt="#7906 · open"></picture></a> Track response truncation across context limits</p><p><a href="https://github.com/verl-project/verl/pull/7597"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/verl-project-verl-7597-dark.svg"><img height="26" src="./assets/prs/status/verl-project-verl-7597-light.svg" alt="#7597 · open"></picture></a> Validate actor FSDP strategy</p></td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary><strong>Hermes Agent</strong> · 3 contributions</summary>
+
+<table>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/NousResearch/hermes-agent"><img src="https://avatars.githubusercontent.com/u/134168893?s=64&amp;v=4" width="30" height="30" alt="NousResearch organization avatar"><br><strong>Hermes Agent</strong></a></td>
+<td width="72%"><p><a href="https://github.com/NousResearch/hermes-agent/pull/113511"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113511-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113511-light.svg" alt="#113511 · open"></picture></a> Control partial-stream continuation for batch evaluation</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/113538"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113538-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113538-light.svg" alt="#113538 · open"></picture></a> Clarify API retry budgets and streaming defaults</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/102549"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-102549-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-102549-light.svg" alt="#102549 · open"></picture></a> Make SSH reconnects race-safe</p></td>
 </tr>
 </table>
 
