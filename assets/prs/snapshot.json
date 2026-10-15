@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "pull_requests": [
     {
       "repo": "huggingface/datasets",
@@ -107,8 +107,8 @@
       "additions": 329,
       "deletions": 13,
       "files": 5,
-      "updated": "2026-10-08T23:18:29Z",
-      "head": "17fb41e734a35d20516d04fd49f6e9abb212e72d",
+      "updated": "2026-10-15T02:37:13Z",
+      "head": "180504196c8bfffa933dc42d2d7bea7039c9c7a2",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -202,11 +202,11 @@
       "number": 7294,
       "title": "Fix stale rollout drops pinning async checkpoint resume positions",
       "url": "https://github.com/huggingface/trl/pull/7294",
-      "additions": 184,
+      "additions": 180,
       "deletions": 13,
       "files": 5,
-      "updated": "2026-10-08T23:48:08Z",
-      "head": "c212290949f59f1ccd6a1a3de96014737da88bf6",
+      "updated": "2026-10-14T19:26:10Z",
+      "head": "533a3669556c75c3240d2ff9a63f8fbd1e38c993",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -328,11 +328,11 @@
       "number": 5396,
       "title": "perf(gated_delta_net): fold q/k L2-norm into the gated_delta_rule kernel",
       "url": "https://github.com/NVIDIA/Megatron-LM/pull/5396",
-      "additions": 278,
+      "additions": 280,
       "deletions": 20,
-      "files": 7,
-      "updated": "2026-10-13T19:12:04Z",
-      "head": "ac051b795b283c57666b50f1efc3432a20a254a6",
+      "files": 8,
+      "updated": "2026-10-14T19:25:43Z",
+      "head": "dd0e152538647edf927a17d4b779c6ead8affd22",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -471,8 +471,8 @@
       "additions": 5,
       "deletions": 0,
       "files": 2,
-      "updated": "2026-10-11T00:24:49Z",
-      "head": "33f55df716212f07f1e262488cfc320d817efdab",
+      "updated": "2026-10-14T19:25:43Z",
+      "head": "5f264854e37c893f6d31dc339b455a8bc21c433f",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -485,8 +485,8 @@
       "additions": 91,
       "deletions": 1,
       "files": 5,
-      "updated": "2026-10-11T00:24:50Z",
-      "head": "2f9217e3a4fdc0913af88f9f184bce8c0cdb6c26",
+      "updated": "2026-10-14T19:25:43Z",
+      "head": "30d303de33cb196293a91e8c6309933cb9e2b38a",
       "role": "author",
       "credit_url": null,
       "state": "open"
