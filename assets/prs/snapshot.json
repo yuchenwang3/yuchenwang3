@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "pull_requests": [
     {
       "repo": "huggingface/datasets",
@@ -468,11 +468,11 @@
       "number": 5400,
       "title": "fix(optimizer): route GDN in_proj to Adam under Muon",
       "url": "https://github.com/NVIDIA/Megatron-LM/pull/5400",
-      "additions": 5,
-      "deletions": 0,
-      "files": 2,
-      "updated": "2026-10-14T19:25:43Z",
-      "head": "5f264854e37c893f6d31dc339b455a8bc21c433f",
+      "additions": 124,
+      "deletions": 1,
+      "files": 4,
+      "updated": "2026-10-15T22:08:57Z",
+      "head": "bc744ecf0fd0fa723dd9e36e1eda7fd607f38ca3",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -482,11 +482,11 @@
       "number": 5431,
       "title": "fix(optimizer): isolate GDN in_proj from global grad-norm clip",
       "url": "https://github.com/NVIDIA/Megatron-LM/pull/5431",
-      "additions": 91,
-      "deletions": 1,
-      "files": 5,
-      "updated": "2026-10-14T19:25:43Z",
-      "head": "30d303de33cb196293a91e8c6309933cb9e2b38a",
+      "additions": 240,
+      "deletions": 2,
+      "files": 7,
+      "updated": "2026-10-15T22:08:59Z",
+      "head": "39136690548ca492e21244abf6c9e409c826b9ba",
       "role": "author",
       "credit_url": null,
       "state": "open"
