@@ -46,7 +46,7 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 
 <!-- PR-PREVIEWS:START -->
 
-<p><strong>12 merged</strong> · <strong>1 adopted solution</strong> · <strong>26 open</strong> · 17 projects</p>
+<p><strong>12 merged</strong> · <strong>1 adopted solution</strong> · <strong>25 open</strong> · 16 projects</p>
 
 ### Highlights
 
@@ -178,18 +178,6 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NousResearch/hermes-agent"><img src="https://avatars.githubusercontent.com/u/134168893?s=64&amp;v=4" width="30" height="30" alt="NousResearch organization avatar"><br><strong>Hermes Agent</strong></a></td>
 <td width="72%"><p><a href="https://github.com/NousResearch/hermes-agent/pull/113511"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113511-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113511-light.svg" alt="#113511 · open"></picture></a> Control partial-stream continuation for batch evaluation</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/113538"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113538-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113538-light.svg" alt="#113538 · open"></picture></a> Clarify API retry budgets and streaming defaults</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/102549"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-102549-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-102549-light.svg" alt="#102549 · open"></picture></a> Make SSH reconnects race-safe</p></td>
-</tr>
-</table>
-
-</details>
-
-<details>
-<summary><strong>TRL</strong> · 1 contribution</summary>
-
-<table>
-<tr>
-<td width="28%" valign="top"><a href="https://github.com/huggingface/trl"><img src="https://avatars.githubusercontent.com/u/25720743?s=64&amp;v=4" width="30" height="30" alt="huggingface organization avatar"><br><strong>TRL</strong></a></td>
-<td width="72%"><p><a href="https://github.com/huggingface/trl/pull/7294"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/huggingface-trl-7294-dark.svg"><img height="26" src="./assets/prs/status/huggingface-trl-7294-light.svg" alt="#7294 · open"></picture></a> Fix async checkpoint resume after stale rollout drops</p></td>
 </tr>
 </table>
 

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "pull_requests": [
     {
       "repo": "huggingface/datasets",
@@ -121,8 +121,8 @@
       "additions": 52,
       "deletions": 0,
       "files": 2,
-      "updated": "2026-10-09T21:50:14Z",
-      "head": "4354a7b4871e5f83cf52698478c678ab3e3d4def",
+      "updated": "2026-10-16T22:50:18Z",
+      "head": "450bef6da5dcb16fd2f678069e8a1071030d8503",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -205,11 +205,11 @@
       "additions": 180,
       "deletions": 13,
       "files": 5,
-      "updated": "2026-10-14T19:26:10Z",
+      "updated": "2026-10-16T21:05:21Z",
       "head": "533a3669556c75c3240d2ff9a63f8fbd1e38c993",
       "role": "author",
       "credit_url": null,
-      "state": "open"
+      "state": "closed"
     },
     {
       "repo": "flashinfer-ai/flashinfer",
