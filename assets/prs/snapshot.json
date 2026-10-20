@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "pull_requests": [
     {
       "repo": "huggingface/datasets",
@@ -65,7 +65,7 @@
       "additions": 3571,
       "deletions": 0,
       "files": 22,
-      "updated": "2026-10-08T23:18:13Z",
+      "updated": "2026-10-20T09:13:24Z",
       "head": "f9a437c23b89206fc0c9a62e8e2c15f81851fb9f",
       "role": "author",
       "credit_url": null,
@@ -116,16 +116,16 @@
     {
       "repo": "vllm-project/vllm",
       "number": 58219,
-      "title": "docs: explain parser boundary tokens in custom grammars",
+      "title": "[Docs] explain parser boundary tokens in custom grammars",
       "url": "https://github.com/vllm-project/vllm/pull/58219",
       "additions": 52,
       "deletions": 0,
       "files": 2,
-      "updated": "2026-10-16T22:50:18Z",
-      "head": "450bef6da5dcb16fd2f678069e8a1071030d8503",
+      "updated": "2026-10-19T21:34:13Z",
+      "head": "17b6859b2b5ee210518d79d63af3d283310e2532",
       "role": "author",
       "credit_url": null,
-      "state": "open"
+      "state": "merged"
     },
     {
       "repo": "THUDM/slime",
@@ -160,11 +160,11 @@
       "number": 4176,
       "title": "refactor(workers)!: unify worker class selection through config",
       "url": "https://github.com/NVIDIA-NeMo/RL/pull/4176",
-      "additions": 526,
+      "additions": 527,
       "deletions": 92,
       "files": 19,
-      "updated": "2026-10-11T00:24:54Z",
-      "head": "24c27600e4df9330b48e90fb78850ae2e0f7150e",
+      "updated": "2026-10-19T21:47:58Z",
+      "head": "8ee8c68c088427027de6184757e169353f0ea4fb",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -233,7 +233,7 @@
       "additions": 667,
       "deletions": 68,
       "files": 9,
-      "updated": "2026-10-18T02:08:15Z",
+      "updated": "2026-10-20T00:28:58Z",
       "head": "b518575e26a2a32aebc69fa5958df4e5afb0369c",
       "role": "author",
       "credit_url": null,
@@ -289,8 +289,8 @@
       "additions": 586,
       "deletions": 26,
       "files": 11,
-      "updated": "2026-10-11T00:24:53Z",
-      "head": "3487617a7b6a8512d9daa9afdda23088d631b099",
+      "updated": "2026-10-19T21:48:34Z",
+      "head": "277f2dc9b57d467afc11c226e4cc150f3a230b53",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -331,8 +331,8 @@
       "additions": 280,
       "deletions": 20,
       "files": 8,
-      "updated": "2026-10-14T19:25:43Z",
-      "head": "dd0e152538647edf927a17d4b779c6ead8affd22",
+      "updated": "2026-10-19T21:47:41Z",
+      "head": "c47b24944688bfca674fc559aa622a1761fcc428",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -359,11 +359,11 @@
       "additions": 209,
       "deletions": 98,
       "files": 3,
-      "updated": "2026-10-04T19:32:24Z",
+      "updated": "2026-10-19T21:48:18Z",
       "head": "2bfac2090950539bede74c251d1e57d2194ab85b",
       "role": "author",
       "credit_url": null,
-      "state": "open"
+      "state": "closed"
     },
     {
       "repo": "modelscope/ms-swift",
@@ -513,8 +513,8 @@
       "additions": 56,
       "deletions": 1,
       "files": 2,
-      "updated": "2026-10-07T04:23:09Z",
-      "head": "3e2115879bd082a6a697787ff3574204dbac7285",
+      "updated": "2026-10-19T21:47:46Z",
+      "head": "8a5e9da2a49e5eaf1de0207472fd5989b0869f2c",
       "role": "author",
       "credit_url": null,
       "state": "open"

@@ -46,7 +46,7 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 
 <!-- PR-PREVIEWS:START -->
 
-<p><strong>12 merged</strong> · <strong>1 adopted solution</strong> · <strong>25 open</strong> · 16 projects</p>
+<p><strong>13 merged</strong> · <strong>1 adopted solution</strong> · <strong>23 open</strong> · 16 projects</p>
 
 ### Highlights
 
@@ -61,7 +61,7 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/vllm-project/vllm"><img src="https://avatars.githubusercontent.com/u/136984999?s=64&amp;v=4" width="30" height="30" alt="vllm-project organization avatar"><br><strong>vLLM</strong></a></td>
-<td width="72%"><p><a href="https://github.com/vllm-project/vllm/pull/54699"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/vllm-project-vllm-54699-dark.svg"><img height="26" src="./assets/prs/status/vllm-project-vllm-54699-light.svg" alt="#54699 · merged"></picture></a> Remove full-weight copies during MoE loading; conversion peak 7.88 → 3.94 GiB in the exact-shape TP2 benchmark</p><details><summary>1 more PR in this repository</summary><p><a href="https://github.com/vllm-project/vllm/pull/58219"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/vllm-project-vllm-58219-dark.svg"><img height="26" src="./assets/prs/status/vllm-project-vllm-58219-light.svg" alt="#58219 · open"></picture></a> Clarify Qwen3 parser boundary tokens in custom grammars</p></details></td>
+<td width="72%"><p><a href="https://github.com/vllm-project/vllm/pull/54699"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/vllm-project-vllm-54699-dark.svg"><img height="26" src="./assets/prs/status/vllm-project-vllm-54699-light.svg" alt="#54699 · merged"></picture></a> Remove full-weight copies during MoE loading; conversion peak 7.88 → 3.94 GiB in the exact-shape TP2 benchmark</p><details><summary>1 more PR in this repository</summary><p><a href="https://github.com/vllm-project/vllm/pull/58219"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/vllm-project-vllm-58219-dark.svg"><img height="26" src="./assets/prs/status/vllm-project-vllm-58219-light.svg" alt="#58219 · merged"></picture></a> Clarify Qwen3 parser boundary tokens in custom grammars</p></details></td>
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NVIDIA-NeMo/RL"><img src="https://avatars.githubusercontent.com/u/213689629?s=64&amp;v=4" width="30" height="30" alt="NVIDIA-NeMo organization avatar"><br><strong>NeMo RL</strong></a></td>
@@ -172,12 +172,12 @@ M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab]
 </details>
 
 <details>
-<summary><strong>Hermes Agent</strong> · 3 contributions</summary>
+<summary><strong>Hermes Agent</strong> · 2 contributions</summary>
 
 <table>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NousResearch/hermes-agent"><img src="https://avatars.githubusercontent.com/u/134168893?s=64&amp;v=4" width="30" height="30" alt="NousResearch organization avatar"><br><strong>Hermes Agent</strong></a></td>
-<td width="72%"><p><a href="https://github.com/NousResearch/hermes-agent/pull/113511"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113511-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113511-light.svg" alt="#113511 · open"></picture></a> Control partial-stream continuation for batch evaluation</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/113538"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113538-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113538-light.svg" alt="#113538 · open"></picture></a> Clarify API retry budgets and streaming defaults</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/102549"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-102549-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-102549-light.svg" alt="#102549 · open"></picture></a> Make SSH reconnects race-safe</p></td>
+<td width="72%"><p><a href="https://github.com/NousResearch/hermes-agent/pull/113511"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113511-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113511-light.svg" alt="#113511 · open"></picture></a> Control partial-stream continuation for batch evaluation</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/113538"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113538-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113538-light.svg" alt="#113538 · open"></picture></a> Clarify API retry budgets and streaming defaults</p></td>
 </tr>
 </table>
 
