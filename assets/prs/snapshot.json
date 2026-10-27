@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "pull_requests": [
     {
       "repo": "huggingface/datasets",
@@ -104,11 +104,11 @@
       "number": 7881,
       "title": "perf(ssm): reuse packed chunkwise CP metadata in GDN and KDA",
       "url": "https://github.com/NVIDIA/Megatron-LM/pull/7881",
-      "additions": 329,
-      "deletions": 13,
-      "files": 5,
-      "updated": "2026-10-15T02:37:13Z",
-      "head": "180504196c8bfffa933dc42d2d7bea7039c9c7a2",
+      "additions": 352,
+      "deletions": 17,
+      "files": 6,
+      "updated": "2026-10-26T23:58:22Z",
+      "head": "4fe88e1e19a7e4ebc352fbb74f6963b91867905e",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -172,13 +172,13 @@
     {
       "repo": "sgl-project/sglang",
       "number": 40103,
-      "title": "[Fix] Reject developer messages silently omitted by chat templates",
+      "title": "[Fix] openai: Reject developer messages silently omitted by chat templates",
       "url": "https://github.com/sgl-project/sglang/pull/40103",
-      "additions": 169,
-      "deletions": 1,
+      "additions": 176,
+      "deletions": 2,
       "files": 2,
-      "updated": "2026-10-08T22:58:48Z",
-      "head": "55589f4e2db644c1de0023d5ee616a717d2794db",
+      "updated": "2026-10-26T23:59:24Z",
+      "head": "732aaba18a2a3525da4a38aebba9d0087984d287",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -342,11 +342,11 @@
       "number": 5463,
       "title": "feat(recompute): add mamba to recompute_modules",
       "url": "https://github.com/NVIDIA/Megatron-LM/pull/5463",
-      "additions": 353,
+      "additions": 389,
       "deletions": 15,
       "files": 3,
-      "updated": "2026-10-12T20:25:32Z",
-      "head": "414aed8904680760ba20d594f11add499da5ba90",
+      "updated": "2026-10-27T12:30:16Z",
+      "head": "a683e8e47c44db12e699411c6be193f0b470bbf3",
       "role": "author",
       "credit_url": null,
       "state": "open"
