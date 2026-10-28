@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "pull_requests": [
     {
       "repo": "huggingface/datasets",
@@ -342,11 +342,11 @@
       "number": 5463,
       "title": "feat(recompute): add mamba to recompute_modules",
       "url": "https://github.com/NVIDIA/Megatron-LM/pull/5463",
-      "additions": 389,
+      "additions": 390,
       "deletions": 15,
-      "files": 3,
-      "updated": "2026-10-27T12:30:16Z",
-      "head": "a683e8e47c44db12e699411c6be193f0b470bbf3",
+      "files": 4,
+      "updated": "2026-10-28T10:17:18Z",
+      "head": "e2cb2ac21f53836d3c22fea0cfc9fcbd15d9545a",
       "role": "author",
       "credit_url": null,
       "state": "open"
