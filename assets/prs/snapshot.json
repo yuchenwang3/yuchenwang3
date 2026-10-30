@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "pull_requests": [
     {
       "repo": "huggingface/datasets",
@@ -345,7 +345,7 @@
       "additions": 390,
       "deletions": 15,
       "files": 4,
-      "updated": "2026-10-28T10:17:18Z",
+      "updated": "2026-10-30T12:20:58Z",
       "head": "e2cb2ac21f53836d3c22fea0cfc9fcbd15d9545a",
       "role": "author",
       "credit_url": null,
