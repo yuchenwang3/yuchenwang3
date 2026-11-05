@@ -261,10 +261,7 @@ def snake_section():
 
 def render_readme(prs):
     header = '''<a id="yuchen-ean-wang"></a>
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-dark.svg">
-<img width="800" src="./assets/terminal-light.svg" alt="Yuchen (Ean) Wang — agentic post-training / ML systems">
-</picture>
+<p><img width="600" src="./assets/terminal-dark.svg" alt="Yuchen (Ean) Wang — agentic post-training / ML systems"></p>
 
 M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
 

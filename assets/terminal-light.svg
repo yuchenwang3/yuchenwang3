@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" role="img" aria-labelledby="terminal-title terminal-desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="220" viewBox="0 0 600 220" role="img" aria-labelledby="terminal-title terminal-desc">
 <title id="terminal-title">Yuchen (Ean) Wang — agentic post-training and ML systems</title>
 <desc id="terminal-desc">A terminal prompt reads yuchen@github:~$ whoami. The output is Yuchen (Ean) Wang, agentic post-training / ML systems, followed by data to train to eval to ship.</desc>
-<rect x="0.5" y="0.5" width="799" height="219" rx="8" fill="#ffffff" stroke="#d1d9e0"/>
-<path d="M8.5 1H791.5A7.5 7.5 0 0 1 799 8.5V36H1V8.5A7.5 7.5 0 0 1 8.5 1Z" fill="#f6f8fa"/>
-<path d="M1 36.5H799" stroke="#d1d9e0"/>
+<rect x="0.5" y="0.5" width="599" height="219" rx="8" fill="#ffffff" stroke="#d1d9e0"/>
+<path d="M8.5 1H591.5A7.5 7.5 0 0 1 599 8.5V36H1V8.5A7.5 7.5 0 0 1 8.5 1Z" fill="#f6f8fa"/>
+<path d="M1 36.5H599" stroke="#d1d9e0"/>
 <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
 <path d="m19 14 5 4-5 4m9 0h7" fill="none" stroke="#1a7f37" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="47" y="23" fill="#59636e" font-size="12">~/profile</text>
-<text x="774" y="23" fill="#59636e" font-size="12" text-anchor="end">README.md</text>
+<text x="574" y="23" fill="#59636e" font-size="12" text-anchor="end">README.md</text>
 <text x="28" y="70" font-size="15"><tspan fill="#1a7f37">yuchen@github:~$</tspan><tspan fill="#1f2328"> whoami</tspan></text>
-<text x="28" y="113" fill="#1f2328" font-size="29" font-weight="600" letter-spacing="-0.8">Yuchen (Ean) Wang</text>
-<text x="28" y="143" fill="#59636e" font-size="18">agentic post-training / ML systems</text>
-<text x="28" y="189" font-size="16"><tspan fill="#59636e">data</tspan><tspan fill="#1a7f37"> → </tspan><tspan fill="#59636e">train</tspan><tspan fill="#1a7f37"> → </tspan><tspan fill="#59636e">eval</tspan><tspan fill="#1a7f37"> → </tspan><tspan fill="#59636e">ship</tspan><tspan fill="#1a7f37"> _</tspan></text>
+<text x="28" y="113" fill="#1f2328" font-size="36" font-weight="600" letter-spacing="-0.8">Yuchen (Ean) Wang</text>
+<text x="28" y="143" fill="#59636e" font-size="20">agentic post-training / ML systems</text>
+<text x="28" y="189" font-size="18"><tspan fill="#59636e">data</tspan><tspan fill="#1a7f37"> → </tspan><tspan fill="#59636e">train</tspan><tspan fill="#1a7f37"> → </tspan><tspan fill="#59636e">eval</tspan><tspan fill="#1a7f37"> → </tspan><tspan fill="#59636e">ship</tspan><tspan fill="#1a7f37"> _</tspan></text>
 </g>
 </svg>
