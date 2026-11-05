@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="220" viewBox="0 0 800 220" role="img" aria-labelledby="terminal-title terminal-desc">
+<title id="terminal-title">Yuchen (Ean) Wang — agentic post-training and ML systems</title>
+<desc id="terminal-desc">A terminal prompt reads yuchen@github:~$ whoami. The output is Yuchen (Ean) Wang, agentic post-training / ML systems, followed by data to train to eval to ship.</desc>
+<rect x="0.5" y="0.5" width="799" height="219" rx="8" fill="#0d1117" stroke="#30363d"/>
+<path d="M8.5 1H791.5A7.5 7.5 0 0 1 799 8.5V36H1V8.5A7.5 7.5 0 0 1 8.5 1Z" fill="#161b22"/>
+<path d="M1 36.5H799" stroke="#30363d"/>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+<path d="m19 14 5 4-5 4m9 0h7" fill="none" stroke="#79d2b0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="47" y="23" fill="#9da7b3" font-size="12">~/profile</text>
+<text x="774" y="23" fill="#9da7b3" font-size="12" text-anchor="end">README.md</text>
+<text x="28" y="70" font-size="15"><tspan fill="#79d2b0">yuchen@github:~$</tspan><tspan fill="#e6edf3"> whoami</tspan></text>
+<text x="28" y="113" fill="#e6edf3" font-size="29" font-weight="600" letter-spacing="-0.8">Yuchen (Ean) Wang</text>
+<text x="28" y="143" fill="#9da7b3" font-size="18">agentic post-training / ML systems</text>
+<text x="28" y="189" font-size="16"><tspan fill="#9da7b3">data</tspan><tspan fill="#79d2b0"> → </tspan><tspan fill="#9da7b3">train</tspan><tspan fill="#79d2b0"> → </tspan><tspan fill="#9da7b3">eval</tspan><tspan fill="#79d2b0"> → </tspan><tspan fill="#9da7b3">ship</tspan><tspan fill="#79d2b0"> _</tspan></text>
+</g>
+</svg>

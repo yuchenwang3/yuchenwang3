@@ -44,7 +44,10 @@ class ProfileLayoutTest(unittest.TestCase):
         block = contribution_section(self.prs)
         featured, remainder = block.split("### More contributions", 1)
         positions = []
+        visible = {(p["repo"], p["number"]) for p in self.prs if p["state"] in ("open", "merged")}
         for repo, number in HIGHLIGHTS:
+            if (repo, number) not in visible:
+                continue
             url = f'https://github.com/{repo}/pull/{number}'
             positions.append(featured.index(f'href="{url}"'))
             self.assertNotIn(f'href="{url}"', remainder)
@@ -74,7 +77,8 @@ class ProfileLayoutTest(unittest.TestCase):
         self.assertNotIn('<details open', featured)
         self.assertNotIn('<details open', remainder)
         groups = re.findall(r'<details>\n(.*?)\n</details>', remainder, re.S)
-        featured_repos = {repo for repo, _ in HIGHLIGHTS}
+        visible = {(p["repo"], p["number"]) for p in self.prs if p["state"] in ("open", "merged")}
+        featured_repos = {repo for repo, number in HIGHLIGHTS if (repo, number) in visible}
         repos = {p['repo'] for p in self.prs if p['state'] in ('merged', 'open')
                  and p['repo'] not in featured_repos}
         self.assertEqual(len(groups), len(repos))
@@ -90,14 +94,14 @@ class ProfileLayoutTest(unittest.TestCase):
 
     def test_research_and_contributions_precede_widgets(self):
         readme = render_readme(self.prs)
-        sections = ['## Research', '## Open-source contributions', '## On GitHub', '## Contribution trail']
+        sections = ['## `~/research`', '## `~/open-source`', '## `~/activity`', '## `~/contribution-trail`']
         positions = [readme.index(section) for section in sections]
         self.assertEqual(positions, sorted(positions))
 
     def test_contact_assets_have_equal_size_and_theme_support(self):
         import xml.etree.ElementTree as ET
         from render_contacts import CONTACTS, contact_svg, contact_button
-        self.assertEqual(len(CONTACTS), 6)
+        self.assertEqual(len(CONTACTS), 5)
         for key in CONTACTS:
             self.assertIn('prefers-color-scheme: dark', contact_button(key))
             for dark in (False, True):
@@ -108,15 +112,15 @@ class ProfileLayoutTest(unittest.TestCase):
                 self.assertEqual(path.read_text(), source)
                 self.assertNotIn('<script', source)
 
-    def test_visible_contact_buttons_keep_original_brand_styles(self):
+    def test_visible_contact_buttons_keep_compact_brand_styles(self):
         from profile_layout import button
         from render_contacts import CONTACTS
         readme = render_readme(self.prs)
         for label, url in CONTACTS.values():
             self.assertIn(button(label, url), readme)
-        self.assertIn('badge/Email-D14836?style=for-the-badge', readme)
-        self.assertIn('badge/LinkedIn-0A66C2?style=for-the-badge', readme)
-        self.assertIn('badge/WeChat%20%C2%B7%20eangyc-07C160?style=for-the-badge', readme)
+        self.assertIn('badge/Email-D14836?style=flat-square', readme)
+        self.assertIn('badge/LinkedIn-0A66C2?style=flat-square', readme)
+        self.assertIn('badge/WeChat%20%C2%B7%20eangyc-07C160?style=flat-square', readme)
         self.assertNotIn('./assets/contacts/', readme)
 
     def test_status_transitions_update_visibility_and_counts(self):
@@ -139,7 +143,8 @@ class ProfileLayoutTest(unittest.TestCase):
     def test_featured_repositories_are_not_repeated(self):
         block = contribution_section(self.prs)
         featured, remainder = block.split("### More contributions", 1)
-        for repo in {repo for repo, _ in HIGHLIGHTS}:
+        visible = {(p["repo"], p["number"]) for p in self.prs if p["state"] in ("open", "merged")}
+        for repo in {repo for repo, number in HIGHLIGHTS if (repo, number) in visible}:
             name = next(name for item, name, _ in PROJECTS if item == repo)
             self.assertEqual(featured.count(f"<strong>{name}</strong>"), 1)
             self.assertNotIn(f"<summary><strong>{name}</strong>", remainder)
@@ -169,7 +174,8 @@ class ProfileLayoutTest(unittest.TestCase):
 
     def test_cineflow_is_a_paper(self):
         readme = render_readme(self.prs)
-        self.assertIn('badge/Paper-B31B1B?style=for-the-badge', readme)
+        self.assertNotIn('https://yuchenwang3.github.io/projects/cineflow/', readme)
+        self.assertNotIn('https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf', readme)
         self.assertIn('CineFlow: figure from the paper', readme)
 
     def test_status_badges_are_theme_aware_and_valid(self):
@@ -189,7 +195,7 @@ class ProfileLayoutTest(unittest.TestCase):
         readme = render_readme(self.prs)
         self.assertIn('/output/github-snake.svg', readme)
         self.assertIn('/output/github-snake-dark.svg', readme)
-        self.assertEqual(readme.count('## Contribution trail'), 1)
+        self.assertEqual(readme.count('## `~/contribution-trail`'), 1)
 
     def test_latest_contributions_are_tracked(self):
         keys = {(p["repo"], p["number"]) for p in self.prs}
@@ -212,7 +218,7 @@ class ProfileLayoutTest(unittest.TestCase):
     def test_compact_header_and_clickable_widgets(self):
         readme = render_readme(self.prs)
         self.assertNotIn('editorial-header', readme)
-        self.assertIn('Yuchen (Ean) Wang — handwritten typing signature', readme)
+        self.assertIn('Yuchen (Ean) Wang — agentic post-training / ML systems', readme)
         self.assertIn('img.shields.io/github/followers/yuchenwang3', readme)
         self.assertIn('img.shields.io/github/stars/yuchenwang3', readme)
         for kind in ('activity', 'languages'):

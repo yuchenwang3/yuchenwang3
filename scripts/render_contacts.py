@@ -5,7 +5,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CONTACTS = {
     "website": ("Website", "https://yuchenwang3.github.io/"),
-    "cv": ("CV", "https://yuchenwang3.github.io/CV.pdf"),
     "scholar": ("Scholar", "https://scholar.google.com/citations?user=NharhG8AAAAJ"),
     "linkedin": ("LinkedIn", "https://www.linkedin.com/in/yuchen3"),
     "email": ("Email", "mailto:yuchenwang0303@gmail.com"),

@@ -6,6 +6,15 @@ from profile_art import PR_DESIGN
 from render_contacts import CONTACTS
 from status_badges import status_link
 
+# Hugging Face downloadsAllTime for all 12 official quantized Occamy repos.
+# Source: /api/models?author=Accio-Lab&expand[]=downloadsAllTime (2026-11-05).
+QUANTIZED_DOWNLOADS = {
+    "GGUF": 1176549, "APEX-GGUF": 5118, "FP8": 688, "NVFP4": 4770,
+    "MLX-3bit": 833, "MLX-4bit": 1089, "MLX-5bit": 294,
+    "MLX-6bit": 511, "MLX-8bit": 157, "MLX-mxfp4": 327,
+    "MLX-mxfp8": 73, "MLX-nvfp4": 355,
+}
+
 
 def button(label, url, color="30363D"):
     styles = {
@@ -24,7 +33,7 @@ def button(label, url, color="30363D"):
     extra = ""
     if label in styles:
         color, logo = styles[label]
-        style = "for-the-badge"
+        style = "flat-square"
         extra = f"&amp;logo={logo}&amp;logoColor={'black' if label == 'Model' else 'white'}"
     badge = f"https://img.shields.io/badge/{quote(label, safe='')}-{color}?style={style}{extra}"
     return f'<a href="{escape(url, quote=True)}"><img src="{badge}" alt="{escape(label)}"></a>'
@@ -35,17 +44,19 @@ def research_section():
         ("Occamy-1.0", "occamy-mark", "svg",
          "https://accio-lab.github.io/occamy/",
          "35B-A3B agent model for long-horizon tool use.",
-         "Core contributor · Post-training algorithms, infrastructure &amp; data",
+         'Core contributor · Post-training algorithms, infrastructure &amp; data<br>'
+         '<a href="https://huggingface.co/collections/Accio-Lab/occamy-10" '
+         f'title="{sum(QUANTIZED_DOWNLOADS.values()):,} all-time downloads across 12 official quantized repositories">'
+         '<strong>≈1.2M cumulative downloads</strong></a> across official quantized releases',
          [("Report", "https://arxiv.org/abs/2609.11977"),
           ("Demo", "https://accio-lab.github.io/occamy/"),
           ("Model", "https://huggingface.co/Accio-Lab/Occamy-1.0"),
           ("Code", "https://github.com/Accio-Lab/occamy")]),
         ("CineFlow", "cineflow-system", "png",
-         "https://yuchenwang3.github.io/projects/cineflow/",
+         None,
          "Dependency-driven parallel video generation.",
          "Co-first author · 1.7–5.5× end-to-end speedup in the reported evaluation",
-         [("Project", "https://yuchenwang3.github.io/projects/cineflow/"),
-          ("Paper", "https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf")]),
+         []),
         ("Dynamic Prefill", "prefill-timeline", "png",
          "https://yuchenwang3.github.io/projects/prepack/",
          "Adaptive batching and prompt packing for LLM serving.",
@@ -58,14 +69,20 @@ def research_section():
         visual = f'<img width="100%" src="./assets/research/{stem}.{ext}" alt="{escape(name)}: '+("official logo" if ext == "svg" else "figure from the paper" if name == "CineFlow" else "figure from the project report")+'">'
         if ext == "svg":
             visual = f'<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/research/{stem}-dark.svg">{visual}</picture>'
+        title = escape(name)
+        if url:
+            visual = f'<a href="{url}">{visual}</a>'
+            title = f'<a href="{url}">{title}</a>'
+        resources = " ".join(button(label, target) for label, target in links)
+        resources = f'<p>{resources}</p>' if resources else ''
         rows.append(f'''<tr>
-<td width="32%" align="center"><a href="{url}">{visual}</a></td>
-<td width="68%"><h3><a href="{url}">{name}</a></h3>
+<td width="32%" align="center">{visual}</td>
+<td width="68%"><h3>{title}</h3>
 <p>{summary}<br><sub>{detail}</sub></p>
-<p>{" ".join(button(label, target) for label, target in links)}</p></td>
+{resources}</td>
 </tr>''')
-    raredx = '<a href="https://arxiv.org/abs/2609.35549"><img src="https://img.shields.io/badge/RareDx%20%C2%B7%20Co--first%20author-B31B1B?style=for-the-badge&amp;logo=arxiv&amp;logoColor=white" alt="RareDx: co-first author; graph-grounded RL for rare disease diagnosis"></a>'
-    return "## Research\n\n<table>\n" + "\n".join(rows) + "\n</table>\n\n" + " ".join([raredx,
+    raredx = '<a href="https://arxiv.org/abs/2609.35549"><img src="https://img.shields.io/badge/RareDx%20%C2%B7%20Co--first%20author-B31B1B?style=flat-square&amp;logo=arxiv&amp;logoColor=white" alt="RareDx: co-first author; graph-grounded RL for rare disease diagnosis"></a>'
+    return '<a id="research"></a>\n\n## `~/research`\n\n<table>\n' + "\n".join(rows) + "\n</table>\n\n" + " ".join([raredx,
         button("CUDA Attention", "https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf"),
         button("RL for Legal Reasoning", "https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf"),
     ]) + "\n"
@@ -182,7 +199,7 @@ def contribution_table(prs, project_order, secondary=None):
         if not contributions:
             continue
         rows.append(f'''<tr>
-<td width="28%" valign="top"><a href="https://github.com/{repo}"><img src="https://avatars.githubusercontent.com/u/{avatar}?s=64&amp;v=4" width="30" height="30" alt="{repo.split('/')[0]} organization avatar"><br><strong>{name}</strong></a></td>
+<td width="28%" valign="top"><a href="https://github.com/{repo}"><strong>{name}</strong></a><br><sub><code>{repo.split('/')[0]}</code></sub></td>
 <td width="72%">{"".join(contributions)}</td>
 </tr>''')
     return "<table>\n" + "\n".join(rows) + "\n</table>" if rows else ""
@@ -233,7 +250,7 @@ def contribution_section(prs):
 
 def snake_section():
     base = "https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/"
-    return f'''\n## Contribution trail
+    return f'''\n## `~/contribution-trail`
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="{base}github-snake-dark.svg">
@@ -243,23 +260,23 @@ def snake_section():
 
 
 def render_readme(prs):
-    header = '''<p><a id="yuchen-ean-wang"></a>
+    header = '''<a id="yuchen-ean-wang"></a>
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="./assets/signature-dark.svg">
-<img width="430" src="./assets/signature-light.svg" alt="Yuchen (Ean) Wang — handwritten typing signature">
+<source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-dark.svg">
+<img width="800" src="./assets/terminal-light.svg" alt="Yuchen (Ean) Wang — agentic post-training / ML systems">
 </picture>
-</p>
 
-Agentic post-training & ML systems.<br>
 M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
+
+[`research/`](#research) · [`patches/`](#patches) · [`activity/`](#activity)
 
 '''
     contacts = '<p>\n' + "\n".join(button(label, url) for label, url in CONTACTS.values()) + "\n</p>\n\n"
     return (header + contacts + research_section()
-            + "\n## Open-source contributions\n\n<!-- PR-PREVIEWS:START -->"
+            + '\n<a id="patches"></a>\n\n## `~/open-source`\n\n<!-- PR-PREVIEWS:START -->'
             + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n"
-            + "\n## Academic service\n\nReviewer, [WSDM 2027](https://www.wsdm-conference.org/2027/).\n"
-            + "\n## On GitHub\n\n" + widget_section() + snake_section())
+            + "\n## `~/service`\n\nReviewer, [WSDM 2027](https://www.wsdm-conference.org/2027/).\n"
+            + '\n<a id="activity"></a>\n\n## `~/activity`\n\n' + widget_section() + snake_section())
 
 
 def widget_section():

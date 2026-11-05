@@ -3,9 +3,12 @@ import json
 from pathlib import Path
 from profile_art import logo, svg
 from profile_layout import render_readme
+from render_terminal import terminal_svg
 
 ROOT = Path(__file__).resolve().parents[1]
 for dark in (False, True):
+    theme = "dark" if dark else "light"
+    (ROOT / "assets" / f"terminal-{theme}.svg").write_text(terminal_svg(dark))
     mark = logo(100, 0, 400, "#edf0ee" if dark else "#142629", "#6ed6b6" if dark else "#137765")
     name = "occamy-mark-dark.svg" if dark else "occamy-mark.svg"
     (ROOT / "assets/research" / name).write_text(svg(600, 360, "Occamy", "Official Occamy logo geometry; colors adapted to the page theme.", mark))
