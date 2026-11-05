@@ -23,26 +23,23 @@ class ProfileLayoutTest(unittest.TestCase):
 
     def test_every_active_or_merged_pr_is_preserved(self):
         block = contribution_section(self.prs)
+        full_list = block.split('<details>', 1)[1]
         for p in self.prs:
             if p["state"] == "closed":
                 self.assertNotIn(f'href="{p["url"]}"', block)
                 continue
-            self.assertEqual(block.count(f'href="{p["url"]}"'), 1)
-            self.assertIn(f'#{p["number"]} · {p["state"]}', block)
+            self.assertEqual(full_list.count(f'href="{p["url"]}"'), 1)
+            self.assertIn(f'#{p["number"]} · {p["state"]}', full_list)
 
-    def test_one_row_per_project_in_each_group(self):
+    def test_one_row_per_project_in_full_list(self):
         block = contribution_section(self.prs)
         visible = [p for p in self.prs if p["state"] in ("open", "merged")]
-        featured_repos = {repo for repo, number in HIGHLIGHTS if (repo, number) in {(p["repo"], p["number"]) for p in visible}}
-        for heading, is_featured in [("Highlights", True), ("More contributions", False)]:
-            group = block.split(f"### {heading}\n", 1)[1].split("### More contributions", 1)[0]
-            projects = {p["repo"] for p in visible if (p["repo"] in featured_repos) == is_featured}
-            self.assertEqual(group.count("<tr>"), len(projects))
+        self.assertEqual(block.count("<tr>"), len({p["repo"] for p in visible}))
         self.assertEqual(len(PROJECTS), len({p[0] for p in PROJECTS}))
 
-    def test_highlights_are_first_without_duplicates(self):
+    def test_highlights_precede_and_remain_in_full_list(self):
         block = contribution_section(self.prs)
-        featured, remainder = block.split("### More contributions", 1)
+        featured, full_list = block.split("<details>", 1)
         positions = []
         visible = {(p["repo"], p["number"]) for p in self.prs if p["state"] in ("open", "merged")}
         for repo, number in HIGHLIGHTS:
@@ -50,14 +47,16 @@ class ProfileLayoutTest(unittest.TestCase):
                 continue
             url = f'https://github.com/{repo}/pull/{number}'
             positions.append(featured.index(f'href="{url}"'))
-            self.assertNotIn(f'href="{url}"', remainder)
+            self.assertEqual(full_list.count(f'href="{url}"'), 1)
         self.assertEqual(positions, sorted(positions))
+        self.assertEqual(len(HIGHLIGHTS), 3)
+        self.assertEqual(featured.count('<li>'), len(positions))
         self.assertEqual(len(HIGHLIGHTS), len(set(HIGHLIGHTS)))
 
     def test_closed_highlight_is_not_displayed(self):
         pr = next(p for p in self.prs if (p['repo'], p['number']) == HIGHLIGHTS[0])
         block = contribution_section([dict(pr, state='closed')])
-        self.assertNotIn('### Highlights', block)
+        self.assertNotIn('<li>', block.split('<details>', 1)[0])
         self.assertNotIn(pr['url'], block)
 
     def test_full_upstream_inventory(self):
@@ -70,21 +69,15 @@ class ProfileLayoutTest(unittest.TestCase):
         self.assertNotIn("Closed without merge", block)
         self.assertIn("<details>", block)
 
-    def test_remainder_is_collapsed_by_repository(self):
+    def test_full_list_is_one_collapsed_group(self):
         block = contribution_section(self.prs)
-        featured, remainder = block.split("### More contributions", 1)
-        self.assertIn('<details><summary>1 more PR in this repository</summary>', featured)
-        self.assertNotIn('<details open', featured)
-        self.assertNotIn('<details open', remainder)
-        groups = re.findall(r'<details>\n(.*?)\n</details>', remainder, re.S)
-        visible = {(p["repo"], p["number"]) for p in self.prs if p["state"] in ("open", "merged")}
-        featured_repos = {repo for repo, number in HIGHLIGHTS if (repo, number) in visible}
-        repos = {p['repo'] for p in self.prs if p['state'] in ('merged', 'open')
-                 and p['repo'] not in featured_repos}
-        self.assertEqual(len(groups), len(repos))
-        for group in groups:
-            self.assertIn('<summary><strong>', group)
-            self.assertEqual(group.count('<tr>'), 1)
+        self.assertEqual(block.count('<details>'), 1)
+        self.assertEqual(block.count('</details>'), 1)
+        self.assertNotIn('<details open', block)
+        full_list = block.split('<details>', 1)[1]
+        self.assertIn('<summary>Full PR list', full_list)
+        repos = {p['repo'] for p in self.prs if p['state'] in ('merged', 'open')}
+        self.assertEqual(full_list.count('<tr>'), len(repos))
 
     def test_highlight_metrics_keep_benchmark_scope(self):
         block = contribution_section(self.prs)
@@ -94,7 +87,7 @@ class ProfileLayoutTest(unittest.TestCase):
 
     def test_research_and_contributions_precede_widgets(self):
         readme = render_readme(self.prs)
-        sections = ['## `~/research`', '## `~/open-source`', '## `~/activity`', '## `~/contribution-trail`']
+        sections = ['### [Occamy-1.0]', '### Selected contributions', '### Other research', '<summary>Activity</summary>', '#### Contribution trail']
         positions = [readme.index(section) for section in sections]
         self.assertEqual(positions, sorted(positions))
 
@@ -140,15 +133,19 @@ class ProfileLayoutTest(unittest.TestCase):
             count = sum(p["state"] == state and (state != "merged" or p.get("role") != "adopted_solution") for p in self.prs)
             self.assertIn(f"<strong>{count} {state}</strong>", block)
 
-    def test_featured_repositories_are_not_repeated(self):
+    def test_only_selected_prs_are_expanded(self):
         block = contribution_section(self.prs)
-        featured, remainder = block.split("### More contributions", 1)
+        featured, full_list = block.split("<details>", 1)
         visible = {(p["repo"], p["number"]) for p in self.prs if p["state"] in ("open", "merged")}
-        for repo in {repo for repo, number in HIGHLIGHTS if (repo, number) in visible}:
-            name = next(name for item, name, _ in PROJECTS if item == repo)
-            self.assertEqual(featured.count(f"<strong>{name}</strong>"), 1)
-            self.assertNotIn(f"<summary><strong>{name}</strong>", remainder)
-        self.assertIn("1 more PR in this repository", featured)
+        for p in self.prs:
+            url = f'href="{p["url"]}"'
+            if (p["repo"], p["number"]) in HIGHLIGHTS and (p["repo"], p["number"]) in visible:
+                self.assertEqual(featured.count(url), 1)
+                self.assertIn(f'<code>{p["state"]}</code>', featured)
+            else:
+                self.assertNotIn(url, featured)
+        self.assertNotIn('<table>', featured)
+        self.assertIn('<table>', full_list)
 
     def test_profile_does_not_claim_visitor_identity_or_inflated_views(self):
         readme = render_readme(self.prs)
@@ -176,7 +173,8 @@ class ProfileLayoutTest(unittest.TestCase):
         readme = render_readme(self.prs)
         self.assertNotIn('https://yuchenwang3.github.io/projects/cineflow/', readme)
         self.assertNotIn('https://yuchenwang3.github.io/assets/pdf/projects/cineflow-paper.pdf', readme)
-        self.assertIn('CineFlow: figure from the paper', readme)
+        self.assertIn('**CineFlow**', readme)
+        self.assertIn('Co-first author · 1.7–5.5× end-to-end speedup in the reported evaluation', readme)
 
     def test_status_badges_are_theme_aware_and_valid(self):
         import xml.etree.ElementTree as ET
@@ -195,7 +193,10 @@ class ProfileLayoutTest(unittest.TestCase):
         readme = render_readme(self.prs)
         self.assertIn('/output/github-snake.svg', readme)
         self.assertIn('/output/github-snake-dark.svg', readme)
-        self.assertEqual(readme.count('## `~/contribution-trail`'), 1)
+        self.assertEqual(readme.count('#### Contribution trail'), 1)
+        activity = readme.split('<summary>Activity</summary>', 1)[1]
+        self.assertIn('/output/github-snake.svg', activity)
+        self.assertTrue(activity.rstrip().endswith('</details>'))
 
     def test_latest_contributions_are_tracked(self):
         keys = {(p["repo"], p["number"]) for p in self.prs}
@@ -218,12 +219,14 @@ class ProfileLayoutTest(unittest.TestCase):
     def test_compact_header_and_clickable_widgets(self):
         readme = render_readme(self.prs)
         self.assertNotIn('editorial-header', readme)
-        self.assertIn('Yuchen (Ean) Wang — agentic post-training / ML systems', readme)
+        self.assertNotIn('./assets/terminal-', readme)
+        self.assertIn('## `>` Yuchen (Ean) Wang', readme)
+        activity = readme.split('<summary>Activity</summary>', 1)[1]
         self.assertIn('img.shields.io/github/followers/yuchenwang3', readme)
         self.assertIn('img.shields.io/github/stars/yuchenwang3', readme)
         for kind in ('activity', 'languages'):
             for theme in ('light', 'dark'):
-                self.assertIn(f'./assets/widgets/{kind}-{theme}.svg', readme)
+                self.assertIn(f'./assets/widgets/{kind}-{theme}.svg', activity)
 
     def test_widgets_are_valid_and_honest_about_language_scope(self):
         import xml.etree.ElementTree as ET
@@ -240,20 +243,15 @@ class ProfileLayoutTest(unittest.TestCase):
         ET.fromstring(render_widget(empty, 'languages'))
         ET.fromstring(render_widget(empty, 'activity'))
 
-    def test_signature_and_affiliations(self):
-        import xml.etree.ElementTree as ET
-        from render_signature import signature_svg
+    def test_occamy_scope_and_affiliations(self):
+        from profile_layout import QUANTIZED_DOWNLOADS
         readme = render_readme(self.prs)
         for org in ('illinois', 'Accio-Lab', 'alibaba'):
             self.assertIn(f'[@{org}](https://github.com/{org})', readme)
-        for dark in (False, True):
-            svg = signature_svg(dark)
-            self.assertEqual(ET.fromstring(svg).attrib['height'], '52')
-            self.assertIn('prefers-reduced-motion', svg)
-            self.assertIn('animation: write 3s linear 1 both', svg)
-            self.assertNotIn('infinite', svg)
-            self.assertIn('𝓨𝓾𝓬𝓱𝓮𝓷', svg)
-            self.assertNotIn('<script', svg)
+        self.assertIn('**Core contributor** — post-training algorithms, infrastructure & data', readme)
+        self.assertIn('≈1.2M cumulative downloads', readme)
+        self.assertIn('across official quantized releases', readme)
+        self.assertIn(f'{sum(QUANTIZED_DOWNLOADS.values()):,} all-time downloads across 12 official quantized repositories', readme)
 
 
 if __name__ == "__main__":

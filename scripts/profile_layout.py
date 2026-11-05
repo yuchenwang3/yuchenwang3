@@ -39,53 +39,26 @@ def button(label, url, color="30363D"):
     return f'<a href="{escape(url, quote=True)}"><img src="{badge}" alt="{escape(label)}"></a>'
 
 
+def occamy_section():
+    return f'''### [Occamy-1.0](https://accio-lab.github.io/occamy/)
+
+35B-A3B agent model for long-horizon tool use. **Core contributor** — post-training algorithms, infrastructure & data.<br>
+<a href="https://huggingface.co/collections/Accio-Lab/occamy-10" title="{sum(QUANTIZED_DOWNLOADS.values()):,} all-time downloads across 12 official quantized repositories"><strong>≈1.2M cumulative downloads</strong></a> across official quantized releases.
+
+[Report](https://arxiv.org/abs/2609.11977) · [Demo](https://accio-lab.github.io/occamy/) · [Model](https://huggingface.co/Accio-Lab/Occamy-1.0) · [Code](https://github.com/Accio-Lab/occamy)
+'''
+
+
 def research_section():
-    projects = [
-        ("Occamy-1.0", "occamy-mark", "svg",
-         "https://accio-lab.github.io/occamy/",
-         "35B-A3B agent model for long-horizon tool use.",
-         'Core contributor · Post-training algorithms, infrastructure &amp; data<br>'
-         '<a href="https://huggingface.co/collections/Accio-Lab/occamy-10" '
-         f'title="{sum(QUANTIZED_DOWNLOADS.values()):,} all-time downloads across 12 official quantized repositories">'
-         '<strong>≈1.2M cumulative downloads</strong></a> across official quantized releases',
-         [("Report", "https://arxiv.org/abs/2609.11977"),
-          ("Demo", "https://accio-lab.github.io/occamy/"),
-          ("Model", "https://huggingface.co/Accio-Lab/Occamy-1.0"),
-          ("Code", "https://github.com/Accio-Lab/occamy")]),
-        ("CineFlow", "cineflow-system", "png",
-         None,
-         "Dependency-driven parallel video generation.",
-         "Co-first author · 1.7–5.5× end-to-end speedup in the reported evaluation",
-         []),
-        ("Dynamic Prefill", "prefill-timeline", "png",
-         "https://yuchenwang3.github.io/projects/prepack/",
-         "Adaptive batching and prompt packing for LLM serving.",
-         "Up to 20% lower TTFT on the reported traces",
-         [("Report", "https://yuchenwang3.github.io/assets/pdf/projects/dynamic-prefill-online-packing-report.pdf"),
-          ("Code", "https://github.com/Winlere/prepack-workspace")]),
-    ]
-    rows = []
-    for name, stem, ext, url, summary, detail, links in projects:
-        visual = f'<img width="100%" src="./assets/research/{stem}.{ext}" alt="{escape(name)}: '+("official logo" if ext == "svg" else "figure from the paper" if name == "CineFlow" else "figure from the project report")+'">'
-        if ext == "svg":
-            visual = f'<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/research/{stem}-dark.svg">{visual}</picture>'
-        title = escape(name)
-        if url:
-            visual = f'<a href="{url}">{visual}</a>'
-            title = f'<a href="{url}">{title}</a>'
-        resources = " ".join(button(label, target) for label, target in links)
-        resources = f'<p>{resources}</p>' if resources else ''
-        rows.append(f'''<tr>
-<td width="32%" align="center">{visual}</td>
-<td width="68%"><h3>{title}</h3>
-<p>{summary}<br><sub>{detail}</sub></p>
-{resources}</td>
-</tr>''')
-    raredx = '<a href="https://arxiv.org/abs/2609.35549"><img src="https://img.shields.io/badge/RareDx%20%C2%B7%20Co--first%20author-B31B1B?style=flat-square&amp;logo=arxiv&amp;logoColor=white" alt="RareDx: co-first author; graph-grounded RL for rare disease diagnosis"></a>'
-    return '<a id="research"></a>\n\n## `~/research`\n\n<table>\n' + "\n".join(rows) + "\n</table>\n\n" + " ".join([raredx,
-        button("CUDA Attention", "https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf"),
-        button("RL for Legal Reasoning", "https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf"),
-    ]) + "\n"
+    return '''<a id="research"></a>
+
+### Other research
+
+- **CineFlow** — Dependency-driven parallel video generation. Co-first author · 1.7–5.5× end-to-end speedup in the reported evaluation.
+- **[Dynamic Prefill](https://yuchenwang3.github.io/projects/prepack/)** — Adaptive batching and prompt packing; up to 20% lower TTFT on the reported traces. [Report](https://yuchenwang3.github.io/assets/pdf/projects/dynamic-prefill-online-packing-report.pdf) · [Code](https://github.com/Winlere/prepack-workspace)
+- **[RareDx](https://arxiv.org/abs/2609.35549)** — Graph-grounded RL for rare disease diagnosis. Co-first author.
+- [CUDA Attention](https://yuchenwang3.github.io/assets/pdf/projects/gpt2-processing-unit-report.pdf) · [RL for Legal Reasoning](https://yuchenwang3.github.io/assets/pdf/projects/legal-reasoning-thesis.pdf)
+'''
 
 
 PROJECTS = [
@@ -154,23 +127,15 @@ PR_LABELS = {
 }
 
 
-# Curated technical highlights, independent of merge state. The remainder stays
-# available in repository disclosures, with every PR rendered exactly once.
+# A short front-page selection; each also appears in the complete disclosure.
 HIGHLIGHTS = [
-    ("huggingface/datasets", 8670),
-    ("modelscope/mcore-bridge", 211),
     ("vllm-project/vllm", 54699),
-    ("NVIDIA-NeMo/RL", 3943),
-    ("NVIDIA/Megatron-LM", 5396),
-    ("NVIDIA/Megatron-LM", 5463),
-    ("Dao-AILab/flash-attention", 2507),
-    ("flashinfer-ai/flashinfer", 4984),
-    ("sgl-project/sglang", 39765),
-    ("NousResearch/hermes-agent", 100693),
+    ("modelscope/mcore-bridge", 211),
+    ("huggingface/datasets", 8670),
 ]
 
 
-def contribution_table(prs, project_order, secondary=None):
+def contribution_table(prs, project_order):
     projects = {repo: (name, avatar) for repo, name, avatar in PROJECTS}
     rows = []
     for repo in project_order:
@@ -189,13 +154,6 @@ def contribution_table(prs, project_order, secondary=None):
                 credit = f'<br><sub><a href="{escape(p["credit_url"], quote=True)}">Solution adopted by the PR author</a></sub>'
             return f'<p>{status} {escape(label)}{credit}</p>'
         contributions.extend(contribution_line(p) for p in prs if p["repo"] == repo)
-        extra = [p for p in (secondary or []) if p["repo"] == repo]
-        if extra:
-            count = len(extra)
-            contributions.append(
-                f'<details><summary>{count} more PR{"s" if count != 1 else ""} in this repository</summary>'
-                + "".join(contribution_line(p) for p in extra) + '</details>'
-            )
         if not contributions:
             continue
         rows.append(f'''<tr>
@@ -214,43 +172,30 @@ def contribution_section(prs):
     open_count = sum(p["state"] == "open" for p in visible)
     project_count = len({p["repo"] for p in visible})
     adopted_summary = f'<strong>{adopted_count} adopted solution{("s" if adopted_count != 1 else "")}</strong> · ' if adopted_count else ""
-    summary = (f'<p><strong>{merged_count} merged</strong> · ' + adopted_summary +
-               f'<strong>{open_count} open</strong> · {project_count} projects</p>')
+    summary = (f'<strong>{merged_count} merged</strong> · ' + adopted_summary +
+               f'<strong>{open_count} open</strong> · {project_count} projects')
     by_key = {(p["repo"], p["number"]): p for p in visible}
     featured = [by_key[key] for key in HIGHLIGHTS if key in by_key]
-    featured_order = list(dict.fromkeys(p["repo"] for p in featured))
-    featured_repos = set(featured_order)
-    secondary = [p for p in visible if p["repo"] in featured_repos and (p["repo"], p["number"]) not in HIGHLIGHTS]
-    remainder = [p for p in visible if p["repo"] not in featured_repos]
-    sections = []
-    if featured:
-        sections.append("### Highlights\n\n" + contribution_table(featured, featured_order, secondary))
-    if remainder:
-        disclosures = []
-        for repo, name, _ in PROJECTS:
-            contributions = sorted(
-                (p for p in remainder if p["repo"] == repo),
-                key=lambda p: {"merged": 0, "open": 1}[p["state"]],
-            )
-            if not contributions:
-                continue
-            count = len(contributions)
-            disclosures.append(
-                f'<details>\n<summary><strong>{escape(name)}</strong> · '
-                f'{count} contribution{"s" if count != 1 else ""}</summary>\n\n'
-                + contribution_table(contributions, [repo]) + '\n\n</details>'
-            )
-        sections.append("### More contributions\n\n" + "\n\n".join(disclosures))
-    footer = " ".join([
-        button("All contributions ↗", "https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests"),
-        button("Engineering notes ↗", "https://yuchenwang3.github.io/projects/open-source-systems/"),
-    ])
-    return "\n\n" + summary + "\n\n" + "\n\n".join(sections) + "\n\n" + footer + "\n\n"
+    names = {repo: name for repo, name, _ in PROJECTS}
+    highlights = []
+    for p in featured:
+        label = PR_LABELS[(p["repo"], p["number"])]
+        highlights.append(
+            f'<li><a href="{escape(p["url"], quote=True)}"><strong>{names[p["repo"]]} #{p["number"]}</strong></a> '
+            f'<code>{p["state"]}</code> — {escape(label)}</li>'
+        )
+    selected = '<ul>\n' + '\n'.join(highlights) + '\n</ul>\n\n' if highlights else ''
+    ordered = sorted(visible, key=lambda p: {"merged": 0, "open": 1}[p["state"]])
+    full_list = contribution_table(ordered, [repo for repo, _, _ in PROJECTS])
+    footer = ('[All authored PRs](https://github.com/search?q=author%3Ayuchenwang3+is%3Apr&type=pullrequests) · '
+              '[Engineering notes](https://yuchenwang3.github.io/projects/open-source-systems/)')
+    return ('\n\n' + selected + '<details>\n<summary>Full PR list · ' + summary + '</summary>\n\n'
+            + full_list + '\n\n' + footer + '\n\n</details>\n\n')
 
 
 def snake_section():
     base = "https://raw.githubusercontent.com/yuchenwang3/yuchenwang3/output/"
-    return f'''\n## `~/contribution-trail`
+    return f'''\n#### Contribution trail
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="{base}github-snake-dark.svg">
@@ -261,19 +206,20 @@ def snake_section():
 
 def render_readme(prs):
     header = '''<a id="yuchen-ean-wang"></a>
-<p><img width="600" src="./assets/terminal-dark.svg" alt="Yuchen (Ean) Wang — agentic post-training / ML systems"></p>
 
-M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
+## `>` Yuchen (Ean) Wang
 
-[`research/`](#research) · [`patches/`](#patches) · [`activity/`](#activity)
+Agentic post-training & ML systems · M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
 
 '''
     contacts = '<p>\n' + "\n".join(button(label, url) for label, url in CONTACTS.values()) + "\n</p>\n\n"
-    return (header + contacts + research_section()
-            + '\n<a id="patches"></a>\n\n## `~/open-source`\n\n<!-- PR-PREVIEWS:START -->'
+    return (header + contacts + occamy_section()
+            + '\n<a id="patches"></a>\n\n### Selected contributions\n\n<!-- PR-PREVIEWS:START -->'
             + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n"
-            + "\n## `~/service`\n\nReviewer, [WSDM 2027](https://www.wsdm-conference.org/2027/).\n"
-            + '\n<a id="activity"></a>\n\n## `~/activity`\n\n' + widget_section() + snake_section())
+            + '\n' + research_section()
+            + "\nReviewer, [WSDM 2027](https://www.wsdm-conference.org/2027/).\n"
+            + '\n<a id="activity"></a>\n\n<details>\n<summary>Activity</summary>\n\n'
+            + widget_section() + snake_section() + '\n</details>\n')
 
 
 def widget_section():
