@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "pull_requests": [
     {
       "repo": "huggingface/datasets",
@@ -79,7 +79,7 @@
       "additions": 173,
       "deletions": 4,
       "files": 3,
-      "updated": "2026-11-05T19:49:09Z",
+      "updated": "2026-11-06T19:52:01Z",
       "head": "12a6ab7b2ffe6112388e61009e417547de1f2db9",
       "role": "author",
       "credit_url": null,
@@ -247,7 +247,7 @@
       "additions": 248,
       "deletions": 2,
       "files": 2,
-      "updated": "2026-11-05T19:48:17Z",
+      "updated": "2026-11-06T05:59:17Z",
       "head": "1ccea14a1d9d77b959450e55a9da357652d2c001",
       "role": "author",
       "credit_url": null,
@@ -261,7 +261,7 @@
       "additions": 157,
       "deletions": 0,
       "files": 6,
-      "updated": "2026-11-05T19:48:21Z",
+      "updated": "2026-11-06T18:49:40Z",
       "head": "e237ddd1a6514adb8a8706cd662a8a2a7fe5271a",
       "role": "author",
       "credit_url": null,
@@ -275,7 +275,7 @@
       "additions": 14,
       "deletions": 12,
       "files": 4,
-      "updated": "2026-11-05T19:48:23Z",
+      "updated": "2026-11-06T18:49:36Z",
       "head": "047c24d7121479a588850bb40a3f8624d8f79b71",
       "role": "author",
       "credit_url": null,
