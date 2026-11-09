@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "pull_requests": [
     {
       "repo": "huggingface/datasets",
@@ -76,11 +76,11 @@
       "number": 6312,
       "title": "feat(conversion): add a failure exit mode to HF/Megatron comparison",
       "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6312",
-      "additions": 173,
+      "additions": 176,
       "deletions": 4,
-      "files": 3,
-      "updated": "2026-11-06T19:52:01Z",
-      "head": "12a6ab7b2ffe6112388e61009e417547de1f2db9",
+      "files": 6,
+      "updated": "2026-11-09T20:33:22Z",
+      "head": "b5b514d0ade1fb190c2b983dc7d66ea8959d2ebd",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -160,11 +160,11 @@
       "number": 4176,
       "title": "refactor(workers)!: unify worker class selection through config",
       "url": "https://github.com/NVIDIA-NeMo/RL/pull/4176",
-      "additions": 531,
-      "deletions": 93,
+      "additions": 518,
+      "deletions": 96,
       "files": 19,
-      "updated": "2026-11-08T08:18:03Z",
-      "head": "28f421d7e7e4cbbe17b83307a498d38381df70b6",
+      "updated": "2026-11-09T20:18:46Z",
+      "head": "079f0f73330b1afd42717a9334635a0243256f94",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -244,11 +244,11 @@
       "number": 39765,
       "title": "[Fix] scheduler: Publish Mamba prefill cache updates before preparing the next batch",
       "url": "https://github.com/sgl-project/sglang/pull/39765",
-      "additions": 248,
+      "additions": 249,
       "deletions": 2,
       "files": 2,
-      "updated": "2026-11-06T05:59:17Z",
-      "head": "1ccea14a1d9d77b959450e55a9da357652d2c001",
+      "updated": "2026-11-09T21:44:14Z",
+      "head": "e839a2580e617ef7e9d76cca837315b2981efbcf",
       "role": "author",
       "credit_url": null,
       "state": "open"
