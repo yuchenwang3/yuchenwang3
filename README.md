@@ -32,7 +32,7 @@ Agentic post-training & ML systems · M.S. CS [@illinois](https://github.com/ill
 </ul>
 
 <details>
-<summary>Full PR list · <strong>13 merged</strong> · <strong>1 adopted solution</strong> · <strong>23 open</strong> · 16 projects</summary>
+<summary>Full PR list · <strong>14 merged</strong> · <strong>1 adopted solution</strong> · <strong>22 open</strong> · 16 projects</summary>
 
 <table>
 <tr>
@@ -45,7 +45,7 @@ Agentic post-training & ML systems · M.S. CS [@illinois](https://github.com/ill
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge"><strong>Megatron Bridge</strong></a><br><sub><code>NVIDIA-NeMo</code></sub></td>
-<td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6315"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6315-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6315-light.svg" alt="#6315 · open"></picture></a> Add Bridge-local Qwen4-Exp text-decoder support; GPU integration is pending</p><p><a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6312"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6312-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6312-light.svg" alt="#6312 · open"></picture></a> Make HF/Megatron comparison failures return a nonzero exit status</p></td>
+<td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6312"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6312-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6312-light.svg" alt="#6312 · merged"></picture></a> Make HF/Megatron comparison failures return a nonzero exit status</p><p><a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/6315"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6315-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-Megatron-Bridge-6315-light.svg" alt="#6315 · open"></picture></a> Add Bridge-local Qwen4-Exp text-decoder support; GPU integration is pending</p></td>
 </tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/THUDM/slime"><strong>slime</strong></a><br><sub><code>THUDM</code></sub></td>

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "pull_requests": [
     {
       "repo": "huggingface/datasets",
@@ -79,11 +79,11 @@
       "additions": 176,
       "deletions": 4,
       "files": 6,
-      "updated": "2026-11-13T23:07:34Z",
+      "updated": "2026-11-17T00:19:21Z",
       "head": "dd9aaef63932712a745f197556753e925b81d33b",
       "role": "author",
       "credit_url": null,
-      "state": "open"
+      "state": "merged"
     },
     {
       "repo": "NVIDIA/Megatron-LM",
@@ -331,7 +331,7 @@
       "additions": 299,
       "deletions": 19,
       "files": 8,
-      "updated": "2026-11-16T07:08:25Z",
+      "updated": "2026-11-17T04:23:46Z",
       "head": "c8acb9e0460d96a4661b19db1d2652c57255f492",
       "role": "author",
       "credit_url": null,
