@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "pull_requests": [
     {
       "repo": "huggingface/datasets",
@@ -90,11 +90,11 @@
       "number": 7864,
       "title": "fix(optimizer): preserve native Adam counters across checkpoint restore",
       "url": "https://github.com/NVIDIA/Megatron-LM/pull/7864",
-      "additions": 187,
+      "additions": 183,
       "deletions": 1,
       "files": 2,
-      "updated": "2026-11-18T20:29:07Z",
-      "head": "3c08784b5cd243c1ccf1fc5eb26c32d050b199d7",
+      "updated": "2026-11-20T20:20:38Z",
+      "head": "8655e8ee07776e13398c1ec048d814f8b2cdedd4",
       "role": "author",
       "credit_url": null,
       "state": "open"
@@ -345,7 +345,7 @@
       "additions": 390,
       "deletions": 15,
       "files": 4,
-      "updated": "2026-11-19T20:45:36Z",
+      "updated": "2026-11-20T00:22:33Z",
       "head": "5f90cabe6c4799250656fff533e400c4cbe3736f",
       "role": "author",
       "credit_url": null,
@@ -485,7 +485,7 @@
       "additions": 236,
       "deletions": 1,
       "files": 7,
-      "updated": "2026-11-19T20:44:16Z",
+      "updated": "2026-11-20T00:22:32Z",
       "head": "e6b72928d840447c76c49f048b6726c262d52b07",
       "role": "author",
       "credit_url": null,
@@ -513,7 +513,7 @@
       "additions": 56,
       "deletions": 1,
       "files": 2,
-      "updated": "2026-11-19T20:33:09Z",
+      "updated": "2026-11-20T00:22:34Z",
       "head": "8a5e9da2a49e5eaf1de0207472fd5989b0869f2c",
       "role": "author",
       "credit_url": null,
