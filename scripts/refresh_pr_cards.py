@@ -10,6 +10,11 @@ from status_badges import badge_stem, render_status
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 SELECTED = [
+    ("harbor-framework/terminal-bench-science", 2841),
+    ("harbor-framework/terminal-bench-science", 2843),
+    ("harbor-framework/terminal-bench-science", 2864),
+    ("harbor-framework/terminal-bench-science", 2866),
+    ("harbor-framework/harbor", 3965),
     ("huggingface/datasets", 8670),
     ("modelscope/mcore-bridge", 211),
     ("modelscope/mcore-bridge", 212),

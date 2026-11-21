@@ -49,6 +49,19 @@ def occamy_section():
 '''
 
 
+def evaluation_section():
+    base = "https://github.com/harbor-framework/terminal-bench-science"
+    return f'''
+### Agent evaluation
+
+Four [Terminal-Bench-Science]({base}) research tasks in review:
+[voice perturbation]({base}/pull/2841) · [red-giant asteroseismology]({base}/pull/2843) ·
+[GNSS station velocities]({base}/pull/2864) · [cortical layers]({base}/pull/2866).
+Each grades a submitted program on withheld data, with opposing pass gates calibrated against reference and ablated baselines.
+Merged: [NeMo RL #4193](https://github.com/NVIDIA-NeMo/RL/pull/4193) renders evaluation prompts as one complete conversation, so scored text and token IDs come from the same prompt.
+'''
+
+
 def research_section():
     return '''<a id="research"></a>
 
@@ -62,6 +75,9 @@ def research_section():
 
 
 PROJECTS = [
+    ("harbor-framework/terminal-bench-science", "Terminal-Bench-Science", 256467836),
+    ("NVIDIA-NeMo/RL", "NeMo RL", 213689629),
+    ("NVIDIA-NeMo/Gym", "NeMo Gym", 213689629),
     ("huggingface/datasets", "HF Datasets", 25720743),
     ("modelscope/mcore-bridge", "mcore-bridge", 109945100),
     ("NVIDIA-NeMo/Megatron-Bridge", "Megatron Bridge", 213689629),
@@ -70,18 +86,22 @@ PROJECTS = [
     ("flashinfer-ai/flashinfer", "FlashInfer", 145061914),
     ("vllm-project/vime", "vime", 136984999),
     ("NVIDIA-NeMo/Emerging-Optimizers", "Emerging Optimizers", 213689629),
-    ("NVIDIA-NeMo/Gym", "NeMo Gym", 213689629),
     ("Dao-AILab/flash-attention", "FlashAttention", 139507659),
     ("vllm-project/vllm", "vLLM", 136984999),
     ("NVIDIA/Megatron-LM", "Megatron-LM", 1728152),
-    ("NVIDIA-NeMo/RL", "NeMo RL", 213689629),
     ("sgl-project/sglang", "SGLang", 147780389),
     ("verl-project/verl", "verl", 212961691),
     ("NousResearch/hermes-agent", "Hermes Agent", 134168893),
+    ("harbor-framework/harbor", "Harbor", 256467836),
     ("huggingface/trl", "TRL", 25720743),
 ]
 
 PR_LABELS = {
+    ("harbor-framework/terminal-bench-science", 2841): "Task: voice perturbation analysis, graded on 136 withheld recordings",
+    ("harbor-framework/terminal-bench-science", 2843): "Task: red-giant asteroseismology, graded on 70 withheld light curves",
+    ("harbor-framework/terminal-bench-science", 2864): "Task: GNSS station velocities with paired accuracy and uncertainty gates",
+    ("harbor-framework/terminal-bench-science", 2866): "Task: cortical layer analysis on sections from an unseen donor",
+    ("harbor-framework/harbor", 3965): "Reap Docker and Podman rootless probes",
     ("huggingface/datasets", 8670): "Preserve source shards during streaming shuffle so four workers can share 19 shards",
     ("modelscope/mcore-bridge", 211): "Score packed QSA within each document; 2.70× faster in an 8K synthetic selector benchmark",
     ("modelscope/mcore-bridge", 212): "Preserve low-precision rounding in gated residual mixing",
@@ -98,7 +118,7 @@ PR_LABELS = {
     ("NVIDIA/Megatron-LM", 5463): "Enable selective Mamba mixer recompute to save activation memory without full-layer recomputation",
     ("flashinfer-ai/flashinfer", 4984): "Restore K/V calibration in FP8 KV prefill, correcting silently mis-scaled attention outputs",
     ("NousResearch/hermes-agent", 100693): "Resolve local schema references so nested tool arguments reach handlers as objects, not JSON strings",
-    ("NVIDIA-NeMo/RL", 4193): "Render evaluation prompts as complete conversations",
+    ("NVIDIA-NeMo/RL", 4193): "Render evaluation prompts as one complete conversation, so scored text and token IDs come from the same prompt",
     ("NVIDIA-NeMo/RL", 4176): "Unify worker selection through configuration",
     ("sgl-project/sglang", 40103): "Reject developer messages silently dropped by templates",
     ("verl-project/verl", 7906): "Track response truncation across context limits",
@@ -209,11 +229,11 @@ def render_readme(prs):
 
 ## `>` Yuchen (Ean) Wang
 
-Agentic post-training & ML systems · M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
+Agentic post-training, evaluation & ML systems · M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
 
 '''
     contacts = '<p>\n' + "\n".join(button(label, url) for label, url in CONTACTS.values()) + "\n</p>\n\n"
-    return (header + contacts + occamy_section()
+    return (header + contacts + occamy_section() + evaluation_section()
             + '\n<a id="patches"></a>\n\n### Selected contributions\n\n<!-- PR-PREVIEWS:START -->'
             + contribution_section(prs) + "<!-- PR-PREVIEWS:END -->\n"
             + '\n' + research_section()

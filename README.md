@@ -2,7 +2,7 @@
 
 ## `>` Yuchen (Ean) Wang
 
-Agentic post-training & ML systems · M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
+Agentic post-training, evaluation & ML systems · M.S. CS [@illinois](https://github.com/illinois) · Research intern [@Accio-Lab](https://github.com/Accio-Lab) / [@alibaba](https://github.com/alibaba).
 
 <p>
 <a href="https://yuchenwang3.github.io/"><img src="https://img.shields.io/badge/Website-181717?style=flat-square&amp;logo=vercel&amp;logoColor=white" alt="Website"></a>
@@ -19,6 +19,14 @@ Agentic post-training & ML systems · M.S. CS [@illinois](https://github.com/ill
 
 [Report](https://arxiv.org/abs/2609.11977) · [Demo](https://accio-lab.github.io/occamy/) · [Model](https://huggingface.co/Accio-Lab/Occamy-1.0) · [Code](https://github.com/Accio-Lab/occamy)
 
+### Agent evaluation
+
+Four [Terminal-Bench-Science](https://github.com/harbor-framework/terminal-bench-science) research tasks in review:
+[voice perturbation](https://github.com/harbor-framework/terminal-bench-science/pull/2841) · [red-giant asteroseismology](https://github.com/harbor-framework/terminal-bench-science/pull/2843) ·
+[GNSS station velocities](https://github.com/harbor-framework/terminal-bench-science/pull/2864) · [cortical layers](https://github.com/harbor-framework/terminal-bench-science/pull/2866).
+Each grades a submitted program on withheld data, with opposing pass gates calibrated against reference and ablated baselines.
+Merged: [NeMo RL #4193](https://github.com/NVIDIA-NeMo/RL/pull/4193) renders evaluation prompts as one complete conversation, so scored text and token IDs come from the same prompt.
+
 <a id="patches"></a>
 
 ### Selected contributions
@@ -32,9 +40,21 @@ Agentic post-training & ML systems · M.S. CS [@illinois](https://github.com/ill
 </ul>
 
 <details>
-<summary>Full PR list · <strong>14 merged</strong> · <strong>1 adopted solution</strong> · <strong>22 open</strong> · 16 projects</summary>
+<summary>Full PR list · <strong>14 merged</strong> · <strong>1 adopted solution</strong> · <strong>27 open</strong> · 18 projects</summary>
 
 <table>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/harbor-framework/terminal-bench-science"><strong>Terminal-Bench-Science</strong></a><br><sub><code>harbor-framework</code></sub></td>
+<td width="72%"><p><a href="https://github.com/harbor-framework/terminal-bench-science/pull/2841"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/harbor-framework-terminal-bench-science-2841-dark.svg"><img height="26" src="./assets/prs/status/harbor-framework-terminal-bench-science-2841-light.svg" alt="#2841 · open"></picture></a> Task: voice perturbation analysis, graded on 136 withheld recordings</p><p><a href="https://github.com/harbor-framework/terminal-bench-science/pull/2843"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/harbor-framework-terminal-bench-science-2843-dark.svg"><img height="26" src="./assets/prs/status/harbor-framework-terminal-bench-science-2843-light.svg" alt="#2843 · open"></picture></a> Task: red-giant asteroseismology, graded on 70 withheld light curves</p><p><a href="https://github.com/harbor-framework/terminal-bench-science/pull/2864"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/harbor-framework-terminal-bench-science-2864-dark.svg"><img height="26" src="./assets/prs/status/harbor-framework-terminal-bench-science-2864-light.svg" alt="#2864 · open"></picture></a> Task: GNSS station velocities with paired accuracy and uncertainty gates</p><p><a href="https://github.com/harbor-framework/terminal-bench-science/pull/2866"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/harbor-framework-terminal-bench-science-2866-dark.svg"><img height="26" src="./assets/prs/status/harbor-framework-terminal-bench-science-2866-light.svg" alt="#2866 · open"></picture></a> Task: cortical layer analysis on sections from an unseen donor</p></td>
+</tr>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/NVIDIA-NeMo/RL"><strong>NeMo RL</strong></a><br><sub><code>NVIDIA-NeMo</code></sub></td>
+<td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/4193"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-4193-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-4193-light.svg" alt="#4193 · merged"></picture></a> Render evaluation prompts as one complete conversation, so scored text and token IDs come from the same prompt</p><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/4176"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-4176-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-4176-light.svg" alt="#4176 · open"></picture></a> Unify worker selection through configuration</p><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/3943"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-3943-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-3943-light.svg" alt="#3943 · open"></picture></a> Bypass driver tensor materialization in distillation; 4.4–5.3× faster transfers in a controlled Ray benchmark</p><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/2962"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-2962-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-2962-light.svg" alt="#2962 · open"></picture></a> Sanitize non-finite async log probabilities</p></td>
+</tr>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/NVIDIA-NeMo/Gym"><strong>NeMo Gym</strong></a><br><sub><code>NVIDIA-NeMo</code></sub></td>
+<td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/Gym/pull/2726"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-Gym-2726-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-Gym-2726-light.svg" alt="#2726 · merged"></picture></a> Preserve HTTP errors across process boundaries<br><sub>Co-author</sub></p></td>
+</tr>
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/huggingface/datasets"><strong>HF Datasets</strong></a><br><sub><code>huggingface</code></sub></td>
 <td width="72%"><p><a href="https://github.com/huggingface/datasets/pull/8670"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/huggingface-datasets-8670-dark.svg"><img height="26" src="./assets/prs/status/huggingface-datasets-8670-light.svg" alt="#8670 · merged"></picture></a> Preserve source shards during streaming shuffle so four workers can share 19 shards</p></td>
@@ -68,10 +88,6 @@ Agentic post-training & ML systems · M.S. CS [@illinois](https://github.com/ill
 <td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/Emerging-Optimizers/pull/230"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-Emerging-Optimizers-230-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-Emerging-Optimizers-230-light.svg" alt="#230 · merged"></picture></a> Keep Muon scale-invariant</p></td>
 </tr>
 <tr>
-<td width="28%" valign="top"><a href="https://github.com/NVIDIA-NeMo/Gym"><strong>NeMo Gym</strong></a><br><sub><code>NVIDIA-NeMo</code></sub></td>
-<td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/Gym/pull/2726"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-Gym-2726-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-Gym-2726-light.svg" alt="#2726 · merged"></picture></a> Preserve HTTP errors across process boundaries<br><sub>Co-author</sub></p></td>
-</tr>
-<tr>
 <td width="28%" valign="top"><a href="https://github.com/Dao-AILab/flash-attention"><strong>FlashAttention</strong></a><br><sub><code>Dao-AILab</code></sub></td>
 <td width="72%"><p><a href="https://github.com/Dao-AILab/flash-attention/pull/2507"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/Dao-AILab-flash-attention-2507-dark.svg"><img height="26" src="./assets/prs/status/Dao-AILab-flash-attention-2507-light.svg" alt="#2507 · merged"></picture></a> Prevent redundant backward-kernel recompilation with stable cache keys, without CPU–GPU sync<br><sub><a href="https://github.com/Dao-AILab/flash-attention/pull/2507#issuecomment-4921776396">Solution adopted by the PR author</a></sub></p></td>
 </tr>
@@ -84,10 +100,6 @@ Agentic post-training & ML systems · M.S. CS [@illinois](https://github.com/ill
 <td width="72%"><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/7864"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-7864-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-7864-light.svg" alt="#7864 · open"></picture></a> Preserve native Adam step counters across checkpoint restoration</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/7881"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-7881-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-7881-light.svg" alt="#7881 · open"></picture></a> Reuse packed chunkwise CP metadata across GDN and KDA layers</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5396"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5396-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5396-light.svg" alt="#5396 · open"></picture></a> Fuse GDN Q/K normalization to remove an extra backward activation buffer</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5463"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5463-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5463-light.svg" alt="#5463 · open"></picture></a> Enable selective Mamba mixer recompute to save activation memory without full-layer recomputation</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5400"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5400-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5400-light.svg" alt="#5400 · open"></picture></a> Route GDN input projections to Adam</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5431"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5431-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5431-light.svg" alt="#5431 · open"></picture></a> Exclude GDN input projections from global clipping</p><p><a href="https://github.com/NVIDIA/Megatron-LM/pull/5395"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-Megatron-LM-5395-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-Megatron-LM-5395-light.svg" alt="#5395 · open"></picture></a> Skip gradient clipping for Muon</p></td>
 </tr>
 <tr>
-<td width="28%" valign="top"><a href="https://github.com/NVIDIA-NeMo/RL"><strong>NeMo RL</strong></a><br><sub><code>NVIDIA-NeMo</code></sub></td>
-<td width="72%"><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/4193"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-4193-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-4193-light.svg" alt="#4193 · merged"></picture></a> Render evaluation prompts as complete conversations</p><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/4176"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-4176-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-4176-light.svg" alt="#4176 · open"></picture></a> Unify worker selection through configuration</p><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/3943"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-3943-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-3943-light.svg" alt="#3943 · open"></picture></a> Bypass driver tensor materialization in distillation; 4.4–5.3× faster transfers in a controlled Ray benchmark</p><p><a href="https://github.com/NVIDIA-NeMo/RL/pull/2962"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NVIDIA-NeMo-RL-2962-dark.svg"><img height="26" src="./assets/prs/status/NVIDIA-NeMo-RL-2962-light.svg" alt="#2962 · open"></picture></a> Sanitize non-finite async log probabilities</p></td>
-</tr>
-<tr>
 <td width="28%" valign="top"><a href="https://github.com/sgl-project/sglang"><strong>SGLang</strong></a><br><sub><code>sgl-project</code></sub></td>
 <td width="72%"><p><a href="https://github.com/sgl-project/sglang/pull/40103"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-40103-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-40103-light.svg" alt="#40103 · open"></picture></a> Reject developer messages silently dropped by templates</p><p><a href="https://github.com/sgl-project/sglang/pull/39765"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-39765-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-39765-light.svg" alt="#39765 · open"></picture></a> Publish Mamba cache updates before dependent batches capture stale KV mappings</p><p><a href="https://github.com/sgl-project/sglang/pull/38063"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-38063-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-38063-light.svg" alt="#38063 · open"></picture></a> Explain cold MXFP4 JIT startup</p><p><a href="https://github.com/sgl-project/sglang/pull/31621"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/sgl-project-sglang-31621-dark.svg"><img height="26" src="./assets/prs/status/sgl-project-sglang-31621-light.svg" alt="#31621 · open"></picture></a> Honor weight-check exclusions during reset</p></td>
 </tr>
@@ -98,6 +110,10 @@ Agentic post-training & ML systems · M.S. CS [@illinois](https://github.com/ill
 <tr>
 <td width="28%" valign="top"><a href="https://github.com/NousResearch/hermes-agent"><strong>Hermes Agent</strong></a><br><sub><code>NousResearch</code></sub></td>
 <td width="72%"><p><a href="https://github.com/NousResearch/hermes-agent/pull/113511"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113511-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113511-light.svg" alt="#113511 · open"></picture></a> Control partial-stream continuation for batch evaluation</p><p><a href="https://github.com/NousResearch/hermes-agent/pull/113538"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/NousResearch-hermes-agent-113538-dark.svg"><img height="26" src="./assets/prs/status/NousResearch-hermes-agent-113538-light.svg" alt="#113538 · open"></picture></a> Clarify API retry budgets and streaming defaults</p></td>
+</tr>
+<tr>
+<td width="28%" valign="top"><a href="https://github.com/harbor-framework/harbor"><strong>Harbor</strong></a><br><sub><code>harbor-framework</code></sub></td>
+<td width="72%"><p><a href="https://github.com/harbor-framework/harbor/pull/3965"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/prs/status/harbor-framework-harbor-3965-dark.svg"><img height="26" src="./assets/prs/status/harbor-framework-harbor-3965-light.svg" alt="#3965 · open"></picture></a> Reap Docker and Podman rootless probes</p></td>
 </tr>
 </table>
 

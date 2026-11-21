@@ -61,8 +61,8 @@ class ProfileLayoutTest(unittest.TestCase):
 
     def test_full_upstream_inventory(self):
         from refresh_pr_cards import SELECTED
-        self.assertEqual(len(SELECTED), 44)
-        self.assertEqual(len(PROJECTS), 17)
+        self.assertEqual(len(SELECTED), 49)
+        self.assertEqual(len(PROJECTS), 19)
         self.assertEqual(set(SELECTED), {(p["repo"], p["number"]) for p in self.prs})
         self.assertEqual(len(SELECTED), len(set(SELECTED)))
         block = contribution_section(self.prs)
